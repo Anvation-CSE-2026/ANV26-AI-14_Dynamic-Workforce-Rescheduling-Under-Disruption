@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "ResQWork (debug server)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/run.py",
+      "cwd": "${workspaceFolder}/backend",
+      "env": {
+        "RESQWORK_NO_BROWSER": "0"
+      },
+      "justMyCode": true
+    }
+  ]
+}

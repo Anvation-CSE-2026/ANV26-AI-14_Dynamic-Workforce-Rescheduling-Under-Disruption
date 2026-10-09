@@ -1,0 +1,1256 @@
+{
+  "organization": {
+    "id": "st-aster",
+    "name": "St. Aster Multispeciality Hospital",
+    "domain": "healthcare",
+    "location": "Bengaluru",
+    "timezone": "Asia/Kolkata",
+    "size": "350 beds"
+  },
+  "reference_date": "2026-10-08",
+  "reference_time": "20:00",
+  "departments": [
+    {
+      "id": "ICU",
+      "name": "Intensive Care Unit",
+      "kind": "unit"
+    },
+    {
+      "id": "ED",
+      "name": "Emergency Department",
+      "kind": "unit"
+    },
+    {
+      "id": "WARD",
+      "name": "General Ward",
+      "kind": "unit"
+    }
+  ],
+  "skills": [
+    "RN",
+    "ICU Care",
+    "ER Triage",
+    "Pediatrics",
+    "ACLS"
+  ],
+  "employees": [
+    {
+      "id": "H01",
+      "name": "Rahul Sharma",
+      "role": "ICU Nurse",
+      "department": "ICU",
+      "skills": [
+        "RN",
+        "ICU Care"
+      ],
+      "certifications": [
+        "ACLS"
+      ],
+      "contracted_weekly_hours": 36,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "rahul@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 1,
+        "schedule_changes_30d": 1,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "H02",
+      "name": "Priya Nair",
+      "role": "ICU Nurse",
+      "department": "ICU",
+      "skills": [
+        "RN",
+        "ICU Care"
+      ],
+      "certifications": [
+        "ACLS"
+      ],
+      "contracted_weekly_hours": 36,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "priya@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 1,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "H03",
+      "name": "Elena Rostova",
+      "role": "ICU Nurse",
+      "department": "ICU",
+      "skills": [
+        "RN",
+        "ICU Care"
+      ],
+      "certifications": [
+        "ACLS"
+      ],
+      "contracted_weekly_hours": 36,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "elena@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 1,
+        "schedule_changes_30d": 2,
+        "overtime_hours_30d": 4
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "H04",
+      "name": "Carlos Mendez",
+      "role": "ICU/ED Float Nurse",
+      "department": "ED",
+      "skills": [
+        "RN",
+        "ICU Care",
+        "ER Triage"
+      ],
+      "certifications": [
+        "ACLS"
+      ],
+      "contracted_weekly_hours": 36,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "carlos@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 1,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "H05",
+      "name": "Hannah Schmidt",
+      "role": "ICU Nurse",
+      "department": "ICU",
+      "skills": [
+        "RN",
+        "ICU Care"
+      ],
+      "certifications": [
+        "ACLS"
+      ],
+      "contracted_weekly_hours": 36,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "hannah@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "H06",
+      "name": "Marcus Vance",
+      "role": "ER Nurse",
+      "department": "ED",
+      "skills": [
+        "RN",
+        "ER Triage"
+      ],
+      "certifications": [
+        "ACLS"
+      ],
+      "contracted_weekly_hours": 36,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "marcus@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "H07",
+      "name": "Aisha Patel",
+      "role": "ER Nurse",
+      "department": "ED",
+      "skills": [
+        "RN",
+        "ER Triage"
+      ],
+      "certifications": [
+        "ACLS"
+      ],
+      "contracted_weekly_hours": 36,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "aisha@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 1,
+        "schedule_changes_30d": 1,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "H08",
+      "name": "David Chen",
+      "role": "ER Nurse",
+      "department": "ED",
+      "skills": [
+        "RN",
+        "ER Triage"
+      ],
+      "certifications": [
+        "ACLS"
+      ],
+      "contracted_weekly_hours": 36,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "david@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 2,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "H09",
+      "name": "Meera Iyer",
+      "role": "Ward Nurse",
+      "department": "WARD",
+      "skills": [
+        "RN"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 36,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "meera@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "H10",
+      "name": "Sanjay Rao",
+      "role": "Ward Nurse",
+      "department": "WARD",
+      "skills": [
+        "RN"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 36,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "sanjay@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 1,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "H11",
+      "name": "Grace Thomas",
+      "role": "Pediatric Nurse",
+      "department": "WARD",
+      "skills": [
+        "RN",
+        "Pediatrics"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 36,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "grace@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "H12",
+      "name": "Arjun Mehta",
+      "role": "Ward Nurse",
+      "department": "WARD",
+      "skills": [
+        "RN"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 36,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "arjun@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 1,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "H13",
+      "name": "Fatima Khan",
+      "role": "ER Nurse",
+      "department": "ED",
+      "skills": [
+        "RN",
+        "ER Triage"
+      ],
+      "certifications": [
+        "ACLS"
+      ],
+      "contracted_weekly_hours": 36,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "fatima@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "H14",
+      "name": "Kavya Reddy",
+      "role": "ICU Nurse",
+      "department": "ICU",
+      "skills": [
+        "RN",
+        "ICU Care"
+      ],
+      "certifications": [
+        "ACLS"
+      ],
+      "contracted_weekly_hours": 36,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "kavya@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "H15",
+      "name": "Rohan Gupta",
+      "role": "Ward Nurse",
+      "department": "WARD",
+      "skills": [
+        "RN"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 36,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "rohan@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "H16",
+      "name": "Lisa Wong",
+      "role": "ER Nurse",
+      "department": "ED",
+      "skills": [
+        "RN",
+        "ER Triage"
+      ],
+      "certifications": [
+        "ACLS"
+      ],
+      "contracted_weekly_hours": 36,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "lisa@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "H17",
+      "name": "Neha Joshi",
+      "role": "ICU Nurse (Float)",
+      "department": "ICU",
+      "skills": [
+        "RN",
+        "ICU Care"
+      ],
+      "certifications": [
+        "ACLS"
+      ],
+      "contracted_weekly_hours": 36,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "neha@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 3,
+        "schedule_changes_30d": 4,
+        "overtime_hours_30d": 10
+      },
+      "preferences": {},
+      "attributes": {}
+    }
+  ],
+  "shifts": [
+    {
+      "id": "ICU-D-1007-1",
+      "date": "2026-10-07",
+      "assignment": "ICU Day",
+      "department": "ICU",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN",
+        "ICU Care"
+      ],
+      "required_certifications": [
+        "ACLS"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "patient_care_level": "critical"
+      }
+    },
+    {
+      "id": "ICU-D-1007-2",
+      "date": "2026-10-07",
+      "assignment": "ICU Day",
+      "department": "ICU",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN",
+        "ICU Care"
+      ],
+      "required_certifications": [
+        "ACLS"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "patient_care_level": "critical"
+      }
+    },
+    {
+      "id": "ICU-N-1007-1",
+      "date": "2026-10-07",
+      "assignment": "ICU Night",
+      "department": "ICU",
+      "start": "19:00",
+      "end": "07:00",
+      "shift_type": "Night",
+      "required_skills": [
+        "RN",
+        "ICU Care"
+      ],
+      "required_certifications": [
+        "ACLS"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "patient_care_level": "critical"
+      }
+    },
+    {
+      "id": "ED-D-1007-1",
+      "date": "2026-10-07",
+      "assignment": "Emergency Day",
+      "department": "ED",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN",
+        "ER Triage"
+      ],
+      "required_certifications": [
+        "ACLS"
+      ],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "ED-D-1007-2",
+      "date": "2026-10-07",
+      "assignment": "Emergency Day",
+      "department": "ED",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN",
+        "ER Triage"
+      ],
+      "required_certifications": [
+        "ACLS"
+      ],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "ED-N-1007-1",
+      "date": "2026-10-07",
+      "assignment": "Emergency Night",
+      "department": "ED",
+      "start": "19:00",
+      "end": "07:00",
+      "shift_type": "Night",
+      "required_skills": [
+        "RN",
+        "ER Triage"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "WARD-D-1007-1",
+      "date": "2026-10-07",
+      "assignment": "General Ward Day",
+      "department": "WARD",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "WARD-D-1007-2",
+      "date": "2026-10-07",
+      "assignment": "General Ward Day",
+      "department": "WARD",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "WARD-N-1007-1",
+      "date": "2026-10-07",
+      "assignment": "General Ward Night",
+      "department": "WARD",
+      "start": "19:00",
+      "end": "07:00",
+      "shift_type": "Night",
+      "required_skills": [
+        "RN"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "ICU-D-1008-1",
+      "date": "2026-10-08",
+      "assignment": "ICU Day",
+      "department": "ICU",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN",
+        "ICU Care"
+      ],
+      "required_certifications": [
+        "ACLS"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "patient_care_level": "critical"
+      }
+    },
+    {
+      "id": "ICU-D-1008-2",
+      "date": "2026-10-08",
+      "assignment": "ICU Day",
+      "department": "ICU",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN",
+        "ICU Care"
+      ],
+      "required_certifications": [
+        "ACLS"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "patient_care_level": "critical"
+      }
+    },
+    {
+      "id": "ICU-N-1008-1",
+      "date": "2026-10-08",
+      "assignment": "ICU Night",
+      "department": "ICU",
+      "start": "19:00",
+      "end": "07:00",
+      "shift_type": "Night",
+      "required_skills": [
+        "RN",
+        "ICU Care"
+      ],
+      "required_certifications": [
+        "ACLS"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "patient_care_level": "critical"
+      }
+    },
+    {
+      "id": "ED-D-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Emergency Day",
+      "department": "ED",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN",
+        "ER Triage"
+      ],
+      "required_certifications": [
+        "ACLS"
+      ],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "ED-D-1008-2",
+      "date": "2026-10-08",
+      "assignment": "Emergency Day",
+      "department": "ED",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN",
+        "ER Triage"
+      ],
+      "required_certifications": [
+        "ACLS"
+      ],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "ED-N-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Emergency Night",
+      "department": "ED",
+      "start": "19:00",
+      "end": "07:00",
+      "shift_type": "Night",
+      "required_skills": [
+        "RN",
+        "ER Triage"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "WARD-D-1008-1",
+      "date": "2026-10-08",
+      "assignment": "General Ward Day",
+      "department": "WARD",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "WARD-D-1008-2",
+      "date": "2026-10-08",
+      "assignment": "General Ward Day",
+      "department": "WARD",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "WARD-N-1008-1",
+      "date": "2026-10-08",
+      "assignment": "General Ward Night",
+      "department": "WARD",
+      "start": "19:00",
+      "end": "07:00",
+      "shift_type": "Night",
+      "required_skills": [
+        "RN"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "ICU-D-1009-1",
+      "date": "2026-10-09",
+      "assignment": "ICU Day",
+      "department": "ICU",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN",
+        "ICU Care"
+      ],
+      "required_certifications": [
+        "ACLS"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "patient_care_level": "critical"
+      }
+    },
+    {
+      "id": "ICU-D-1009-2",
+      "date": "2026-10-09",
+      "assignment": "ICU Day",
+      "department": "ICU",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN",
+        "ICU Care"
+      ],
+      "required_certifications": [
+        "ACLS"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "patient_care_level": "critical"
+      }
+    },
+    {
+      "id": "ICU-N-1009-1",
+      "date": "2026-10-09",
+      "assignment": "ICU Night",
+      "department": "ICU",
+      "start": "19:00",
+      "end": "07:00",
+      "shift_type": "Night",
+      "required_skills": [
+        "RN",
+        "ICU Care"
+      ],
+      "required_certifications": [
+        "ACLS"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "patient_care_level": "critical"
+      }
+    },
+    {
+      "id": "ED-D-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Emergency Day",
+      "department": "ED",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN",
+        "ER Triage"
+      ],
+      "required_certifications": [
+        "ACLS"
+      ],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "ED-D-1009-2",
+      "date": "2026-10-09",
+      "assignment": "Emergency Day",
+      "department": "ED",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN",
+        "ER Triage"
+      ],
+      "required_certifications": [
+        "ACLS"
+      ],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "ED-N-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Emergency Night",
+      "department": "ED",
+      "start": "19:00",
+      "end": "07:00",
+      "shift_type": "Night",
+      "required_skills": [
+        "RN",
+        "ER Triage"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "WARD-D-1009-1",
+      "date": "2026-10-09",
+      "assignment": "General Ward Day",
+      "department": "WARD",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "WARD-D-1009-2",
+      "date": "2026-10-09",
+      "assignment": "General Ward Day",
+      "department": "WARD",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "WARD-N-1009-1",
+      "date": "2026-10-09",
+      "assignment": "General Ward Night",
+      "department": "WARD",
+      "start": "19:00",
+      "end": "07:00",
+      "shift_type": "Night",
+      "required_skills": [
+        "RN"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "ICU-D-1010-1",
+      "date": "2026-10-10",
+      "assignment": "ICU Day",
+      "department": "ICU",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN",
+        "ICU Care"
+      ],
+      "required_certifications": [
+        "ACLS"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "patient_care_level": "critical"
+      }
+    },
+    {
+      "id": "ICU-D-1010-2",
+      "date": "2026-10-10",
+      "assignment": "ICU Day",
+      "department": "ICU",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN",
+        "ICU Care"
+      ],
+      "required_certifications": [
+        "ACLS"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "patient_care_level": "critical"
+      }
+    },
+    {
+      "id": "ICU-N-1010-1",
+      "date": "2026-10-10",
+      "assignment": "ICU Night",
+      "department": "ICU",
+      "start": "19:00",
+      "end": "07:00",
+      "shift_type": "Night",
+      "required_skills": [
+        "RN",
+        "ICU Care"
+      ],
+      "required_certifications": [
+        "ACLS"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "patient_care_level": "critical"
+      }
+    },
+    {
+      "id": "ED-D-1010-1",
+      "date": "2026-10-10",
+      "assignment": "Emergency Day",
+      "department": "ED",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN",
+        "ER Triage"
+      ],
+      "required_certifications": [
+        "ACLS"
+      ],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "ED-D-1010-2",
+      "date": "2026-10-10",
+      "assignment": "Emergency Day",
+      "department": "ED",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN",
+        "ER Triage"
+      ],
+      "required_certifications": [
+        "ACLS"
+      ],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "ED-N-1010-1",
+      "date": "2026-10-10",
+      "assignment": "Emergency Night",
+      "department": "ED",
+      "start": "19:00",
+      "end": "07:00",
+      "shift_type": "Night",
+      "required_skills": [
+        "RN",
+        "ER Triage"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "WARD-D-1010-1",
+      "date": "2026-10-10",
+      "assignment": "General Ward Day",
+      "department": "WARD",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "WARD-D-1010-2",
+      "date": "2026-10-10",
+      "assignment": "General Ward Day",
+      "department": "WARD",
+      "start": "07:00",
+      "end": "19:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "RN"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "WARD-N-1010-1",
+      "date": "2026-10-10",
+      "assignment": "General Ward Night",
+      "department": "WARD",
+      "start": "19:00",
+      "end": "07:00",
+      "shift_type": "Night",
+      "required_skills": [
+        "RN"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    }
+  ],
+  "existing_schedule": [
+    {
+      "shift_id": "ICU-D-1007-1",
+      "employee_id": "H05"
+    },
+    {
+      "shift_id": "ICU-D-1007-2",
+      "employee_id": "H02"
+    },
+    {
+      "shift_id": "ICU-N-1007-1",
+      "employee_id": "H14"
+    },
+    {
+      "shift_id": "ED-D-1007-1",
+      "employee_id": "H07"
+    },
+    {
+      "shift_id": "ED-D-1007-2",
+      "employee_id": "H08"
+    },
+    {
+      "shift_id": "ED-N-1007-1",
+      "employee_id": "H13"
+    },
+    {
+      "shift_id": "WARD-D-1007-1",
+      "employee_id": "H09"
+    },
+    {
+      "shift_id": "WARD-D-1007-2",
+      "employee_id": "H12"
+    },
+    {
+      "shift_id": "WARD-N-1007-1",
+      "employee_id": "H15"
+    },
+    {
+      "shift_id": "ICU-D-1008-1",
+      "employee_id": "H05"
+    },
+    {
+      "shift_id": "ICU-D-1008-2",
+      "employee_id": "H01"
+    },
+    {
+      "shift_id": "ICU-N-1008-1",
+      "employee_id": "H03"
+    },
+    {
+      "shift_id": "ED-D-1008-1",
+      "employee_id": "H06"
+    },
+    {
+      "shift_id": "ED-D-1008-2",
+      "employee_id": "H16"
+    },
+    {
+      "shift_id": "ED-N-1008-1",
+      "employee_id": "H13"
+    },
+    {
+      "shift_id": "WARD-D-1008-1",
+      "employee_id": "H10"
+    },
+    {
+      "shift_id": "WARD-D-1008-2",
+      "employee_id": "H11"
+    },
+    {
+      "shift_id": "WARD-N-1008-1",
+      "employee_id": "H15"
+    },
+    {
+      "shift_id": "ICU-D-1009-1",
+      "employee_id": "H01"
+    },
+    {
+      "shift_id": "ICU-D-1009-2",
+      "employee_id": "H02"
+    },
+    {
+      "shift_id": "ICU-N-1009-1",
+      "employee_id": "H14"
+    },
+    {
+      "shift_id": "ED-D-1009-1",
+      "employee_id": "H04"
+    },
+    {
+      "shift_id": "ED-D-1009-2",
+      "employee_id": "H07"
+    },
+    {
+      "shift_id": "ED-N-1009-1",
+      "employee_id": "H08"
+    },
+    {
+      "shift_id": "WARD-D-1009-1",
+      "employee_id": "H09"
+    },
+    {
+      "shift_id": "WARD-D-1009-2",
+      "employee_id": "H12"
+    },
+    {
+      "shift_id": "WARD-N-1009-1",
+      "employee_id": "H10"
+    },
+    {
+      "shift_id": "ICU-D-1010-1",
+      "employee_id": "H05"
+    },
+    {
+      "shift_id": "ICU-D-1010-2",
+      "employee_id": "H03"
+    },
+    {
+      "shift_id": "ICU-N-1010-1",
+      "employee_id": "H17"
+    },
+    {
+      "shift_id": "ED-D-1010-1",
+      "employee_id": "H16"
+    },
+    {
+      "shift_id": "ED-D-1010-2",
+      "employee_id": "H06"
+    },
+    {
+      "shift_id": "ED-N-1010-1",
+      "employee_id": "H13"
+    },
+    {
+      "shift_id": "WARD-D-1010-1",
+      "employee_id": "H11"
+    },
+    {
+      "shift_id": "WARD-D-1010-2",
+      "employee_id": "H15"
+    },
+    {
+      "shift_id": "WARD-N-1010-1",
+      "employee_id": "H12"
+    }
+  ],
+  "availability": [],
+  "disruptions": [
+    {
+      "id": "DEMO-ICU",
+      "employee_id": "H01",
+      "date": "2026-10-09",
+      "start": "07:00",
+      "end": "19:00",
+      "reason": "sick",
+      "severity": "critical",
+      "label": "ICU nurse unavailable"
+    },
+    {
+      "id": "DEMO-ED",
+      "employee_id": "H07",
+      "date": "2026-10-09",
+      "start": "07:00",
+      "end": "19:00",
+      "reason": "emergency",
+      "severity": "high",
+      "label": "ER nurse unavailable"
+    },
+    {
+      "id": "DEMO-WARD",
+      "employee_id": "H12",
+      "date": "2026-10-09",
+      "start": "07:00",
+      "end": "19:00",
+      "reason": "leave",
+      "severity": "medium",
+      "label": "Ward nurse unavailable"
+    }
+  ],
+  "constraints": {
+    "min_rest_hours": 11,
+    "allow_overtime": true,
+    "max_overtime_hours_per_week": 12,
+    "extra": {
+      "minimum_nurse_ratio_icu": "1:2"
+    }
+  },
+  "optimization": {
+    "minimum_change": true,
+    "fairness": true,
+    "skill_coverage": true,
+    "overtime_penalty": true
+  }
+}

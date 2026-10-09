@@ -1,0 +1,323 @@
+{
+  "$defs": {
+    "Candidate": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "Candidate",
+      "type": "object"
+    },
+    "Confidence": {
+      "additionalProperties": false,
+      "description": "Deterministic confidence: starts at 1.0, reduced by each disclosed factor.\n\nNot model self-assessment. Blocking issues force ``level='none'``.",
+      "properties": {
+        "score": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Score",
+          "type": "number"
+        },
+        "level": {
+          "enum": [
+            "high",
+            "medium",
+            "low",
+            "none"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "factors": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Factors",
+          "type": "array"
+        }
+      },
+      "required": [
+        "score",
+        "level"
+      ],
+      "title": "Confidence",
+      "type": "object"
+    },
+    "FeedbackPreference": {
+      "additionalProperties": false,
+      "properties": {
+        "preference_id": {
+          "title": "Preference Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "avoid_employee",
+            "prefer_employee",
+            "objective_priority",
+            "overtime_rule"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "employee_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Employee Id"
+        },
+        "employee_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Employee Name"
+        },
+        "priority": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Priority"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "overtime_mode": {
+          "anyOf": [
+            {
+              "enum": [
+                "never",
+                "only_if_unavoidable",
+                "allowed"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Overtime Mode"
+        },
+        "scope": {
+          "enum": [
+            "next_reschedule",
+            "until_revoked"
+          ],
+          "title": "Scope",
+          "type": "string"
+        },
+        "strength": {
+          "enum": [
+            "hard",
+            "soft"
+          ],
+          "title": "Strength",
+          "type": "string"
+        },
+        "source_text": {
+          "title": "Source Text",
+          "type": "string"
+        },
+        "created_on": {
+          "title": "Created On",
+          "type": "string"
+        }
+      },
+      "required": [
+        "preference_id",
+        "kind",
+        "scope",
+        "strength",
+        "source_text",
+        "created_on"
+      ],
+      "title": "FeedbackPreference",
+      "type": "object"
+    },
+    "Issue": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "enum": [
+            "UNKNOWN_EMPLOYEE",
+            "AMBIGUOUS_EMPLOYEE",
+            "MISSING_EMPLOYEE",
+            "UNKNOWN_ASSIGNMENT",
+            "AMBIGUOUS_ASSIGNMENT",
+            "MISSING_DATE",
+            "INVALID_DATE",
+            "DATE_IN_PAST",
+            "DATE_OUT_OF_HORIZON",
+            "MISSING_TIME",
+            "INVALID_TIME",
+            "UNSUPPORTED_DISRUPTION",
+            "UNSUPPORTED_CONSTRAINT",
+            "UNSUPPORTED_CHANGE",
+            "NOT_A_DISRUPTION",
+            "NOT_A_WHAT_IF",
+            "NOT_FEEDBACK",
+            "LOCKED_EMPLOYEE_CONFLICT",
+            "CONTRADICTORY_CHANGES",
+            "NEEDS_NAMES",
+            "INVALID_VALUE",
+            "LLM_ERROR"
+          ],
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "field": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Field"
+        },
+        "blocking": {
+          "default": true,
+          "title": "Blocking",
+          "type": "boolean"
+        },
+        "candidates": {
+          "items": {
+            "$ref": "#/$defs/Candidate"
+          },
+          "title": "Candidates",
+          "type": "array"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "title": "Issue",
+      "type": "object"
+    },
+    "Meta": {
+      "additionalProperties": false,
+      "description": "Audit metadata attached to every AI result.",
+      "properties": {
+        "prompt": {
+          "default": "",
+          "title": "Prompt",
+          "type": "string"
+        },
+        "provider": {
+          "default": "",
+          "title": "Provider",
+          "type": "string"
+        },
+        "model": {
+          "default": "",
+          "title": "Model",
+          "type": "string"
+        },
+        "trace_id": {
+          "default": "",
+          "title": "Trace Id",
+          "type": "string"
+        }
+      },
+      "title": "Meta",
+      "type": "object"
+    },
+    "Priority": {
+      "enum": [
+        "minimize_changes",
+        "minimize_affected_employees",
+        "minimize_overtime",
+        "fairness",
+        "employee_preferences"
+      ],
+      "title": "Priority",
+      "type": "string"
+    }
+  },
+  "properties": {
+    "status": {
+      "enum": [
+        "READY",
+        "NEEDS_CLARIFICATION",
+        "UNSUPPORTED",
+        "ERROR"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "preferences": {
+      "items": {
+        "$ref": "#/$defs/FeedbackPreference"
+      },
+      "title": "Preferences",
+      "type": "array"
+    },
+    "unsupported": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unsupported",
+      "type": "array"
+    },
+    "issues": {
+      "items": {
+        "$ref": "#/$defs/Issue"
+      },
+      "title": "Issues",
+      "type": "array"
+    },
+    "summary": {
+      "default": "",
+      "title": "Summary",
+      "type": "string"
+    },
+    "confidence": {
+      "$ref": "#/$defs/Confidence"
+    },
+    "raw_request": {
+      "default": "",
+      "title": "Raw Request",
+      "type": "string"
+    },
+    "meta": {
+      "$ref": "#/$defs/Meta"
+    }
+  },
+  "required": [
+    "status"
+  ],
+  "title": "FeedbackResult",
+  "type": "object"
+}

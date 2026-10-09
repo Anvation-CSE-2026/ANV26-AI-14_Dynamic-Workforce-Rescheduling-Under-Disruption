@@ -1,0 +1,245 @@
+{
+  "id": "education",
+  "label": "Education",
+  "tagline": "Schools & colleges",
+  "icon": "GraduationCap",
+  "accent": "#4338ca",
+  "identity": "academic",
+  "dashboardName": "Academic Operations Dashboard",
+  "terminology": {
+    "employee": "Teacher",
+    "employees": "Teachers",
+    "shift": "Period",
+    "assignment": "Class",
+    "department": "Department",
+    "departments": "Departments",
+    "skill": "Subject",
+    "skills": "Subjects",
+    "manager": "Academic coordinator",
+    "disruption": "Teacher absence",
+    "organization": "School"
+  },
+  "kpis": [
+    {
+      "id": "teacher_coverage",
+      "label": "Teacher Coverage",
+      "metric": "available_staff",
+      "format": "ratio",
+      "good": "high",
+      "hint": "Teachers available"
+    },
+    {
+      "id": "class_coverage",
+      "label": "Class Coverage",
+      "metric": "coverage_pct",
+      "format": "percent",
+      "good": "high",
+      "hint": "Periods with a teacher"
+    },
+    {
+      "id": "subject_gaps",
+      "label": "Subject Gaps",
+      "metric": "uncovered_shifts",
+      "format": "count",
+      "good": "low",
+      "hint": "Periods without a qualified teacher"
+    },
+    {
+      "id": "workload",
+      "label": "Teacher Workload",
+      "metric": "avg_weekly_hours",
+      "format": "hours",
+      "good": "low",
+      "hint": "Average scheduled teaching hours"
+    },
+    {
+      "id": "conflicts",
+      "label": "Schedule Conflicts",
+      "metric": "schedule_conflicts",
+      "format": "count",
+      "good": "low",
+      "hint": "Double-booked teachers"
+    }
+  ],
+  "subDashboards": [
+    {
+      "id": "department",
+      "name": "Teacher / Department Dashboard",
+      "audience": "Heads of department",
+      "widgets": [
+        "department_coverage",
+        "roster",
+        "qualification_matrix",
+        "workload_balance"
+      ]
+    },
+    {
+      "id": "admin",
+      "name": "Academic Admin Dashboard",
+      "audience": "Principal & admin office",
+      "widgets": [
+        "fairness_distribution",
+        "disruption_history",
+        "compliance",
+        "overtime_by_person"
+      ]
+    }
+  ],
+  "constraintLabels": {
+    "required_skills": "Subject qualification",
+    "min_rest_hours": "Gap between periods",
+    "max_daily_hours": "Maximum teaching load per day",
+    "max_weekly_hours": "Weekly teaching load",
+    "overtime": "Extra periods",
+    "priority": "Exam-year classes"
+  },
+  "riskIndicators": [
+    {
+      "id": "load",
+      "label": "Overloaded teachers",
+      "metric": "fatigue_risk_count"
+    },
+    {
+      "id": "gaps",
+      "label": "Uncovered periods",
+      "metric": "uncovered_shifts"
+    }
+  ],
+  "recommendedActions": [
+    "Share lesson plans with the substitute",
+    "Inform class teachers of 8A and 9A",
+    "Balance substitute load across the week"
+  ],
+  "recognition": {
+    "categories": [
+      {
+        "id": "substitution_support",
+        "label": "Substitution Support",
+        "description": "Took a colleague's class at short notice",
+        "signals": [
+          "disruption_cover"
+        ],
+        "points": 20,
+        "managerAwardable": true
+      },
+      {
+        "id": "exam_support",
+        "label": "Critical Period Support",
+        "description": "Covered a high-priority class or exam period",
+        "signals": [
+          "critical_cover"
+        ],
+        "points": 10,
+        "managerAwardable": true
+      },
+      {
+        "id": "reliability",
+        "label": "Reliability",
+        "description": "Acknowledged changes promptly and gave early notice of absences",
+        "signals": [
+          "prompt_acknowledgement",
+          "advance_notice"
+        ],
+        "points": 5,
+        "managerAwardable": true
+      },
+      {
+        "id": "student_impact",
+        "label": "Student Impact",
+        "description": "Exceptional outcome or support for students",
+        "signals": [],
+        "points": 15,
+        "managerAwardable": true
+      },
+      {
+        "id": "collaboration",
+        "label": "Collaboration",
+        "description": "Shared lesson plans or mentored a colleague",
+        "signals": [],
+        "points": 15,
+        "managerAwardable": true
+      },
+      {
+        "id": "professional_development",
+        "label": "Professional Development",
+        "description": "Completed training or a new subject qualification",
+        "signals": [],
+        "points": 15,
+        "managerAwardable": true
+      }
+    ],
+    "tiers": [
+      {
+        "points": 40,
+        "label": "Recognized",
+        "benefit": "Mention at the staff meeting"
+      },
+      {
+        "points": 100,
+        "label": "Valued",
+        "benefit": "A free period of choice next term"
+      },
+      {
+        "points": 200,
+        "label": "Outstanding",
+        "benefit": "Conference or course sponsorship"
+      }
+    ]
+  },
+  "charts": [
+    "department_coverage",
+    "workload_balance",
+    "qualification_gaps"
+  ],
+  "commonKpis": [
+    {
+      "id": "workforce",
+      "label": "Workforce Status",
+      "metric": "available_staff",
+      "format": "ratio",
+      "good": "high",
+      "hint": "Available vs total people today and tomorrow"
+    },
+    {
+      "id": "coverage",
+      "label": "Schedule Coverage",
+      "metric": "coverage_pct",
+      "format": "percent",
+      "good": "high",
+      "hint": "Shifts with a qualified person assigned"
+    },
+    {
+      "id": "disruptions",
+      "label": "Active Disruptions",
+      "metric": "active_disruptions",
+      "format": "count",
+      "good": "low",
+      "hint": "Disruptions not yet repaired"
+    },
+    {
+      "id": "at_risk",
+      "label": "At-Risk Assignments",
+      "metric": "at_risk_assignments",
+      "format": "count",
+      "good": "low",
+      "hint": "Shifts affected by an open disruption"
+    },
+    {
+      "id": "overtime",
+      "label": "Overtime",
+      "metric": "overtime_hours",
+      "format": "hours",
+      "good": "low",
+      "hint": "Scheduled hours above contracted hours this week"
+    },
+    {
+      "id": "skills",
+      "label": "Skill Coverage",
+      "metric": "skill_coverage_pct",
+      "format": "percent",
+      "good": "high",
+      "hint": "Covered shifts staffed by fully qualified people"
+    }
+  ],
+  "demoDataset": "shared/demo-data/education.json"
+}

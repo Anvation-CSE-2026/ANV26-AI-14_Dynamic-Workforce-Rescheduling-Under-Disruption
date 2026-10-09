@@ -1,0 +1,432 @@
+{
+  "$defs": {
+    "CandidateFacts": {
+      "additionalProperties": false,
+      "description": "One optimizer-produced alternative.",
+      "properties": {
+        "candidate_id": {
+          "title": "Candidate Id",
+          "type": "string"
+        },
+        "label": {
+          "description": "Display name, e.g. 'Option A'",
+          "title": "Label",
+          "type": "string"
+        },
+        "strategy": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Objective profile used, e.g. 'minimize_changes'",
+          "title": "Strategy"
+        },
+        "status": {
+          "enum": [
+            "FEASIBLE",
+            "OPTIMAL",
+            "INFEASIBLE",
+            "PARTIAL"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "metrics": {
+          "$ref": "#/$defs/MetricsFact"
+        },
+        "changes": {
+          "items": {
+            "$ref": "#/$defs/ChangeFact"
+          },
+          "title": "Changes",
+          "type": "array"
+        },
+        "policy_violations": {
+          "default": 0,
+          "title": "Policy Violations",
+          "type": "integer"
+        },
+        "policy_warnings": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Policy Warnings",
+          "type": "array"
+        }
+      },
+      "required": [
+        "candidate_id",
+        "label",
+        "status",
+        "metrics"
+      ],
+      "title": "CandidateFacts",
+      "type": "object"
+    },
+    "ChangeFact": {
+      "additionalProperties": false,
+      "properties": {
+        "employee_id": {
+          "title": "Employee Id",
+          "type": "string"
+        },
+        "employee_name": {
+          "title": "Employee Name",
+          "type": "string"
+        },
+        "change_type": {
+          "enum": [
+            "unassigned",
+            "reassigned",
+            "shift_moved",
+            "added"
+          ],
+          "title": "Change Type",
+          "type": "string"
+        },
+        "date": {
+          "title": "Date",
+          "type": "string"
+        },
+        "from_assignment": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "From Assignment"
+        },
+        "to_assignment": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "To Assignment"
+        },
+        "from_shift": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "e.g. '09:00-17:00'",
+          "title": "From Shift"
+        },
+        "to_shift": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "To Shift"
+        }
+      },
+      "required": [
+        "employee_id",
+        "employee_name",
+        "change_type",
+        "date"
+      ],
+      "title": "ChangeFact",
+      "type": "object"
+    },
+    "ExplanationPoint": {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "fact_refs": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Fact Refs",
+          "type": "array"
+        }
+      },
+      "required": [
+        "text"
+      ],
+      "title": "ExplanationPoint",
+      "type": "object"
+    },
+    "Meta": {
+      "additionalProperties": false,
+      "description": "Audit metadata attached to every AI result.",
+      "properties": {
+        "prompt": {
+          "default": "",
+          "title": "Prompt",
+          "type": "string"
+        },
+        "provider": {
+          "default": "",
+          "title": "Provider",
+          "type": "string"
+        },
+        "model": {
+          "default": "",
+          "title": "Model",
+          "type": "string"
+        },
+        "trace_id": {
+          "default": "",
+          "title": "Trace Id",
+          "type": "string"
+        }
+      },
+      "title": "Meta",
+      "type": "object"
+    },
+    "MetricsFact": {
+      "additionalProperties": false,
+      "properties": {
+        "assignments_changed": {
+          "title": "Assignments Changed",
+          "type": "integer"
+        },
+        "employees_affected": {
+          "title": "Employees Affected",
+          "type": "integer"
+        },
+        "shift_changes": {
+          "default": 0,
+          "title": "Shift Changes",
+          "type": "integer"
+        },
+        "overtime_hours": {
+          "default": 0,
+          "title": "Overtime Hours",
+          "type": "number"
+        },
+        "hard_constraint_violations": {
+          "default": 0,
+          "title": "Hard Constraint Violations",
+          "type": "integer"
+        },
+        "unfilled_requirements": {
+          "default": 0,
+          "title": "Unfilled Requirements",
+          "type": "integer"
+        },
+        "preference_violations": {
+          "default": 0,
+          "title": "Preference Violations",
+          "type": "integer"
+        },
+        "impact_score": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Impact Score"
+        },
+        "impact_level": {
+          "anyOf": [
+            {
+              "enum": [
+                "LOW",
+                "MEDIUM",
+                "HIGH"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Impact Level"
+        },
+        "fairness_score": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fairness Score"
+        }
+      },
+      "required": [
+        "assignments_changed",
+        "employees_affected"
+      ],
+      "title": "MetricsFact",
+      "type": "object"
+    },
+    "Tradeoff": {
+      "properties": {
+        "candidate_id": {
+          "title": "Candidate Id",
+          "type": "string"
+        },
+        "versus": {
+          "title": "Versus",
+          "type": "string"
+        },
+        "better": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "description": "dimension \u2192 improvement (positive)",
+          "title": "Better",
+          "type": "object"
+        },
+        "worse": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "description": "dimension \u2192 cost (positive)",
+          "title": "Worse",
+          "type": "object"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "candidate_id",
+        "versus",
+        "text"
+      ],
+      "title": "Tradeoff",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "candidates": {
+      "items": {
+        "$ref": "#/$defs/CandidateFacts"
+      },
+      "title": "Candidates",
+      "type": "array"
+    },
+    "compliant": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Compliant",
+      "type": "array"
+    },
+    "non_compliant": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "candidate_id \u2192 reason",
+      "title": "Non Compliant",
+      "type": "object"
+    },
+    "best_by": {
+      "additionalProperties": {
+        "items": {
+          "type": "string"
+        },
+        "type": "array"
+      },
+      "title": "Best By",
+      "type": "object"
+    },
+    "dominated": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "candidate_id \u2192 dominating candidate_id",
+      "title": "Dominated",
+      "type": "object"
+    },
+    "tradeoffs": {
+      "items": {
+        "$ref": "#/$defs/Tradeoff"
+      },
+      "title": "Tradeoffs",
+      "type": "array"
+    },
+    "recommended_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Recommended Id"
+    },
+    "recommendation_reason": {
+      "default": "",
+      "title": "Recommendation Reason",
+      "type": "string"
+    },
+    "headline": {
+      "default": "",
+      "title": "Headline",
+      "type": "string"
+    },
+    "points": {
+      "items": {
+        "$ref": "#/$defs/ExplanationPoint"
+      },
+      "title": "Points",
+      "type": "array"
+    },
+    "source": {
+      "default": "template",
+      "enum": [
+        "llm",
+        "template"
+      ],
+      "title": "Source",
+      "type": "string"
+    },
+    "grounding_warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Grounding Warnings",
+      "type": "array"
+    },
+    "meta": {
+      "$ref": "#/$defs/Meta"
+    }
+  },
+  "required": [
+    "candidates",
+    "compliant"
+  ],
+  "title": "CandidateComparison",
+  "type": "object"
+}

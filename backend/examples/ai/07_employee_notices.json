@@ -1,0 +1,41 @@
+[
+  {
+    "employee_id": "EMP003",
+    "title": "Schedule change: Friday 09 October",
+    "body": "Hi Arjun,\n\nYour schedule has been updated to cover a gap in the team:\n• On Friday 09 October you'll work SUPPORT_L2, 09:00-17:00 (previously KANNADA_DESK, 13:00-21:00).\n\nThis change keeps you within: max 40h per week (Working Time Policy §2.2); at least 11h rest between shifts (Working Time Policy §3.1).\n\nPlease acknowledge this change in ResQWork. If it conflicts with something, use 'Report a conflict' and your manager will review it.\n\nThank you!",
+    "changes": [
+      {
+        "employee_id": "EMP003",
+        "employee_name": "Arjun Mehta",
+        "change_type": "reassigned",
+        "date": "2026-10-09",
+        "from_assignment": "KANNADA_DESK",
+        "to_assignment": "SUPPORT_L2",
+        "from_shift": "13:00-21:00",
+        "to_shift": "09:00-17:00"
+      }
+    ],
+    "policies": [
+      {
+        "policy_id": "HR-WT-001",
+        "document": "Working Time Policy",
+        "section": "2.2",
+        "constraint_type": "max_weekly_hours",
+        "value": 40,
+        "unit": "hours",
+        "satisfied": true
+      },
+      {
+        "policy_id": "HR-WT-001",
+        "document": "Working Time Policy",
+        "section": "3.1",
+        "constraint_type": "minimum_rest",
+        "value": 11,
+        "unit": "hours",
+        "satisfied": true
+      }
+    ],
+    "requires_acknowledgement": true,
+    "schedule_version": "v42"
+  }
+]

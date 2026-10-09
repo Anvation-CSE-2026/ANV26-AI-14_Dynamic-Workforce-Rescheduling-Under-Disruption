@@ -1,0 +1,167 @@
+{
+  "$defs": {
+    "AssignmentRef": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "aliases": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Aliases",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "AssignmentRef",
+      "type": "object"
+    },
+    "EmployeeRef": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "aliases": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Aliases",
+          "type": "array"
+        },
+        "role": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Role"
+        },
+        "team": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Team"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "EmployeeRef",
+      "type": "object"
+    },
+    "ShiftRef": {
+      "additionalProperties": false,
+      "description": "Subset of the canonical ScheduleEntry.",
+      "properties": {
+        "employee_id": {
+          "title": "Employee Id",
+          "type": "string"
+        },
+        "date": {
+          "title": "Date",
+          "type": "string"
+        },
+        "start_time": {
+          "title": "Start Time",
+          "type": "string"
+        },
+        "end_time": {
+          "title": "End Time",
+          "type": "string"
+        },
+        "assignment_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Assignment Id"
+        }
+      },
+      "required": [
+        "employee_id",
+        "date",
+        "start_time",
+        "end_time"
+      ],
+      "title": "ShiftRef",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "reference_date": {
+      "description": "The manager's 'today', ISO date",
+      "title": "Reference Date",
+      "type": "string"
+    },
+    "timezone": {
+      "default": "Asia/Kolkata",
+      "title": "Timezone",
+      "type": "string"
+    },
+    "employees": {
+      "items": {
+        "$ref": "#/$defs/EmployeeRef"
+      },
+      "title": "Employees",
+      "type": "array"
+    },
+    "assignments": {
+      "items": {
+        "$ref": "#/$defs/AssignmentRef"
+      },
+      "title": "Assignments",
+      "type": "array"
+    },
+    "shifts": {
+      "items": {
+        "$ref": "#/$defs/ShiftRef"
+      },
+      "title": "Shifts",
+      "type": "array"
+    },
+    "max_horizon_days": {
+      "default": 14,
+      "title": "Max Horizon Days",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "reference_date",
+    "employees"
+  ],
+  "title": "ParseContext",
+  "type": "object"
+}

@@ -1,0 +1,7 @@
+pydantic>=2.5
+anthropic>=0.40
+pytest>=8
+# optional providers / embeddings
+# openai>=1.40
+# google-genai>=1.0
+# voyageai>=0.3

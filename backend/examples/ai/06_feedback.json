@@ -1,0 +1,47 @@
+{
+  "request": "Don't assign Arjun next time, and never use overtime unless it's unavoidable.",
+  "response": {
+    "status": "READY",
+    "preferences": [
+      {
+        "preference_id": "fb_1b8a916ece",
+        "kind": "avoid_employee",
+        "employee_id": "EMP003",
+        "employee_name": "Arjun Mehta",
+        "priority": null,
+        "overtime_mode": null,
+        "scope": "next_reschedule",
+        "strength": "hard",
+        "source_text": "Don't assign Arjun next time",
+        "created_on": "2026-10-08"
+      },
+      {
+        "preference_id": "fb_a51dd534f6",
+        "kind": "overtime_rule",
+        "employee_id": null,
+        "employee_name": null,
+        "priority": null,
+        "overtime_mode": "only_if_unavoidable",
+        "scope": "until_revoked",
+        "strength": "soft",
+        "source_text": "never use overtime unless it's unavoidable",
+        "created_on": "2026-10-08"
+      }
+    ],
+    "unsupported": [],
+    "issues": [],
+    "summary": "never use Arjun Mehta as a replacement next time; use overtime only if unavoidable from now on.",
+    "confidence": {
+      "score": 1.0,
+      "level": "high",
+      "factors": []
+    },
+    "raw_request": "Don't assign Arjun next time, and never use overtime unless it's unavoidable.",
+    "meta": {
+      "prompt": "feedback_extraction@2.0.0",
+      "provider": "mock",
+      "model": "mock-1",
+      "trace_id": "2d4b51b9d61e438a"
+    }
+  }
+}

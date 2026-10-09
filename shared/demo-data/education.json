@@ -1,0 +1,869 @@
+{
+  "organization": {
+    "id": "greenfield",
+    "name": "Greenfield Public School",
+    "domain": "education",
+    "location": "Mysuru",
+    "timezone": "Asia/Kolkata",
+    "size": "1,200 students"
+  },
+  "reference_date": "2026-10-08",
+  "reference_time": "07:30",
+  "departments": [
+    {
+      "id": "MATH",
+      "name": "Mathematics",
+      "kind": "department"
+    },
+    {
+      "id": "SCI",
+      "name": "Science",
+      "kind": "department"
+    },
+    {
+      "id": "ENG",
+      "name": "English",
+      "kind": "department"
+    },
+    {
+      "id": "SOC",
+      "name": "Social Studies",
+      "kind": "department"
+    },
+    {
+      "id": "POOL",
+      "name": "Substitute Pool",
+      "kind": "department"
+    }
+  ],
+  "skills": [
+    "Mathematics",
+    "Physics",
+    "Chemistry",
+    "Biology",
+    "English",
+    "History",
+    "Geography",
+    "Computer Science"
+  ],
+  "employees": [
+    {
+      "id": "T01",
+      "name": "Anjali Rao",
+      "role": "Mathematics Teacher",
+      "department": "MATH",
+      "skills": [
+        "Mathematics"
+      ],
+      "certifications": [
+        "B.Ed"
+      ],
+      "contracted_weekly_hours": 24,
+      "max_weekly_hours": 30,
+      "max_daily_hours": 5,
+      "email": "anjali@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 1,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {
+        "subjects": [
+          "Mathematics"
+        ]
+      }
+    },
+    {
+      "id": "T02",
+      "name": "Vikram Joshi",
+      "role": "Mathematics Teacher",
+      "department": "MATH",
+      "skills": [
+        "Mathematics",
+        "Physics"
+      ],
+      "certifications": [
+        "B.Ed"
+      ],
+      "contracted_weekly_hours": 24,
+      "max_weekly_hours": 30,
+      "max_daily_hours": 5,
+      "email": "vikram@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {
+        "subjects": [
+          "Mathematics",
+          "Physics"
+        ]
+      }
+    },
+    {
+      "id": "T03",
+      "name": "Sneha Kulkarni",
+      "role": "Science Teacher",
+      "department": "SCI",
+      "skills": [
+        "Physics",
+        "Chemistry"
+      ],
+      "certifications": [
+        "B.Ed"
+      ],
+      "contracted_weekly_hours": 24,
+      "max_weekly_hours": 30,
+      "max_daily_hours": 5,
+      "email": "sneha@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "T04",
+      "name": "Rajesh Menon",
+      "role": "English Teacher",
+      "department": "ENG",
+      "skills": [
+        "English"
+      ],
+      "certifications": [
+        "B.Ed"
+      ],
+      "contracted_weekly_hours": 24,
+      "max_weekly_hours": 30,
+      "max_daily_hours": 5,
+      "email": "rajesh@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "T05",
+      "name": "Fatima Sheikh",
+      "role": "Mathematics Teacher",
+      "department": "MATH",
+      "skills": [
+        "Mathematics"
+      ],
+      "certifications": [
+        "B.Ed"
+      ],
+      "contracted_weekly_hours": 24,
+      "max_weekly_hours": 30,
+      "max_daily_hours": 5,
+      "email": "fatima@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 3,
+        "schedule_changes_30d": 4,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "T06",
+      "name": "Arvind Nair",
+      "role": "Biology Teacher",
+      "department": "SCI",
+      "skills": [
+        "Biology",
+        "Chemistry"
+      ],
+      "certifications": [
+        "B.Ed"
+      ],
+      "contracted_weekly_hours": 24,
+      "max_weekly_hours": 30,
+      "max_daily_hours": 5,
+      "email": "arvind@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "T07",
+      "name": "Meenakshi Iyer",
+      "role": "English Teacher",
+      "department": "ENG",
+      "skills": [
+        "English",
+        "History"
+      ],
+      "certifications": [
+        "B.Ed"
+      ],
+      "contracted_weekly_hours": 24,
+      "max_weekly_hours": 30,
+      "max_daily_hours": 5,
+      "email": "meenakshi@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "T08",
+      "name": "Rohit Sinha",
+      "role": "Social Studies Teacher",
+      "department": "SOC",
+      "skills": [
+        "History",
+        "Geography"
+      ],
+      "certifications": [
+        "B.Ed"
+      ],
+      "contracted_weekly_hours": 24,
+      "max_weekly_hours": 30,
+      "max_daily_hours": 5,
+      "email": "rohit@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "T09",
+      "name": "Kavitha Reddy",
+      "role": "Substitute Teacher",
+      "department": "POOL",
+      "skills": [
+        "Mathematics",
+        "English"
+      ],
+      "certifications": [
+        "B.Ed"
+      ],
+      "contracted_weekly_hours": 24,
+      "max_weekly_hours": 30,
+      "max_daily_hours": 5,
+      "email": "kavitha@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "T10",
+      "name": "Daniel Mathew",
+      "role": "Computer Science Teacher",
+      "department": "SCI",
+      "skills": [
+        "Computer Science",
+        "Mathematics"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 24,
+      "max_weekly_hours": 30,
+      "max_daily_hours": 5,
+      "email": "daniel@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    }
+  ],
+  "shifts": [
+    {
+      "id": "8A-P1-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Class 8A \u00b7 Mathematics (P1)",
+      "department": "MATH",
+      "start": "08:00",
+      "end": "09:00",
+      "shift_type": "P1",
+      "required_skills": [
+        "Mathematics"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "grade": "8",
+        "section": "A",
+        "classroom": "Room 8A",
+        "subject": "Mathematics"
+      }
+    },
+    {
+      "id": "8A-P2-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Class 8A \u00b7 English (P2)",
+      "department": "ENG",
+      "start": "09:00",
+      "end": "10:00",
+      "shift_type": "P2",
+      "required_skills": [
+        "English"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "grade": "8",
+        "section": "A",
+        "classroom": "Room 8A",
+        "subject": "English"
+      }
+    },
+    {
+      "id": "8A-P3-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Class 8A \u00b7 Physics (P3)",
+      "department": "SCI",
+      "start": "10:15",
+      "end": "11:15",
+      "shift_type": "P3",
+      "required_skills": [
+        "Physics"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "grade": "8",
+        "section": "A",
+        "classroom": "Room 8A",
+        "subject": "Physics"
+      }
+    },
+    {
+      "id": "8A-P4-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Class 8A \u00b7 History (P4)",
+      "department": "SOC",
+      "start": "11:15",
+      "end": "12:15",
+      "shift_type": "P4",
+      "required_skills": [
+        "History"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "grade": "8",
+        "section": "A",
+        "classroom": "Room 8A",
+        "subject": "History"
+      }
+    },
+    {
+      "id": "8A-P5-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Class 8A \u00b7 Computer Science (P5)",
+      "department": "SCI",
+      "start": "13:00",
+      "end": "14:00",
+      "shift_type": "P5",
+      "required_skills": [
+        "Computer Science"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "grade": "8",
+        "section": "A",
+        "classroom": "Room 8A",
+        "subject": "Computer Science"
+      }
+    },
+    {
+      "id": "8B-P1-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Class 8B \u00b7 English (P1)",
+      "department": "ENG",
+      "start": "08:00",
+      "end": "09:00",
+      "shift_type": "P1",
+      "required_skills": [
+        "English"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "grade": "8",
+        "section": "B",
+        "classroom": "Room 8B",
+        "subject": "English"
+      }
+    },
+    {
+      "id": "8B-P2-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Class 8B \u00b7 Mathematics (P2)",
+      "department": "MATH",
+      "start": "09:00",
+      "end": "10:00",
+      "shift_type": "P2",
+      "required_skills": [
+        "Mathematics"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "grade": "8",
+        "section": "B",
+        "classroom": "Room 8B",
+        "subject": "Mathematics"
+      }
+    },
+    {
+      "id": "8B-P3-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Class 8B \u00b7 Biology (P3)",
+      "department": "SCI",
+      "start": "10:15",
+      "end": "11:15",
+      "shift_type": "P3",
+      "required_skills": [
+        "Biology"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "grade": "8",
+        "section": "B",
+        "classroom": "Room 8B",
+        "subject": "Biology"
+      }
+    },
+    {
+      "id": "8B-P4-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Class 8B \u00b7 Mathematics (P4)",
+      "department": "MATH",
+      "start": "11:15",
+      "end": "12:15",
+      "shift_type": "P4",
+      "required_skills": [
+        "Mathematics"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "grade": "8",
+        "section": "B",
+        "classroom": "Room 8B",
+        "subject": "Mathematics"
+      }
+    },
+    {
+      "id": "8B-P5-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Class 8B \u00b7 Geography (P5)",
+      "department": "SOC",
+      "start": "13:00",
+      "end": "14:00",
+      "shift_type": "P5",
+      "required_skills": [
+        "Geography"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "grade": "8",
+        "section": "B",
+        "classroom": "Room 8B",
+        "subject": "Geography"
+      }
+    },
+    {
+      "id": "9A-P1-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Class 9A \u00b7 Physics (P1)",
+      "department": "SCI",
+      "start": "08:00",
+      "end": "09:00",
+      "shift_type": "P1",
+      "required_skills": [
+        "Physics"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "grade": "9",
+        "section": "A",
+        "classroom": "Room 9A",
+        "subject": "Physics"
+      }
+    },
+    {
+      "id": "9A-P2-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Class 9A \u00b7 Chemistry (P2)",
+      "department": "SCI",
+      "start": "09:00",
+      "end": "10:00",
+      "shift_type": "P2",
+      "required_skills": [
+        "Chemistry"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "grade": "9",
+        "section": "A",
+        "classroom": "Room 9A",
+        "subject": "Chemistry"
+      }
+    },
+    {
+      "id": "9A-P3-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Class 9A \u00b7 Mathematics (P3)",
+      "department": "MATH",
+      "start": "10:15",
+      "end": "11:15",
+      "shift_type": "P3",
+      "required_skills": [
+        "Mathematics"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "grade": "9",
+        "section": "A",
+        "classroom": "Room 9A",
+        "subject": "Mathematics"
+      }
+    },
+    {
+      "id": "9A-P4-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Class 9A \u00b7 English (P4)",
+      "department": "ENG",
+      "start": "11:15",
+      "end": "12:15",
+      "shift_type": "P4",
+      "required_skills": [
+        "English"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "grade": "9",
+        "section": "A",
+        "classroom": "Room 9A",
+        "subject": "English"
+      }
+    },
+    {
+      "id": "9A-P5-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Class 9A \u00b7 Mathematics (P5)",
+      "department": "MATH",
+      "start": "13:00",
+      "end": "14:00",
+      "shift_type": "P5",
+      "required_skills": [
+        "Mathematics"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "grade": "9",
+        "section": "A",
+        "classroom": "Room 9A",
+        "subject": "Mathematics"
+      }
+    },
+    {
+      "id": "9B-P1-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Class 9B \u00b7 Biology (P1)",
+      "department": "SCI",
+      "start": "08:00",
+      "end": "09:00",
+      "shift_type": "P1",
+      "required_skills": [
+        "Biology"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "grade": "9",
+        "section": "B",
+        "classroom": "Room 9B",
+        "subject": "Biology"
+      }
+    },
+    {
+      "id": "9B-P2-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Class 9B \u00b7 Mathematics (P2)",
+      "department": "MATH",
+      "start": "09:00",
+      "end": "10:00",
+      "shift_type": "P2",
+      "required_skills": [
+        "Mathematics"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "grade": "9",
+        "section": "B",
+        "classroom": "Room 9B",
+        "subject": "Mathematics"
+      }
+    },
+    {
+      "id": "9B-P3-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Class 9B \u00b7 English (P3)",
+      "department": "ENG",
+      "start": "10:15",
+      "end": "11:15",
+      "shift_type": "P3",
+      "required_skills": [
+        "English"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "grade": "9",
+        "section": "B",
+        "classroom": "Room 9B",
+        "subject": "English"
+      }
+    },
+    {
+      "id": "9B-P4-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Class 9B \u00b7 Chemistry (P4)",
+      "department": "SCI",
+      "start": "11:15",
+      "end": "12:15",
+      "shift_type": "P4",
+      "required_skills": [
+        "Chemistry"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "grade": "9",
+        "section": "B",
+        "classroom": "Room 9B",
+        "subject": "Chemistry"
+      }
+    },
+    {
+      "id": "9B-P5-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Class 9B \u00b7 History (P5)",
+      "department": "SOC",
+      "start": "13:00",
+      "end": "14:00",
+      "shift_type": "P5",
+      "required_skills": [
+        "History"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "grade": "9",
+        "section": "B",
+        "classroom": "Room 9B",
+        "subject": "History"
+      }
+    },
+    {
+      "id": "THU-AM-T02-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Thursday block \u00b7 Mathematics",
+      "department": "MATH",
+      "start": "08:00",
+      "end": "12:00",
+      "shift_type": "Block",
+      "required_skills": [
+        "Mathematics"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "THU-AM-T09-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Thursday block \u00b7 English",
+      "department": "MATH",
+      "start": "08:00",
+      "end": "11:00",
+      "shift_type": "Block",
+      "required_skills": [
+        "English"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "THU-AM-T05-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Thursday block \u00b7 Mathematics",
+      "department": "MATH",
+      "start": "08:00",
+      "end": "12:15",
+      "shift_type": "Block",
+      "required_skills": [
+        "Mathematics"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    }
+  ],
+  "existing_schedule": [
+    {
+      "shift_id": "8A-P1-1009-1",
+      "employee_id": "T01"
+    },
+    {
+      "shift_id": "8A-P2-1009-1",
+      "employee_id": "T04"
+    },
+    {
+      "shift_id": "8A-P3-1009-1",
+      "employee_id": "T03"
+    },
+    {
+      "shift_id": "8A-P4-1009-1",
+      "employee_id": "T08"
+    },
+    {
+      "shift_id": "8A-P5-1009-1",
+      "employee_id": "T10"
+    },
+    {
+      "shift_id": "8B-P1-1009-1",
+      "employee_id": "T07"
+    },
+    {
+      "shift_id": "8B-P2-1009-1",
+      "employee_id": "T05"
+    },
+    {
+      "shift_id": "8B-P3-1009-1",
+      "employee_id": "T06"
+    },
+    {
+      "shift_id": "8B-P4-1009-1",
+      "employee_id": "T01"
+    },
+    {
+      "shift_id": "8B-P5-1009-1",
+      "employee_id": "T08"
+    },
+    {
+      "shift_id": "9A-P1-1009-1",
+      "employee_id": "T02"
+    },
+    {
+      "shift_id": "9A-P2-1009-1",
+      "employee_id": "T03"
+    },
+    {
+      "shift_id": "9A-P3-1009-1",
+      "employee_id": "T01"
+    },
+    {
+      "shift_id": "9A-P4-1009-1",
+      "employee_id": "T04"
+    },
+    {
+      "shift_id": "9A-P5-1009-1",
+      "employee_id": "T05"
+    },
+    {
+      "shift_id": "9B-P1-1009-1",
+      "employee_id": "T06"
+    },
+    {
+      "shift_id": "9B-P2-1009-1",
+      "employee_id": "T02"
+    },
+    {
+      "shift_id": "9B-P3-1009-1",
+      "employee_id": "T07"
+    },
+    {
+      "shift_id": "9B-P4-1009-1",
+      "employee_id": "T03"
+    },
+    {
+      "shift_id": "9B-P5-1009-1",
+      "employee_id": "T07"
+    },
+    {
+      "shift_id": "THU-AM-T02-1008-1",
+      "employee_id": "T02"
+    },
+    {
+      "shift_id": "THU-AM-T09-1008-1",
+      "employee_id": "T09"
+    },
+    {
+      "shift_id": "THU-AM-T05-1008-1",
+      "employee_id": "T05"
+    }
+  ],
+  "availability": [],
+  "disruptions": [
+    {
+      "id": "DEMO-MATH",
+      "employee_id": "T01",
+      "date": "2026-10-09",
+      "reason": "sick",
+      "severity": "high",
+      "label": "Mathematics teacher unavailable"
+    },
+    {
+      "id": "DEMO-ENG",
+      "employee_id": "T04",
+      "date": "2026-10-09",
+      "reason": "leave",
+      "severity": "medium",
+      "label": "English teacher unavailable"
+    }
+  ],
+  "constraints": {
+    "min_rest_hours": 0,
+    "allow_overtime": false,
+    "max_overtime_hours_per_week": 0,
+    "extra": {
+      "max_periods_per_day": 5
+    }
+  },
+  "optimization": {
+    "minimum_change": true,
+    "fairness": true,
+    "skill_coverage": true,
+    "overtime_penalty": true
+  }
+}

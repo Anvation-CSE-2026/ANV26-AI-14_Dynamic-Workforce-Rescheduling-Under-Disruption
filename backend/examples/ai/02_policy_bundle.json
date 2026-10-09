@@ -1,0 +1,592 @@
+{
+  "mode": "llm",
+  "constraints": [
+    {
+      "constraint_id": "pc_fd1509bbeb",
+      "constraint_type": "max_daily_hours",
+      "value": 9,
+      "unit": "hours",
+      "severity": "hard",
+      "scope": {
+        "role": null,
+        "assignment": null,
+        "team": null
+      },
+      "source": {
+        "policy_id": "HR-WT-001",
+        "document": "Working Time Policy",
+        "section": "2.1",
+        "chunk_id": "HR-WT-001#2.1",
+        "quote": "No employee may be scheduled for more than 9 hours in a working day"
+      },
+      "interpretation": "Nobody works more than 9 hours in a day.",
+      "retrieval_confidence": 0.67,
+      "interpretation_confidence": 0.95,
+      "verified_by_rules": true,
+      "extracted_by": "llm"
+    },
+    {
+      "constraint_id": "pc_d218cd3882",
+      "constraint_type": "max_weekly_hours",
+      "value": 40,
+      "unit": "hours",
+      "severity": "hard",
+      "scope": {
+        "role": null,
+        "assignment": null,
+        "team": null
+      },
+      "source": {
+        "policy_id": "HR-WT-001",
+        "document": "Working Time Policy",
+        "section": "2.2",
+        "chunk_id": "HR-WT-001#2.2",
+        "quote": "Employees must not work more than 40 hours in a calendar week."
+      },
+      "interpretation": "Weekly hours are capped at 40.",
+      "retrieval_confidence": 0.615,
+      "interpretation_confidence": 0.95,
+      "verified_by_rules": true,
+      "extracted_by": "llm"
+    },
+    {
+      "constraint_id": "pc_a325096b76",
+      "constraint_type": "max_consecutive_days",
+      "value": 6,
+      "unit": "days",
+      "severity": "hard",
+      "scope": {
+        "role": null,
+        "assignment": null,
+        "team": null
+      },
+      "source": {
+        "policy_id": "HR-WT-001",
+        "document": "Working Time Policy",
+        "section": "3.2",
+        "chunk_id": "HR-WT-001#3.2",
+        "quote": "No employee may work more than 6 consecutive days."
+      },
+      "interpretation": "At most 6 days in a row.",
+      "retrieval_confidence": 0.87,
+      "interpretation_confidence": 0.95,
+      "verified_by_rules": true,
+      "extracted_by": "llm"
+    },
+    {
+      "constraint_id": "pc_a2bbe0847e",
+      "constraint_type": "max_weekly_hours",
+      "value": 45,
+      "unit": "hours",
+      "severity": "hard",
+      "scope": {
+        "role": "L2 Support",
+        "assignment": null,
+        "team": null
+      },
+      "source": {
+        "policy_id": "OPS-SUP-007",
+        "document": "Customer Support Operations Staffing Rules",
+        "section": "3",
+        "chunk_id": "OPS-SUP-007#3",
+        "quote": "During peak season, L2 Support agents may work up to 45 hours per week."
+      },
+      "interpretation": "L2 agents may work 45 hours in peak season.",
+      "retrieval_confidence": 0.551,
+      "interpretation_confidence": 0.95,
+      "verified_by_rules": true,
+      "extracted_by": "llm"
+    },
+    {
+      "constraint_id": "pc_fba65ad30a",
+      "constraint_type": "max_overtime_weekly",
+      "value": 8,
+      "unit": "hours",
+      "severity": "hard",
+      "scope": {
+        "role": null,
+        "assignment": null,
+        "team": null
+      },
+      "source": {
+        "policy_id": "HR-OT-002",
+        "document": "Overtime Policy",
+        "section": "2",
+        "chunk_id": "HR-OT-002#2",
+        "quote": "Overtime is capped at 8 hours per employee per week."
+      },
+      "interpretation": "At most 8 overtime hours a week.",
+      "retrieval_confidence": 0.519,
+      "interpretation_confidence": 0.95,
+      "verified_by_rules": true,
+      "extracted_by": "llm"
+    },
+    {
+      "constraint_id": "pc_b859f01a19",
+      "constraint_type": "minimum_rest",
+      "value": 11,
+      "unit": "hours",
+      "severity": "hard",
+      "scope": {
+        "role": null,
+        "assignment": null,
+        "team": null
+      },
+      "source": {
+        "policy_id": "HR-WT-001",
+        "document": "Working Time Policy",
+        "section": "3.1",
+        "chunk_id": "HR-WT-001#3.1",
+        "quote": "Employees must receive at least 11 hours of rest between the end of one shift and the start of the next."
+      },
+      "interpretation": "At least 11 hours between shifts.",
+      "retrieval_confidence": 0.827,
+      "interpretation_confidence": 0.95,
+      "verified_by_rules": true,
+      "extracted_by": "llm"
+    },
+    {
+      "constraint_id": "pc_5eda0e5432",
+      "constraint_type": "min_staffing",
+      "value": 1,
+      "unit": "people",
+      "severity": "hard",
+      "scope": {
+        "role": null,
+        "assignment": "KANNADA_DESK",
+        "team": null
+      },
+      "source": {
+        "policy_id": "OPS-SUP-007",
+        "document": "Customer Support Operations Staffing Rules",
+        "section": "1.2",
+        "chunk_id": "OPS-SUP-007#1.2",
+        "quote": "At least 1 Kannada-speaking agent must be on shift during business hours."
+      },
+      "interpretation": "One Kannada speaker on shift in business hours.",
+      "retrieval_confidence": 0.471,
+      "interpretation_confidence": 0.75,
+      "verified_by_rules": null,
+      "extracted_by": "llm"
+    },
+    {
+      "constraint_id": "pc_8ee25a009f",
+      "constraint_type": "required_skill",
+      "value": "Kannada",
+      "unit": null,
+      "severity": "hard",
+      "scope": {
+        "role": null,
+        "assignment": "KANNADA_DESK",
+        "team": null
+      },
+      "source": {
+        "policy_id": "OPS-SUP-007",
+        "document": "Customer Support Operations Staffing Rules",
+        "section": "1.2",
+        "chunk_id": "OPS-SUP-007#1.2",
+        "quote": "At least 1 Kannada-speaking agent must be on shift during business hours."
+      },
+      "interpretation": "The Kannada desk needs Kannada speakers.",
+      "retrieval_confidence": 0.471,
+      "interpretation_confidence": 0.75,
+      "verified_by_rules": null,
+      "extracted_by": "llm"
+    },
+    {
+      "constraint_id": "pc_8e48fd1197",
+      "constraint_type": "min_staffing",
+      "value": 3,
+      "unit": "people",
+      "severity": "hard",
+      "scope": {
+        "role": null,
+        "assignment": "SUPPORT_L2",
+        "team": null
+      },
+      "source": {
+        "policy_id": "OPS-SUP-007",
+        "document": "Customer Support Operations Staffing Rules",
+        "section": "1.1",
+        "chunk_id": "OPS-SUP-007#1.1",
+        "quote": "The L2 Support queue must have at least 3 agents on shift between 09:00 and 21:00."
+      },
+      "interpretation": "Three agents on the L2 queue from 09:00 to 21:00.",
+      "retrieval_confidence": 0.79,
+      "interpretation_confidence": 0.75,
+      "verified_by_rules": null,
+      "extracted_by": "llm"
+    },
+    {
+      "constraint_id": "pc_a6b2dc5593",
+      "constraint_type": "overtime_requires_approval",
+      "value": true,
+      "unit": null,
+      "severity": "hard",
+      "scope": {
+        "role": null,
+        "assignment": null,
+        "team": null
+      },
+      "source": {
+        "policy_id": "HR-OT-002",
+        "document": "Overtime Policy",
+        "section": "1",
+        "chunk_id": "HR-OT-002#1",
+        "quote": "All overtime requires prior approval from the operations manager."
+      },
+      "interpretation": "Overtime needs manager approval.",
+      "retrieval_confidence": 0.688,
+      "interpretation_confidence": 0.95,
+      "verified_by_rules": true,
+      "extracted_by": "llm"
+    },
+    {
+      "constraint_id": "pc_19fa892d3a",
+      "constraint_type": "max_weekends_per_month",
+      "value": 2,
+      "unit": "weekends",
+      "severity": "soft",
+      "scope": {
+        "role": null,
+        "assignment": null,
+        "team": null
+      },
+      "source": {
+        "policy_id": "HR-WT-001",
+        "document": "Working Time Policy",
+        "section": "4",
+        "chunk_id": "HR-WT-001#4",
+        "quote": "Employees should not be scheduled for more than 2 weekends per month."
+      },
+      "interpretation": "Preferably at most 2 weekends a month.",
+      "retrieval_confidence": 0.859,
+      "interpretation_confidence": 0.95,
+      "verified_by_rules": true,
+      "extracted_by": "llm"
+    },
+    {
+      "constraint_id": "pc_1a3ba07fb0",
+      "constraint_type": "max_schedule_changes_per_month",
+      "value": 3,
+      "unit": "changes",
+      "severity": "soft",
+      "scope": {
+        "role": null,
+        "assignment": null,
+        "team": null
+      },
+      "source": {
+        "policy_id": "OPS-SUP-007",
+        "document": "Customer Support Operations Staffing Rules",
+        "section": "4",
+        "chunk_id": "OPS-SUP-007#4",
+        "quote": "An agent's schedule should not be changed more than 3 times in a calendar month."
+      },
+      "interpretation": "Avoid changing someone's schedule more than 3 times a month.",
+      "retrieval_confidence": 0.475,
+      "interpretation_confidence": 0.95,
+      "verified_by_rules": true,
+      "extracted_by": "llm"
+    },
+    {
+      "constraint_id": "pc_9598a5e9dd",
+      "constraint_type": "required_skill",
+      "value": "Tier-2 troubleshooting",
+      "unit": null,
+      "severity": "hard",
+      "scope": {
+        "role": null,
+        "assignment": "SUPPORT_L2",
+        "team": null
+      },
+      "source": {
+        "policy_id": "OPS-SUP-007",
+        "document": "Customer Support Operations Staffing Rules",
+        "section": "2",
+        "chunk_id": "OPS-SUP-007#2",
+        "quote": "Only agents certified in Tier-2 troubleshooting may cover the L2 Support queue."
+      },
+      "interpretation": "L2 queue needs Tier-2 certification.",
+      "retrieval_confidence": 0.571,
+      "interpretation_confidence": 0.75,
+      "verified_by_rules": null,
+      "extracted_by": "llm"
+    },
+    {
+      "constraint_id": "pc_269e0f2454",
+      "constraint_type": "respect_employee_preferences",
+      "value": true,
+      "unit": null,
+      "severity": "soft",
+      "scope": {
+        "role": null,
+        "assignment": null,
+        "team": null
+      },
+      "source": {
+        "policy_id": "OPS-SUP-007",
+        "document": "Customer Support Operations Staffing Rules",
+        "section": "5",
+        "chunk_id": "OPS-SUP-007#5",
+        "quote": "Agent shift preferences should be respected where possible."
+      },
+      "interpretation": "Respect shift preferences where possible.",
+      "retrieval_confidence": 0.85,
+      "interpretation_confidence": 0.95,
+      "verified_by_rules": true,
+      "extracted_by": "llm"
+    }
+  ],
+  "conflicts": [
+    {
+      "constraint_type": "max_weekly_hours",
+      "scope": "role=L2 Support",
+      "kind": "scoped_looser_than_global",
+      "options": [
+        {
+          "value": 40,
+          "severity": "hard",
+          "scope": "everyone",
+          "source": {
+            "policy_id": "HR-WT-001",
+            "document": "Working Time Policy",
+            "section": "2.2",
+            "chunk_id": "HR-WT-001#2.2",
+            "quote": "Employees must not work more than 40 hours in a calendar week."
+          }
+        },
+        {
+          "value": 45,
+          "severity": "hard",
+          "scope": "role=L2 Support",
+          "source": {
+            "policy_id": "OPS-SUP-007",
+            "document": "Customer Support Operations Staffing Rules",
+            "section": "3",
+            "chunk_id": "OPS-SUP-007#3",
+            "quote": "During peak season, L2 Support agents may work up to 45 hours per week."
+          }
+        }
+      ],
+      "applied_value": 40,
+      "resolution": "strictest_applied",
+      "message": "Customer Support Operations Staffing Rules §3 allows 45 for role=L2 Support, but Working Time Policy §2.2 sets 40 for everyone. Both are enforced, so 40 applies. Confirm which policy should win."
+    }
+  ],
+  "unsupported": [
+    {
+      "chunk_id": "OPS-SUP-007#6",
+      "policy_id": "OPS-SUP-007",
+      "section": "6",
+      "text": "Agents must be notified at least 12 hours before a schedule change."
+    },
+    {
+      "chunk_id": "HR-OT-002#3",
+      "policy_id": "HR-OT-002",
+      "section": "3",
+      "text": "Overtime opportunities should be offered fairly, rotating among qualified employees."
+    }
+  ],
+  "rejected": [],
+  "topics": [
+    {
+      "topic": "working_hours",
+      "query": "maximum working hours per day and per week",
+      "status": "found",
+      "chunk_ids": [
+        "HR-WT-001#2.1",
+        "HR-WT-001#2.2",
+        "HR-WT-001#3.2",
+        "OPS-SUP-007#3",
+        "HR-OT-002#2"
+      ],
+      "best_confidence": 0.67,
+      "message": ""
+    },
+    {
+      "topic": "rest",
+      "query": "minimum rest between shifts",
+      "status": "found",
+      "chunk_ids": [
+        "HR-WT-001#3.1",
+        "OPS-SUP-007#6",
+        "OPS-SUP-007#1.2",
+        "OPS-SUP-007#1.1"
+      ],
+      "best_confidence": 0.827,
+      "message": ""
+    },
+    {
+      "topic": "overtime",
+      "query": "overtime limits and approval",
+      "status": "found",
+      "chunk_ids": [
+        "HR-OT-002#1",
+        "HR-OT-002#4",
+        "HR-OT-002#2"
+      ],
+      "best_confidence": 0.688,
+      "message": ""
+    },
+    {
+      "topic": "consecutive_days",
+      "query": "maximum consecutive working days",
+      "status": "found",
+      "chunk_ids": [
+        "HR-WT-001#3.2",
+        "HR-WT-001#2.1"
+      ],
+      "best_confidence": 0.87,
+      "message": ""
+    },
+    {
+      "topic": "weekends",
+      "query": "weekend work limits per month",
+      "status": "found",
+      "chunk_ids": [
+        "HR-WT-001#4",
+        "OPS-SUP-007#4"
+      ],
+      "best_confidence": 0.859,
+      "message": ""
+    },
+    {
+      "topic": "staffing",
+      "query": "minimum staffing coverage agents on queue",
+      "status": "found",
+      "chunk_ids": [
+        "OPS-SUP-007#1.1",
+        "OPS-SUP-007#2",
+        "OPS-SUP-007#1.2",
+        "OPS-SUP-007#6"
+      ],
+      "best_confidence": 0.79,
+      "message": ""
+    },
+    {
+      "topic": "skills",
+      "query": "skills certification needed to cover queue or assignment",
+      "status": "found",
+      "chunk_ids": [
+        "OPS-SUP-007#2"
+      ],
+      "best_confidence": 0.518,
+      "message": ""
+    },
+    {
+      "topic": "schedule_changes",
+      "query": "how often an employee schedule can be changed reassigned",
+      "status": "found",
+      "chunk_ids": [
+        "OPS-SUP-007#4",
+        "OPS-SUP-007#6"
+      ],
+      "best_confidence": 0.475,
+      "message": ""
+    },
+    {
+      "topic": "preferences",
+      "query": "employee shift preferences",
+      "status": "found",
+      "chunk_ids": [
+        "OPS-SUP-007#5"
+      ],
+      "best_confidence": 0.85,
+      "message": ""
+    },
+    {
+      "topic": "fairness",
+      "query": "fair distribution rotation of overtime and shifts among employees",
+      "status": "found",
+      "chunk_ids": [
+        "HR-OT-002#3"
+      ],
+      "best_confidence": 0.436,
+      "message": ""
+    },
+    {
+      "topic": "request",
+      "query": "Rahul is unavailable tomorrow from 9 to 5. Find a replacement but don't disturb anyone already scheduled unless necessary.",
+      "status": "no_applicable_policy",
+      "chunk_ids": [],
+      "best_confidence": 0.0,
+      "message": "no applicable policy found"
+    },
+    {
+      "topic": "role:L2 Support",
+      "query": "L2 Support requirements hours skills staffing",
+      "status": "found",
+      "chunk_ids": [
+        "OPS-SUP-007#2",
+        "OPS-SUP-007#3"
+      ],
+      "best_confidence": 0.506,
+      "message": ""
+    },
+    {
+      "topic": "assignment:SUPPORT_L2",
+      "query": "SUPPORT L2 staffing skills requirements",
+      "status": "found",
+      "chunk_ids": [
+        "OPS-SUP-007#2",
+        "OPS-SUP-007#1.1"
+      ],
+      "best_confidence": 0.539,
+      "message": ""
+    }
+  ],
+  "optimizer_config": {
+    "hard": {
+      "global": {
+        "max_daily_hours": 9,
+        "max_weekly_hours": 40,
+        "max_consecutive_days": 6,
+        "max_overtime_weekly": 8,
+        "minimum_rest": 11,
+        "overtime_requires_approval": true
+      },
+      "by_role": {
+        "L2 Support": {
+          "max_weekly_hours": 45
+        }
+      },
+      "by_assignment": {
+        "KANNADA_DESK": {
+          "min_staffing": 1
+        },
+        "SUPPORT_L2": {
+          "min_staffing": 3
+        }
+      },
+      "by_team": {}
+    },
+    "soft": {
+      "global": {
+        "max_weekends_per_month": 2,
+        "max_schedule_changes_per_month": 3,
+        "respect_employee_preferences": true
+      },
+      "by_role": {},
+      "by_assignment": {},
+      "by_team": {}
+    },
+    "required_skills": {
+      "global": [],
+      "by_role": {},
+      "by_assignment": {
+        "KANNADA_DESK": [
+          "Kannada"
+        ],
+        "SUPPORT_L2": [
+          "Tier-2 troubleshooting"
+        ]
+      },
+      "by_team": {}
+    }
+  },
+  "trace_ids": [
+    "bc0068107c4d4146",
+    "9c5b994872e645ec"
+  ]
+}

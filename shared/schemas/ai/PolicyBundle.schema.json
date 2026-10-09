@@ -1,0 +1,469 @@
+{
+  "$defs": {
+    "ConflictOption": {
+      "properties": {
+        "value": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "Value"
+        },
+        "severity": {
+          "title": "Severity",
+          "type": "string"
+        },
+        "scope": {
+          "title": "Scope",
+          "type": "string"
+        },
+        "source": {
+          "$ref": "#/$defs/PolicySource"
+        }
+      },
+      "required": [
+        "value",
+        "severity",
+        "scope",
+        "source"
+      ],
+      "title": "ConflictOption",
+      "type": "object"
+    },
+    "PolicyConflict": {
+      "properties": {
+        "constraint_type": {
+          "title": "Constraint Type",
+          "type": "string"
+        },
+        "scope": {
+          "title": "Scope",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "different_values",
+            "scoped_looser_than_global",
+            "interpretation_mismatch"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "options": {
+          "items": {
+            "$ref": "#/$defs/ConflictOption"
+          },
+          "title": "Options",
+          "type": "array"
+        },
+        "applied_value": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Applied Value"
+        },
+        "resolution": {
+          "enum": [
+            "strictest_applied",
+            "needs_review"
+          ],
+          "title": "Resolution",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "constraint_type",
+        "scope",
+        "kind",
+        "options",
+        "applied_value",
+        "resolution",
+        "message"
+      ],
+      "title": "PolicyConflict",
+      "type": "object"
+    },
+    "PolicyConstraint": {
+      "additionalProperties": false,
+      "description": "One validated, source-tracked constraint.",
+      "properties": {
+        "constraint_id": {
+          "default": "",
+          "title": "Constraint Id",
+          "type": "string"
+        },
+        "constraint_type": {
+          "title": "Constraint Type",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "Value"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        },
+        "severity": {
+          "enum": [
+            "hard",
+            "soft"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "scope": {
+          "$ref": "#/$defs/Scope"
+        },
+        "source": {
+          "$ref": "#/$defs/PolicySource"
+        },
+        "interpretation": {
+          "title": "Interpretation",
+          "type": "string"
+        },
+        "retrieval_confidence": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Retrieval Confidence"
+        },
+        "interpretation_confidence": {
+          "default": 0.0,
+          "title": "Interpretation Confidence",
+          "type": "number"
+        },
+        "verified_by_rules": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "True if the deterministic rule extractor read the same value from the quote",
+          "title": "Verified By Rules"
+        },
+        "extracted_by": {
+          "default": "llm",
+          "enum": [
+            "llm",
+            "rules"
+          ],
+          "title": "Extracted By",
+          "type": "string"
+        }
+      },
+      "required": [
+        "constraint_type",
+        "value",
+        "severity",
+        "source",
+        "interpretation"
+      ],
+      "title": "PolicyConstraint",
+      "type": "object"
+    },
+    "PolicySource": {
+      "additionalProperties": false,
+      "properties": {
+        "policy_id": {
+          "title": "Policy Id",
+          "type": "string"
+        },
+        "document": {
+          "title": "Document",
+          "type": "string"
+        },
+        "section": {
+          "title": "Section",
+          "type": "string"
+        },
+        "chunk_id": {
+          "title": "Chunk Id",
+          "type": "string"
+        },
+        "quote": {
+          "title": "Quote",
+          "type": "string"
+        }
+      },
+      "required": [
+        "policy_id",
+        "document",
+        "section",
+        "chunk_id",
+        "quote"
+      ],
+      "title": "PolicySource",
+      "type": "object"
+    },
+    "RejectedItem": {
+      "properties": {
+        "chunk_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Chunk Id"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "item": {
+          "additionalProperties": true,
+          "title": "Item",
+          "type": "object"
+        }
+      },
+      "required": [
+        "reason"
+      ],
+      "title": "RejectedItem",
+      "type": "object"
+    },
+    "Scope": {
+      "additionalProperties": false,
+      "properties": {
+        "role": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Role"
+        },
+        "assignment": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Assignment"
+        },
+        "team": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Team"
+        }
+      },
+      "title": "Scope",
+      "type": "object"
+    },
+    "TopicCoverage": {
+      "properties": {
+        "topic": {
+          "title": "Topic",
+          "type": "string"
+        },
+        "query": {
+          "title": "Query",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "found",
+            "no_applicable_policy"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "chunk_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Chunk Ids",
+          "type": "array"
+        },
+        "best_confidence": {
+          "default": 0.0,
+          "title": "Best Confidence",
+          "type": "number"
+        },
+        "message": {
+          "default": "",
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "topic",
+        "query",
+        "status"
+      ],
+      "title": "TopicCoverage",
+      "type": "object"
+    },
+    "UnsupportedRule": {
+      "properties": {
+        "chunk_id": {
+          "title": "Chunk Id",
+          "type": "string"
+        },
+        "policy_id": {
+          "title": "Policy Id",
+          "type": "string"
+        },
+        "section": {
+          "title": "Section",
+          "type": "string"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "chunk_id",
+        "policy_id",
+        "section",
+        "text"
+      ],
+      "title": "UnsupportedRule",
+      "type": "object"
+    }
+  },
+  "description": "Everything policy-related for one optimization run.",
+  "properties": {
+    "mode": {
+      "enum": [
+        "llm",
+        "rules",
+        "none"
+      ],
+      "title": "Mode",
+      "type": "string"
+    },
+    "constraints": {
+      "description": "Applied after conflict resolution",
+      "items": {
+        "$ref": "#/$defs/PolicyConstraint"
+      },
+      "title": "Constraints",
+      "type": "array"
+    },
+    "conflicts": {
+      "items": {
+        "$ref": "#/$defs/PolicyConflict"
+      },
+      "title": "Conflicts",
+      "type": "array"
+    },
+    "unsupported": {
+      "items": {
+        "$ref": "#/$defs/UnsupportedRule"
+      },
+      "title": "Unsupported",
+      "type": "array"
+    },
+    "rejected": {
+      "items": {
+        "$ref": "#/$defs/RejectedItem"
+      },
+      "title": "Rejected",
+      "type": "array"
+    },
+    "topics": {
+      "items": {
+        "$ref": "#/$defs/TopicCoverage"
+      },
+      "title": "Topics",
+      "type": "array"
+    },
+    "optimizer_config": {
+      "additionalProperties": true,
+      "title": "Optimizer Config",
+      "type": "object"
+    },
+    "trace_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Trace Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "mode"
+  ],
+  "title": "PolicyBundle",
+  "type": "object"
+}

@@ -1,0 +1,10 @@
+services:
+  resqwork:
+    build: .
+    ports: ["8000:8000"]
+    env_file: [backend/.env]
+    environment:
+      DATABASE_URL: ${DATABASE_URL:-sqlite:////data/resqwork.db}
+    volumes: [resqwork-data:/data]
+volumes:
+  resqwork-data:

@@ -1,0 +1,63 @@
+{
+  "request": "Rahul is unavailable tomorrow from 9 to 5. Find a replacement but don't disturb anyone already scheduled unless necessary.",
+  "response": {
+    "intent": {
+      "intent": "report_disruption",
+      "confidence": "high",
+      "method": "llm",
+      "meta": {
+        "prompt": "intent_router@2.0.0",
+        "provider": "mock",
+        "model": "mock-1",
+        "trace_id": "94d9d8b3ad8e4099"
+      }
+    },
+    "disruption": {
+      "status": "READY",
+      "disruptions": [
+        {
+          "type": "employee_unavailability",
+          "employee_id": "EMP001",
+          "date": "2026-10-09",
+          "start_time": "09:00",
+          "end_time": "17:00",
+          "reason": "emergency"
+        }
+      ],
+      "details": [
+        {
+          "employee_name": "Rahul Sharma",
+          "assignment_id": "SUPPORT_L2",
+          "assignment_source": "schedule"
+        }
+      ],
+      "preferences": {
+        "locked_employee_ids": [],
+        "excluded_employee_ids": [],
+        "allow_overtime": null,
+        "priority": "minimize_affected_employees"
+      },
+      "ad_hoc_constraints": [],
+      "unsupported_constraints": [],
+      "issues": [],
+      "assumptions": [],
+      "confidence": {
+        "score": 1.0,
+        "level": "high",
+        "factors": []
+      },
+      "confirmation_summary": "Rahul Sharma (EMP001) unavailable Fri 09 Oct 2026, 09:00–17:00 on SUPPORT_L2 (emergency). Instructions: priority: minimize affected employees.",
+      "raw_request": "Rahul is unavailable tomorrow from 9 to 5. Find a replacement but don't disturb anyone already scheduled unless necessary.",
+      "meta": {
+        "prompt": "disruption_extraction@2.0.0",
+        "provider": "mock",
+        "model": "mock-1",
+        "trace_id": "6777665d0c424f6c"
+      }
+    },
+    "scenario": null,
+    "feedback": null,
+    "policy": null,
+    "message": ""
+  }
+}

@@ -1,0 +1,886 @@
+{
+  "organization": {
+    "id": "swiftroute",
+    "name": "SwiftRoute Logistics",
+    "domain": "logistics",
+    "location": "Bengaluru",
+    "timezone": "Asia/Kolkata",
+    "size": "60 vehicles"
+  },
+  "reference_date": "2026-10-08",
+  "reference_time": "23:00",
+  "departments": [
+    {
+      "id": "NORTH",
+      "name": "North Depot \u00b7 Yelahanka",
+      "kind": "depot"
+    },
+    {
+      "id": "SOUTH",
+      "name": "South Depot \u00b7 Bommasandra",
+      "kind": "depot"
+    },
+    {
+      "id": "CITY",
+      "name": "City Hub \u00b7 Koramangala",
+      "kind": "depot"
+    }
+  ],
+  "skills": [
+    "HMV License",
+    "LMV License",
+    "Hazmat",
+    "Cold Chain",
+    "Hazmat Permit"
+  ],
+  "employees": [
+    {
+      "id": "L01",
+      "name": "Ramesh Gowda",
+      "role": "Heavy Vehicle Driver",
+      "department": "NORTH",
+      "skills": [
+        "HMV License",
+        "Hazmat"
+      ],
+      "certifications": [
+        "Hazmat Permit"
+      ],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "ramesh@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 1,
+        "overtime_hours_30d": 2
+      },
+      "preferences": {},
+      "attributes": {
+        "license_type": "HMV",
+        "vehicle_type": "Tanker"
+      }
+    },
+    {
+      "id": "L02",
+      "name": "Imran Pasha",
+      "role": "Heavy Vehicle Driver",
+      "department": "NORTH",
+      "skills": [
+        "HMV License",
+        "Hazmat"
+      ],
+      "certifications": [
+        "Hazmat Permit"
+      ],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "imran@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {
+        "license_type": "HMV"
+      }
+    },
+    {
+      "id": "L03",
+      "name": "Joseph Fernandes",
+      "role": "Heavy Vehicle Driver",
+      "department": "SOUTH",
+      "skills": [
+        "HMV License",
+        "Hazmat"
+      ],
+      "certifications": [
+        "Hazmat Permit"
+      ],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "joseph@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {
+        "license_type": "HMV"
+      }
+    },
+    {
+      "id": "L04",
+      "name": "Pradeep Shetty",
+      "role": "Heavy Vehicle Driver",
+      "department": "SOUTH",
+      "skills": [
+        "HMV License"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "pradeep@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {
+        "license_type": "HMV"
+      }
+    },
+    {
+      "id": "L05",
+      "name": "Venkatesh Murthy",
+      "role": "Heavy Vehicle Driver",
+      "department": "NORTH",
+      "skills": [
+        "HMV License",
+        "Hazmat"
+      ],
+      "certifications": [
+        "Hazmat Permit"
+      ],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "venkatesh@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {
+        "license_type": "HMV"
+      }
+    },
+    {
+      "id": "L06",
+      "name": "Salma Begum",
+      "role": "Light Vehicle Driver",
+      "department": "CITY",
+      "skills": [
+        "LMV License"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "salma@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {
+        "license_type": "LMV"
+      }
+    },
+    {
+      "id": "L07",
+      "name": "Arun Kumar",
+      "role": "Light Vehicle Driver",
+      "department": "CITY",
+      "skills": [
+        "LMV License"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "arun@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 2,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {
+        "license_type": "LMV"
+      }
+    },
+    {
+      "id": "L08",
+      "name": "Naveen Raj",
+      "role": "Field Technician",
+      "department": "CITY",
+      "skills": [
+        "LMV License",
+        "Cold Chain"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "naveen@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {
+        "license_type": "LMV"
+      }
+    },
+    {
+      "id": "L09",
+      "name": "Kiran Patil",
+      "role": "Heavy Vehicle Driver",
+      "department": "SOUTH",
+      "skills": [
+        "HMV License"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "kiran@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {
+        "license_type": "HMV"
+      }
+    },
+    {
+      "id": "L10",
+      "name": "Ganesh Rao",
+      "role": "Heavy Vehicle Driver",
+      "department": "NORTH",
+      "skills": [
+        "HMV License",
+        "Hazmat"
+      ],
+      "certifications": [
+        "Hazmat Permit"
+      ],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "ganesh@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 3,
+        "schedule_changes_30d": 4,
+        "overtime_hours_30d": 10
+      },
+      "preferences": {},
+      "attributes": {
+        "license_type": "HMV"
+      }
+    },
+    {
+      "id": "L11",
+      "name": "Divya Hegde",
+      "role": "Light Vehicle Driver",
+      "department": "CITY",
+      "skills": [
+        "LMV License",
+        "Cold Chain"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "divya@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {
+        "license_type": "LMV"
+      }
+    },
+    {
+      "id": "L12",
+      "name": "Suresh Babu",
+      "role": "Heavy Vehicle Driver",
+      "department": "SOUTH",
+      "skills": [
+        "HMV License"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "suresh@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {
+        "license_type": "HMV"
+      }
+    }
+  ],
+  "shifts": [
+    {
+      "id": "R21-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Route R-21 \u00b7 Hosur fuel run (hazmat)",
+      "department": "NORTH",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Morning",
+      "required_skills": [
+        "HMV License",
+        "Hazmat"
+      ],
+      "required_certifications": [
+        "Hazmat Permit"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "route": "R-21",
+        "vehicle": "Tanker KA-05-T-221",
+        "delivery_window": "08:00\u201312:00"
+      }
+    },
+    {
+      "id": "R12-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Route R-12 \u00b7 Whitefield distribution",
+      "department": "SOUTH",
+      "start": "07:00",
+      "end": "15:00",
+      "shift_type": "Morning",
+      "required_skills": [
+        "HMV License"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "route": "R-12",
+        "vehicle": "Truck KA-03-B-112"
+      }
+    },
+    {
+      "id": "R12-1008-2",
+      "date": "2026-10-08",
+      "assignment": "Route R-12 \u00b7 Whitefield distribution",
+      "department": "SOUTH",
+      "start": "07:00",
+      "end": "15:00",
+      "shift_type": "Morning",
+      "required_skills": [
+        "HMV License"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "route": "R-12",
+        "vehicle": "Truck KA-03-B-112"
+      }
+    },
+    {
+      "id": "R07-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Route R-07 \u00b7 Electronic City parcels",
+      "department": "CITY",
+      "start": "08:00",
+      "end": "16:00",
+      "shift_type": "Morning",
+      "required_skills": [
+        "LMV License"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "route": "R-07",
+        "vehicle": "Van KA-01-V-707"
+      }
+    },
+    {
+      "id": "R30-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Route R-30 \u00b7 Pharma cold chain",
+      "department": "CITY",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "LMV License",
+        "Cold Chain"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "route": "R-30",
+        "vehicle": "Reefer KA-01-R-030"
+      }
+    },
+    {
+      "id": "N21-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Route N-21 \u00b7 Overnight linehaul (hazmat)",
+      "department": "NORTH",
+      "start": "22:00",
+      "end": "06:00",
+      "shift_type": "Night",
+      "required_skills": [
+        "HMV License",
+        "Hazmat"
+      ],
+      "required_certifications": [
+        "Hazmat Permit"
+      ],
+      "priority": "high",
+      "attributes": {
+        "route": "N-21",
+        "vehicle": "Tanker KA-05-T-219"
+      }
+    },
+    {
+      "id": "R15-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Route R-15 \u00b7 Tumkur Road industrial",
+      "department": "SOUTH",
+      "start": "14:00",
+      "end": "22:00",
+      "shift_type": "Evening",
+      "required_skills": [
+        "HMV License"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "route": "R-15"
+      }
+    },
+    {
+      "id": "R21-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Route R-21 \u00b7 Hosur fuel run (hazmat)",
+      "department": "NORTH",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Morning",
+      "required_skills": [
+        "HMV License",
+        "Hazmat"
+      ],
+      "required_certifications": [
+        "Hazmat Permit"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "route": "R-21",
+        "vehicle": "Tanker KA-05-T-221",
+        "delivery_window": "08:00\u201312:00"
+      }
+    },
+    {
+      "id": "R12-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Route R-12 \u00b7 Whitefield distribution",
+      "department": "SOUTH",
+      "start": "07:00",
+      "end": "15:00",
+      "shift_type": "Morning",
+      "required_skills": [
+        "HMV License"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "route": "R-12",
+        "vehicle": "Truck KA-03-B-112"
+      }
+    },
+    {
+      "id": "R12-1009-2",
+      "date": "2026-10-09",
+      "assignment": "Route R-12 \u00b7 Whitefield distribution",
+      "department": "SOUTH",
+      "start": "07:00",
+      "end": "15:00",
+      "shift_type": "Morning",
+      "required_skills": [
+        "HMV License"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "route": "R-12",
+        "vehicle": "Truck KA-03-B-112"
+      }
+    },
+    {
+      "id": "R07-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Route R-07 \u00b7 Electronic City parcels",
+      "department": "CITY",
+      "start": "08:00",
+      "end": "16:00",
+      "shift_type": "Morning",
+      "required_skills": [
+        "LMV License"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "route": "R-07",
+        "vehicle": "Van KA-01-V-707"
+      }
+    },
+    {
+      "id": "R30-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Route R-30 \u00b7 Pharma cold chain",
+      "department": "CITY",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "LMV License",
+        "Cold Chain"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "route": "R-30",
+        "vehicle": "Reefer KA-01-R-030"
+      }
+    },
+    {
+      "id": "N21-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Route N-21 \u00b7 Overnight linehaul (hazmat)",
+      "department": "NORTH",
+      "start": "22:00",
+      "end": "06:00",
+      "shift_type": "Night",
+      "required_skills": [
+        "HMV License",
+        "Hazmat"
+      ],
+      "required_certifications": [
+        "Hazmat Permit"
+      ],
+      "priority": "high",
+      "attributes": {
+        "route": "N-21",
+        "vehicle": "Tanker KA-05-T-219"
+      }
+    },
+    {
+      "id": "R15-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Route R-15 \u00b7 Tumkur Road industrial",
+      "department": "SOUTH",
+      "start": "14:00",
+      "end": "22:00",
+      "shift_type": "Evening",
+      "required_skills": [
+        "HMV License"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "route": "R-15"
+      }
+    },
+    {
+      "id": "R21-1010-1",
+      "date": "2026-10-10",
+      "assignment": "Route R-21 \u00b7 Hosur fuel run (hazmat)",
+      "department": "NORTH",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Morning",
+      "required_skills": [
+        "HMV License",
+        "Hazmat"
+      ],
+      "required_certifications": [
+        "Hazmat Permit"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "route": "R-21",
+        "vehicle": "Tanker KA-05-T-221",
+        "delivery_window": "08:00\u201312:00"
+      }
+    },
+    {
+      "id": "R12-1010-1",
+      "date": "2026-10-10",
+      "assignment": "Route R-12 \u00b7 Whitefield distribution",
+      "department": "SOUTH",
+      "start": "07:00",
+      "end": "15:00",
+      "shift_type": "Morning",
+      "required_skills": [
+        "HMV License"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "route": "R-12",
+        "vehicle": "Truck KA-03-B-112"
+      }
+    },
+    {
+      "id": "R12-1010-2",
+      "date": "2026-10-10",
+      "assignment": "Route R-12 \u00b7 Whitefield distribution",
+      "department": "SOUTH",
+      "start": "07:00",
+      "end": "15:00",
+      "shift_type": "Morning",
+      "required_skills": [
+        "HMV License"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "route": "R-12",
+        "vehicle": "Truck KA-03-B-112"
+      }
+    },
+    {
+      "id": "R07-1010-1",
+      "date": "2026-10-10",
+      "assignment": "Route R-07 \u00b7 Electronic City parcels",
+      "department": "CITY",
+      "start": "08:00",
+      "end": "16:00",
+      "shift_type": "Morning",
+      "required_skills": [
+        "LMV License"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "route": "R-07",
+        "vehicle": "Van KA-01-V-707"
+      }
+    },
+    {
+      "id": "R21-1005-1",
+      "date": "2026-10-05",
+      "assignment": "Route R-21 \u00b7 Hosur fuel run (hazmat)",
+      "department": "NORTH",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Morning",
+      "required_skills": [
+        "HMV License",
+        "Hazmat"
+      ],
+      "required_certifications": [
+        "Hazmat Permit"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "route": "R-21",
+        "vehicle": "Tanker KA-05-T-221",
+        "delivery_window": "08:00\u201312:00"
+      }
+    },
+    {
+      "id": "R21-1006-1",
+      "date": "2026-10-06",
+      "assignment": "Route R-21 \u00b7 Hosur fuel run (hazmat)",
+      "department": "NORTH",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Morning",
+      "required_skills": [
+        "HMV License",
+        "Hazmat"
+      ],
+      "required_certifications": [
+        "Hazmat Permit"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "route": "R-21",
+        "vehicle": "Tanker KA-05-T-221",
+        "delivery_window": "08:00\u201312:00"
+      }
+    },
+    {
+      "id": "R21-1007-1",
+      "date": "2026-10-07",
+      "assignment": "Route R-21 \u00b7 Hosur fuel run (hazmat)",
+      "department": "NORTH",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Morning",
+      "required_skills": [
+        "HMV License",
+        "Hazmat"
+      ],
+      "required_certifications": [
+        "Hazmat Permit"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "route": "R-21",
+        "vehicle": "Tanker KA-05-T-221",
+        "delivery_window": "08:00\u201312:00"
+      }
+    },
+    {
+      "id": "R15-1008-2",
+      "date": "2026-10-08",
+      "assignment": "Route R-15 \u00b7 Tumkur Road industrial",
+      "department": "SOUTH",
+      "start": "14:00",
+      "end": "22:00",
+      "shift_type": "Evening",
+      "required_skills": [
+        "HMV License"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "route": "R-15"
+      }
+    }
+  ],
+  "existing_schedule": [
+    {
+      "shift_id": "R21-1008-1",
+      "employee_id": "L01"
+    },
+    {
+      "shift_id": "R12-1008-1",
+      "employee_id": "L03"
+    },
+    {
+      "shift_id": "R12-1008-2",
+      "employee_id": "L09"
+    },
+    {
+      "shift_id": "R07-1008-1",
+      "employee_id": "L06"
+    },
+    {
+      "shift_id": "R30-1008-1",
+      "employee_id": "L08"
+    },
+    {
+      "shift_id": "N21-1008-1",
+      "employee_id": "L02"
+    },
+    {
+      "shift_id": "R15-1008-1",
+      "employee_id": "L12"
+    },
+    {
+      "shift_id": "R21-1009-1",
+      "employee_id": "L01"
+    },
+    {
+      "shift_id": "R12-1009-1",
+      "employee_id": "L03"
+    },
+    {
+      "shift_id": "R12-1009-2",
+      "employee_id": "L09"
+    },
+    {
+      "shift_id": "R07-1009-1",
+      "employee_id": "L07"
+    },
+    {
+      "shift_id": "R30-1009-1",
+      "employee_id": "L11"
+    },
+    {
+      "shift_id": "N21-1009-1",
+      "employee_id": "L10"
+    },
+    {
+      "shift_id": "R15-1009-1",
+      "employee_id": "L04"
+    },
+    {
+      "shift_id": "R21-1010-1",
+      "employee_id": "L05"
+    },
+    {
+      "shift_id": "R12-1010-1",
+      "employee_id": "L09"
+    },
+    {
+      "shift_id": "R12-1010-2",
+      "employee_id": "L12"
+    },
+    {
+      "shift_id": "R07-1010-1",
+      "employee_id": "L06"
+    },
+    {
+      "shift_id": "R21-1005-1",
+      "employee_id": "L05"
+    },
+    {
+      "shift_id": "R21-1006-1",
+      "employee_id": "L05"
+    },
+    {
+      "shift_id": "R21-1007-1",
+      "employee_id": "L05"
+    },
+    {
+      "shift_id": "R15-1008-2",
+      "employee_id": "L05"
+    }
+  ],
+  "availability": [],
+  "disruptions": [
+    {
+      "id": "DEMO-DRIVER",
+      "employee_id": "L01",
+      "date": "2026-10-09",
+      "start": "06:00",
+      "end": "14:00",
+      "reason": "sick",
+      "severity": "critical",
+      "label": "Driver unavailable"
+    },
+    {
+      "id": "DEMO-COLD",
+      "employee_id": "L11",
+      "date": "2026-10-09",
+      "start": "09:00",
+      "end": "17:00",
+      "reason": "personal",
+      "severity": "high",
+      "label": "Cold-chain driver unavailable"
+    }
+  ],
+  "constraints": {
+    "min_rest_hours": 10,
+    "allow_overtime": true,
+    "max_overtime_hours_per_week": 8,
+    "extra": {
+      "max_driving_hours_per_day": 9
+    }
+  },
+  "optimization": {
+    "minimum_change": true,
+    "fairness": true,
+    "skill_coverage": true,
+    "overtime_penalty": true
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "facts": {
+    "status": "OPTIMAL",
+    "disruption": {
+      "type": "employee_unavailability",
+      "employee_id": "EMP001",
+      "date": "2026-10-09",
+      "start_time": "09:00",
+      "end_time": "17:00",
+      "reason": "emergency"
+    },
+    "disrupted_employee_name": "Rahul Sharma",
+    "changes": [
+      {
+        "employee_id": "EMP001",
+        "employee_name": "Rahul Sharma",
+        "change_type": "unassigned",
+        "date": "2026-10-09",
+        "from_assignment": "SUPPORT_L2",
+        "to_assignment": null,
+        "from_shift": "09:00-17:00",
+        "to_shift": null
+      },
+      {
+        "employee_id": "EMP003",
+        "employee_name": "Arjun Mehta",
+        "change_type": "reassigned",
+        "date": "2026-10-09",
+        "from_assignment": "KANNADA_DESK",
+        "to_assignment": "SUPPORT_L2",
+        "from_shift": "13:00-21:00",
+        "to_shift": "09:00-17:00"
+      }
+    ],
+    "selected": [
+      {
+        "employee_id": "EMP003",
+        "employee_name": "Arjun Mehta",
+        "covers_assignment": "SUPPORT_L2",
+        "available": true,
+        "skills_match": true,
+        "matched_skills": [
+          "Tier-2 troubleshooting"
+        ],
+        "overtime_hours": 0.0,
+        "weekly_hours_before": 32.0,
+        "weekly_hours_after": 32.0,
+        "max_weekly_hours": 40.0,
+        "rest_hours_before_shift": 14.0,
+        "previous_changes_this_period": 0
+      }
+    ],
+    "rejected": [
+      {
+        "employee_id": "EMP002",
+        "employee_name": "Priya Nair",
+        "reason_code": "SHIFT_OVERLAP",
+        "detail": null,
+        "policy_id": null
+      },
+      {
+        "employee_id": "EMP004",
+        "employee_name": "Sanjay Kumar",
+        "reason_code": "MISSING_SKILL",
+        "detail": "no Tier-2 certification",
+        "policy_id": "OPS-SUP-007"
+      },
+      {
+        "employee_id": "EMP006",
+        "employee_name": "Meera Iyer",
+        "reason_code": "REST_PERIOD_VIOLATION",
+        "detail": "only 9h since last shift",
+        "policy_id": "HR-WT-001"
+      }
+    ],
+    "metrics": {
+      "assignments_changed": 1,
+      "employees_affected": 1,
+      "shift_changes": 0,
+      "overtime_hours": 0.0,
+      "hard_constraint_violations": 0,
+      "unfilled_requirements": 0,
+      "preference_violations": 0,
+      "impact_score": 14.0,
+      "impact_level": "LOW",
+      "fairness_score": 92.0
+    },
+    "constraints_checked": [
+      "availability",
+      "required skills",
+      "max 40h/week",
+      "11h rest between shifts"
+    ],
+    "policies_applied": [
+      {
+        "policy_id": "HR-WT-001",
+        "document": "Working Time Policy",
+        "section": "2.2",
+        "constraint_type": "max_weekly_hours",
+        "value": 40,
+        "unit": "hours",
+        "satisfied": true
+      },
+      {
+        "policy_id": "HR-WT-001",
+        "document": "Working Time Policy",
+        "section": "3.1",
+        "constraint_type": "minimum_rest",
+        "value": 11,
+        "unit": "hours",
+        "satisfied": true
+      }
+    ],
+    "infeasibility_reasons": []
+  },
+  "response": {
+    "headline": "Arjun Mehta covers Rahul Sharma's SUPPORT_L2 work on Fri 09 Oct, 09:00–17:00. 1 assignment changed, 0h overtime.",
+    "points": [
+      {
+        "text": "Arjun Mehta is available then and has the required skills (Tier-2 troubleshooting).",
+        "fact_refs": [
+          "selected.0.available",
+          "selected.0.skills_match",
+          "selected.0.matched_skills"
+        ]
+      },
+      {
+        "text": "Their weekly hours stay at 32h (limit 40h), so no overtime.",
+        "fact_refs": [
+          "selected.0.weekly_hours_before",
+          "selected.0.weekly_hours_after",
+          "selected.0.overtime_hours",
+          "selected.0.max_weekly_hours"
+        ]
+      },
+      {
+        "text": "Arjun Mehta has 14h of rest before the shift.",
+        "fact_refs": [
+          "selected.0.rest_hours_before_shift"
+        ]
+      },
+      {
+        "text": "Arjun Mehta hasn't had any other schedule changes this period.",
+        "fact_refs": [
+          "selected.0.previous_changes_this_period"
+        ]
+      },
+      {
+        "text": "1 employee affected, 0 hard-constraint violations. Impact: LOW (14/100).",
+        "fact_refs": [
+          "metrics.employees_affected",
+          "metrics.hard_constraint_violations",
+          "metrics.impact_level"
+        ]
+      },
+      {
+        "text": "Rules checked: availability; required skills; max 40h/week; 11h rest between shifts.",
+        "fact_refs": [
+          "constraints_checked"
+        ]
+      },
+      {
+        "text": "Complies with max 40h per week (Working Time Policy §2.2); at least 11h rest between shifts (Working Time Policy §3.1).",
+        "fact_refs": [
+          "policies_applied.0",
+          "policies_applied.1"
+        ]
+      }
+    ],
+    "why_not_others": [
+      {
+        "text": "Priya Nair already has an overlapping shift.",
+        "fact_refs": [
+          "rejected.0.reason_code"
+        ]
+      },
+      {
+        "text": "Sanjay Kumar doesn't have the required skill (no Tier-2 certification) under policy OPS-SUP-007.",
+        "fact_refs": [
+          "rejected.1.reason_code",
+          "rejected.1.detail",
+          "rejected.1.policy_id"
+        ]
+      },
+      {
+        "text": "Meera Iyer wouldn't get the required rest between shifts (only 9h since last shift) under policy HR-WT-001.",
+        "fact_refs": [
+          "rejected.2.reason_code",
+          "rejected.2.detail",
+          "rejected.2.policy_id"
+        ]
+      }
+    ],
+    "source": "template",
+    "grounding_warnings": [
+      "explanation: offline demo: deterministic text used"
+    ],
+    "meta": {
+      "prompt": "",
+      "provider": "",
+      "model": "",
+      "trace_id": ""
+    }
+  }
+}

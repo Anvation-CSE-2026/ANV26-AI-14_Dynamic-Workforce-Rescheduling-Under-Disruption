@@ -1,0 +1,62 @@
+{
+  "question": "How much rest do agents need between shifts?",
+  "response": {
+    "query": "How much rest do agents need between shifts?",
+    "status": "found",
+    "hits": [
+      {
+        "chunk": {
+          "chunk_id": "HR-WT-001#3.1",
+          "policy_id": "HR-WT-001",
+          "document": "Working Time Policy",
+          "section": "3.1",
+          "heading_path": "Working Time Policy > 3. Rest and recovery > 3.1 Rest between shifts",
+          "text": "Employees must receive at least 11 hours of rest between the end of one shift and the start of the next.",
+          "position": 3
+        },
+        "confidence": 0.812,
+        "score": 0.9058,
+        "matched_terms": [
+          "rest",
+          "employee",
+          "shift"
+        ]
+      },
+      {
+        "chunk": {
+          "chunk_id": "HR-WT-001#3.2",
+          "policy_id": "HR-WT-001",
+          "document": "Working Time Policy",
+          "section": "3.2",
+          "heading_path": "Working Time Policy > 3. Rest and recovery > 3.2 Consecutive working days",
+          "text": "No employee may work more than 6 consecutive days.",
+          "position": 4
+        },
+        "confidence": 0.508,
+        "score": 0.5457,
+        "matched_terms": [
+          "rest",
+          "employee"
+        ]
+      },
+      {
+        "chunk": {
+          "chunk_id": "HR-WT-001#2.1",
+          "policy_id": "HR-WT-001",
+          "document": "Working Time Policy",
+          "section": "2.1",
+          "heading_path": "Working Time Policy > 2. Working hours > 2.1 Daily hours",
+          "text": "No employee may be scheduled for more than 9 hours in a working day, excluding unpaid breaks.",
+          "position": 1
+        },
+        "confidence": 0.479,
+        "score": 0.4352,
+        "matched_terms": [
+          "rest",
+          "employee"
+        ]
+      }
+    ],
+    "message": ""
+  }
+}

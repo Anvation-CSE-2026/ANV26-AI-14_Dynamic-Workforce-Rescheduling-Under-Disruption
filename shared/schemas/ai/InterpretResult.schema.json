@@ -1,0 +1,1096 @@
+{
+  "$defs": {
+    "AdHocConstraint": {
+      "additionalProperties": false,
+      "description": "A one-off requirement the manager stated for this repair.",
+      "properties": {
+        "kind": {
+          "enum": [
+            "required_skill",
+            "max_daily_hours",
+            "only_team"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Value"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "value",
+        "text"
+      ],
+      "title": "AdHocConstraint",
+      "type": "object"
+    },
+    "AddUnavailability": {
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "add_unavailability",
+          "default": "add_unavailability",
+          "title": "Op",
+          "type": "string"
+        },
+        "disruption": {
+          "$ref": "#/$defs/Disruption"
+        },
+        "employee_name": {
+          "title": "Employee Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "disruption",
+        "employee_name"
+      ],
+      "title": "AddUnavailability",
+      "type": "object"
+    },
+    "Candidate": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "Candidate",
+      "type": "object"
+    },
+    "Confidence": {
+      "additionalProperties": false,
+      "description": "Deterministic confidence: starts at 1.0, reduced by each disclosed factor.\n\nNot model self-assessment. Blocking issues force ``level='none'``.",
+      "properties": {
+        "score": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Score",
+          "type": "number"
+        },
+        "level": {
+          "enum": [
+            "high",
+            "medium",
+            "low",
+            "none"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "factors": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Factors",
+          "type": "array"
+        }
+      },
+      "required": [
+        "score",
+        "level"
+      ],
+      "title": "Confidence",
+      "type": "object"
+    },
+    "Disruption": {
+      "additionalProperties": false,
+      "description": "Canonical disruption passed to the optimizer. Matches the master contract.",
+      "properties": {
+        "type": {
+          "const": "employee_unavailability",
+          "title": "Type",
+          "type": "string"
+        },
+        "employee_id": {
+          "minLength": 1,
+          "title": "Employee Id",
+          "type": "string"
+        },
+        "date": {
+          "description": "ISO date YYYY-MM-DD",
+          "title": "Date",
+          "type": "string"
+        },
+        "start_time": {
+          "description": "HH:MM, 24h",
+          "title": "Start Time",
+          "type": "string"
+        },
+        "end_time": {
+          "description": "HH:MM, 24h",
+          "title": "End Time",
+          "type": "string"
+        },
+        "reason": {
+          "default": "unspecified",
+          "enum": [
+            "sick",
+            "emergency",
+            "leave",
+            "personal",
+            "other",
+            "unspecified"
+          ],
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "employee_id",
+        "date",
+        "start_time",
+        "end_time"
+      ],
+      "title": "Disruption",
+      "type": "object"
+    },
+    "DisruptionDetail": {
+      "additionalProperties": false,
+      "description": "Extra parse information aligned with ``ParseResult.disruptions`` (same index).",
+      "properties": {
+        "employee_name": {
+          "title": "Employee Name",
+          "type": "string"
+        },
+        "assignment_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Assignment Id"
+        },
+        "assignment_source": {
+          "default": "none",
+          "enum": [
+            "stated",
+            "schedule",
+            "none"
+          ],
+          "title": "Assignment Source",
+          "type": "string"
+        }
+      },
+      "required": [
+        "employee_name"
+      ],
+      "title": "DisruptionDetail",
+      "type": "object"
+    },
+    "ExcludeEmployee": {
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "exclude_employee",
+          "default": "exclude_employee",
+          "title": "Op",
+          "type": "string"
+        },
+        "employee_id": {
+          "title": "Employee Id",
+          "type": "string"
+        },
+        "employee_name": {
+          "title": "Employee Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "employee_id",
+        "employee_name"
+      ],
+      "title": "ExcludeEmployee",
+      "type": "object"
+    },
+    "FeedbackPreference": {
+      "additionalProperties": false,
+      "properties": {
+        "preference_id": {
+          "title": "Preference Id",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "avoid_employee",
+            "prefer_employee",
+            "objective_priority",
+            "overtime_rule"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "employee_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Employee Id"
+        },
+        "employee_name": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Employee Name"
+        },
+        "priority": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Priority"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "overtime_mode": {
+          "anyOf": [
+            {
+              "enum": [
+                "never",
+                "only_if_unavoidable",
+                "allowed"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Overtime Mode"
+        },
+        "scope": {
+          "enum": [
+            "next_reschedule",
+            "until_revoked"
+          ],
+          "title": "Scope",
+          "type": "string"
+        },
+        "strength": {
+          "enum": [
+            "hard",
+            "soft"
+          ],
+          "title": "Strength",
+          "type": "string"
+        },
+        "source_text": {
+          "title": "Source Text",
+          "type": "string"
+        },
+        "created_on": {
+          "title": "Created On",
+          "type": "string"
+        }
+      },
+      "required": [
+        "preference_id",
+        "kind",
+        "scope",
+        "strength",
+        "source_text",
+        "created_on"
+      ],
+      "title": "FeedbackPreference",
+      "type": "object"
+    },
+    "FeedbackResult": {
+      "properties": {
+        "status": {
+          "enum": [
+            "READY",
+            "NEEDS_CLARIFICATION",
+            "UNSUPPORTED",
+            "ERROR"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "preferences": {
+          "items": {
+            "$ref": "#/$defs/FeedbackPreference"
+          },
+          "title": "Preferences",
+          "type": "array"
+        },
+        "unsupported": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Unsupported",
+          "type": "array"
+        },
+        "issues": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Issues",
+          "type": "array"
+        },
+        "summary": {
+          "default": "",
+          "title": "Summary",
+          "type": "string"
+        },
+        "confidence": {
+          "$ref": "#/$defs/Confidence"
+        },
+        "raw_request": {
+          "default": "",
+          "title": "Raw Request",
+          "type": "string"
+        },
+        "meta": {
+          "$ref": "#/$defs/Meta"
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "title": "FeedbackResult",
+      "type": "object"
+    },
+    "IncludeEmployee": {
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "include_employee",
+          "default": "include_employee",
+          "title": "Op",
+          "type": "string"
+        },
+        "employee_id": {
+          "title": "Employee Id",
+          "type": "string"
+        },
+        "employee_name": {
+          "title": "Employee Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "employee_id",
+        "employee_name"
+      ],
+      "title": "IncludeEmployee",
+      "type": "object"
+    },
+    "IntentResult": {
+      "properties": {
+        "intent": {
+          "enum": [
+            "report_disruption",
+            "what_if",
+            "manager_feedback",
+            "policy_question",
+            "other"
+          ],
+          "title": "Intent",
+          "type": "string"
+        },
+        "confidence": {
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "title": "Confidence",
+          "type": "string"
+        },
+        "method": {
+          "enum": [
+            "rules",
+            "llm",
+            "fallback_rules"
+          ],
+          "title": "Method",
+          "type": "string"
+        },
+        "meta": {
+          "$ref": "#/$defs/Meta"
+        }
+      },
+      "required": [
+        "intent",
+        "confidence",
+        "method"
+      ],
+      "title": "IntentResult",
+      "type": "object"
+    },
+    "Issue": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "enum": [
+            "UNKNOWN_EMPLOYEE",
+            "AMBIGUOUS_EMPLOYEE",
+            "MISSING_EMPLOYEE",
+            "UNKNOWN_ASSIGNMENT",
+            "AMBIGUOUS_ASSIGNMENT",
+            "MISSING_DATE",
+            "INVALID_DATE",
+            "DATE_IN_PAST",
+            "DATE_OUT_OF_HORIZON",
+            "MISSING_TIME",
+            "INVALID_TIME",
+            "UNSUPPORTED_DISRUPTION",
+            "UNSUPPORTED_CONSTRAINT",
+            "UNSUPPORTED_CHANGE",
+            "NOT_A_DISRUPTION",
+            "NOT_A_WHAT_IF",
+            "NOT_FEEDBACK",
+            "LOCKED_EMPLOYEE_CONFLICT",
+            "CONTRADICTORY_CHANGES",
+            "NEEDS_NAMES",
+            "INVALID_VALUE",
+            "LLM_ERROR"
+          ],
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "field": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Field"
+        },
+        "blocking": {
+          "default": true,
+          "title": "Blocking",
+          "type": "boolean"
+        },
+        "candidates": {
+          "items": {
+            "$ref": "#/$defs/Candidate"
+          },
+          "title": "Candidates",
+          "type": "array"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "title": "Issue",
+      "type": "object"
+    },
+    "LockEmployee": {
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "lock_employee",
+          "default": "lock_employee",
+          "title": "Op",
+          "type": "string"
+        },
+        "employee_id": {
+          "title": "Employee Id",
+          "type": "string"
+        },
+        "employee_name": {
+          "title": "Employee Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "employee_id",
+        "employee_name"
+      ],
+      "title": "LockEmployee",
+      "type": "object"
+    },
+    "ManagerPreferences": {
+      "additionalProperties": false,
+      "description": "Request-level manager intent, resolved to IDs.",
+      "properties": {
+        "locked_employee_ids": {
+          "description": "Schedules that must not change",
+          "items": {
+            "type": "string"
+          },
+          "title": "Locked Employee Ids",
+          "type": "array"
+        },
+        "excluded_employee_ids": {
+          "description": "Must not be used as replacements",
+          "items": {
+            "type": "string"
+          },
+          "title": "Excluded Employee Ids",
+          "type": "array"
+        },
+        "allow_overtime": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "None = organization policy",
+          "title": "Allow Overtime"
+        },
+        "priority": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Priority"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "None = default weights"
+        }
+      },
+      "title": "ManagerPreferences",
+      "type": "object"
+    },
+    "Meta": {
+      "additionalProperties": false,
+      "description": "Audit metadata attached to every AI result.",
+      "properties": {
+        "prompt": {
+          "default": "",
+          "title": "Prompt",
+          "type": "string"
+        },
+        "provider": {
+          "default": "",
+          "title": "Provider",
+          "type": "string"
+        },
+        "model": {
+          "default": "",
+          "title": "Model",
+          "type": "string"
+        },
+        "trace_id": {
+          "default": "",
+          "title": "Trace Id",
+          "type": "string"
+        }
+      },
+      "title": "Meta",
+      "type": "object"
+    },
+    "OverridePolicy": {
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "override_policy",
+          "default": "override_policy",
+          "title": "Op",
+          "type": "string"
+        },
+        "constraint_type": {
+          "title": "Constraint Type",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "integer"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "constraint_type",
+        "value"
+      ],
+      "title": "OverridePolicy",
+      "type": "object"
+    },
+    "ParseResult": {
+      "additionalProperties": false,
+      "description": "Only when ``status == \"READY\"`` may disruptions/preferences/constraints go to the optimizer.",
+      "properties": {
+        "status": {
+          "enum": [
+            "READY",
+            "NEEDS_CLARIFICATION",
+            "UNSUPPORTED",
+            "ERROR"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "disruptions": {
+          "items": {
+            "$ref": "#/$defs/Disruption"
+          },
+          "title": "Disruptions",
+          "type": "array"
+        },
+        "details": {
+          "items": {
+            "$ref": "#/$defs/DisruptionDetail"
+          },
+          "title": "Details",
+          "type": "array"
+        },
+        "preferences": {
+          "$ref": "#/$defs/ManagerPreferences"
+        },
+        "ad_hoc_constraints": {
+          "items": {
+            "$ref": "#/$defs/AdHocConstraint"
+          },
+          "title": "Ad Hoc Constraints",
+          "type": "array"
+        },
+        "unsupported_constraints": {
+          "description": "Stated by the manager but NOT enforced. Show on the card.",
+          "items": {
+            "type": "string"
+          },
+          "title": "Unsupported Constraints",
+          "type": "array"
+        },
+        "issues": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Issues",
+          "type": "array"
+        },
+        "assumptions": {
+          "description": "What the parser filled in. Show on the card.",
+          "items": {
+            "type": "string"
+          },
+          "title": "Assumptions",
+          "type": "array"
+        },
+        "confidence": {
+          "$ref": "#/$defs/Confidence"
+        },
+        "confirmation_summary": {
+          "default": "",
+          "title": "Confirmation Summary",
+          "type": "string"
+        },
+        "raw_request": {
+          "default": "",
+          "title": "Raw Request",
+          "type": "string"
+        },
+        "meta": {
+          "$ref": "#/$defs/Meta"
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "title": "ParseResult",
+      "type": "object"
+    },
+    "PolicyChunk": {
+      "properties": {
+        "chunk_id": {
+          "title": "Chunk Id",
+          "type": "string"
+        },
+        "policy_id": {
+          "title": "Policy Id",
+          "type": "string"
+        },
+        "document": {
+          "title": "Document",
+          "type": "string"
+        },
+        "section": {
+          "title": "Section",
+          "type": "string"
+        },
+        "heading_path": {
+          "title": "Heading Path",
+          "type": "string"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "position": {
+          "title": "Position",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "chunk_id",
+        "policy_id",
+        "document",
+        "section",
+        "heading_path",
+        "text",
+        "position"
+      ],
+      "title": "PolicyChunk",
+      "type": "object"
+    },
+    "Priority": {
+      "enum": [
+        "minimize_changes",
+        "minimize_affected_employees",
+        "minimize_overtime",
+        "fairness",
+        "employee_preferences"
+      ],
+      "title": "Priority",
+      "type": "string"
+    },
+    "RemoveUnavailability": {
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "remove_unavailability",
+          "default": "remove_unavailability",
+          "title": "Op",
+          "type": "string"
+        },
+        "employee_id": {
+          "title": "Employee Id",
+          "type": "string"
+        },
+        "employee_name": {
+          "title": "Employee Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "employee_id",
+        "employee_name"
+      ],
+      "title": "RemoveUnavailability",
+      "type": "object"
+    },
+    "RetrievalResult": {
+      "properties": {
+        "query": {
+          "title": "Query",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "found",
+            "no_applicable_policy"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "hits": {
+          "items": {
+            "$ref": "#/$defs/RetrievedPolicy"
+          },
+          "title": "Hits",
+          "type": "array"
+        },
+        "message": {
+          "default": "",
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "query",
+        "status"
+      ],
+      "title": "RetrievalResult",
+      "type": "object"
+    },
+    "RetrievedPolicy": {
+      "properties": {
+        "chunk": {
+          "$ref": "#/$defs/PolicyChunk"
+        },
+        "confidence": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "score": {
+          "title": "Score",
+          "type": "number"
+        },
+        "matched_terms": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Matched Terms",
+          "type": "array"
+        }
+      },
+      "required": [
+        "chunk",
+        "confidence",
+        "score",
+        "matched_terms"
+      ],
+      "title": "RetrievedPolicy",
+      "type": "object"
+    },
+    "ScenarioSpec": {
+      "description": "Changes to apply on top of the current scenario before re-optimizing.",
+      "properties": {
+        "status": {
+          "enum": [
+            "READY",
+            "NEEDS_CLARIFICATION",
+            "UNSUPPORTED",
+            "ERROR"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "changes": {
+          "items": {
+            "discriminator": {
+              "mapping": {
+                "add_unavailability": "#/$defs/AddUnavailability",
+                "exclude_employee": "#/$defs/ExcludeEmployee",
+                "include_employee": "#/$defs/IncludeEmployee",
+                "lock_employee": "#/$defs/LockEmployee",
+                "override_policy": "#/$defs/OverridePolicy",
+                "remove_unavailability": "#/$defs/RemoveUnavailability",
+                "set_overtime": "#/$defs/SetOvertime",
+                "set_priority": "#/$defs/SetPriority"
+              },
+              "propertyName": "op"
+            },
+            "oneOf": [
+              {
+                "$ref": "#/$defs/SetOvertime"
+              },
+              {
+                "$ref": "#/$defs/SetPriority"
+              },
+              {
+                "$ref": "#/$defs/AddUnavailability"
+              },
+              {
+                "$ref": "#/$defs/RemoveUnavailability"
+              },
+              {
+                "$ref": "#/$defs/LockEmployee"
+              },
+              {
+                "$ref": "#/$defs/ExcludeEmployee"
+              },
+              {
+                "$ref": "#/$defs/IncludeEmployee"
+              },
+              {
+                "$ref": "#/$defs/OverridePolicy"
+              }
+            ]
+          },
+          "title": "Changes",
+          "type": "array"
+        },
+        "unsupported": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Unsupported",
+          "type": "array"
+        },
+        "issues": {
+          "items": {
+            "$ref": "#/$defs/Issue"
+          },
+          "title": "Issues",
+          "type": "array"
+        },
+        "assumptions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Assumptions",
+          "type": "array"
+        },
+        "summary": {
+          "default": "",
+          "title": "Summary",
+          "type": "string"
+        },
+        "confidence": {
+          "$ref": "#/$defs/Confidence"
+        },
+        "raw_request": {
+          "default": "",
+          "title": "Raw Request",
+          "type": "string"
+        },
+        "meta": {
+          "$ref": "#/$defs/Meta"
+        }
+      },
+      "required": [
+        "status"
+      ],
+      "title": "ScenarioSpec",
+      "type": "object"
+    },
+    "SetOvertime": {
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "set_overtime",
+          "default": "set_overtime",
+          "title": "Op",
+          "type": "string"
+        },
+        "allow": {
+          "title": "Allow",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "allow"
+      ],
+      "title": "SetOvertime",
+      "type": "object"
+    },
+    "SetPriority": {
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "set_priority",
+          "default": "set_priority",
+          "title": "Op",
+          "type": "string"
+        },
+        "priority": {
+          "$ref": "#/$defs/Priority"
+        }
+      },
+      "required": [
+        "priority"
+      ],
+      "title": "SetPriority",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "intent": {
+      "$ref": "#/$defs/IntentResult"
+    },
+    "disruption": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ParseResult"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "scenario": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ScenarioSpec"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "feedback": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/FeedbackResult"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "policy": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/RetrievalResult"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "message": {
+      "default": "",
+      "title": "Message",
+      "type": "string"
+    }
+  },
+  "required": [
+    "intent"
+  ],
+  "title": "InterpretResult",
+  "type": "object"
+}

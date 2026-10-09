@@ -1,0 +1,8728 @@
+{
+ "organization": {
+  "id": "aster-flagship",
+  "name": "Aster City Hospital (100 staff)",
+  "domain": "healthcare",
+  "location": "Bengaluru",
+  "timezone": "Asia/Kolkata",
+  "size": "100 nursing staff"
+ },
+ "reference_date": "2026-10-08",
+ "reference_time": "07:30",
+ "departments": [
+  {
+   "id": "ICU",
+   "name": "Intensive Care Unit",
+   "kind": "unit"
+  },
+  {
+   "id": "ER",
+   "name": "Emergency Department",
+   "kind": "unit"
+  },
+  {
+   "id": "WARD",
+   "name": "General Ward",
+   "kind": "unit"
+  },
+  {
+   "id": "PAEDS",
+   "name": "Paediatrics",
+   "kind": "unit"
+  },
+  {
+   "id": "OT",
+   "name": "Operating Theatre",
+   "kind": "unit"
+  }
+ ],
+ "skills": [
+  "Emergency Care",
+  "ICU Care",
+  "Paediatric Care",
+  "RN",
+  "Theatre",
+  "Ventilator",
+  "Ward Care"
+ ],
+ "employees": [
+  {
+   "id": "ICU01",
+   "name": "Kavya Rao",
+   "role": "Intensive Nurse",
+   "department": "ICU",
+   "email": "kavya.icu01@flagship.demo",
+   "phone": "+91 98013 10037",
+   "skills": [
+    "RN",
+    "ICU Care",
+    "Ventilator"
+   ],
+   "certifications": [
+    "ACLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ICU02",
+   "name": "Arjun Menon",
+   "role": "Intensive Nurse",
+   "department": "ICU",
+   "email": "arjun.icu02@flagship.demo",
+   "phone": "+91 98023 10074",
+   "skills": [
+    "RN",
+    "ICU Care",
+    "Ventilator"
+   ],
+   "certifications": [
+    "ACLS"
+   ],
+   "contracted_weekly_hours": 48,
+   "max_weekly_hours": 56,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": [
+     {
+      "date": "2026-10-06",
+      "kind": "volunteer",
+      "hours": 8,
+      "completed": true,
+      "ref": "hist-a-0"
+     },
+     {
+      "date": "2026-10-03",
+      "kind": "volunteer",
+      "hours": 8,
+      "completed": true,
+      "ref": "hist-a-1"
+     },
+     {
+      "date": "2026-10-01",
+      "kind": "volunteer",
+      "hours": 8,
+      "completed": true,
+      "ref": "hist-a-2"
+     },
+     {
+      "date": "2026-09-28",
+      "kind": "volunteer",
+      "hours": 8,
+      "completed": true,
+      "ref": "hist-a-3"
+     },
+     {
+      "date": "2026-09-25",
+      "kind": "volunteer",
+      "hours": 8,
+      "completed": true,
+      "ref": "hist-a-4"
+     },
+     {
+      "date": "2026-09-22",
+      "kind": "volunteer",
+      "hours": 8,
+      "completed": true,
+      "ref": "hist-a-5"
+     },
+     {
+      "date": "2026-09-18",
+      "kind": "volunteer",
+      "hours": 8,
+      "completed": true,
+      "ref": "hist-a-6"
+     },
+     {
+      "date": "2026-09-14",
+      "kind": "volunteer",
+      "hours": 8,
+      "completed": true,
+      "ref": "hist-a-7"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ICU03",
+   "name": "Meera Pillai",
+   "role": "Intensive Nurse",
+   "department": "ICU",
+   "email": "meera.icu03@flagship.demo",
+   "phone": "+91 98033 10111",
+   "skills": [
+    "RN",
+    "ICU Care",
+    "Ventilator"
+   ],
+   "certifications": [
+    "ACLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": [
+     {
+      "date": "2026-09-30",
+      "kind": "volunteer",
+      "hours": 8,
+      "completed": true,
+      "ref": "hist-b-0"
+     },
+     {
+      "date": "2026-09-16",
+      "kind": "volunteer",
+      "hours": 8,
+      "completed": true,
+      "ref": "hist-b-1"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ICU04",
+   "name": "Sunil Varma",
+   "role": "Intensive Nurse",
+   "department": "ICU",
+   "email": "sunil.icu04@flagship.demo",
+   "phone": "+91 98043 10148",
+   "skills": [
+    "RN",
+    "ICU Care",
+    "Ventilator"
+   ],
+   "certifications": [
+    "ACLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ICU05",
+   "name": "Farah Khan",
+   "role": "Intensive Nurse",
+   "department": "ICU",
+   "email": "farah.icu05@flagship.demo",
+   "phone": "+91 98053 10185",
+   "skills": [
+    "RN",
+    "ICU Care",
+    "Ventilator"
+   ],
+   "certifications": [
+    "ACLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ICU06",
+   "name": "Leela Iyer",
+   "role": "Intensive Nurse",
+   "department": "ICU",
+   "email": "leela.icu06@flagship.demo",
+   "phone": "+91 98063 10222",
+   "skills": [
+    "RN",
+    "ICU Care",
+    "Ventilator"
+   ],
+   "certifications": [
+    "ACLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ICU07",
+   "name": "Aarav Sharma",
+   "role": "Intensive Nurse",
+   "department": "ICU",
+   "email": "aarav.icu07@flagship.demo",
+   "phone": "+91 98073 10259",
+   "skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "certifications": [
+    "ACLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ICU08",
+   "name": "Diya Sharma",
+   "role": "Intensive Nurse",
+   "department": "ICU",
+   "email": "diya.icu08@flagship.demo",
+   "phone": "+91 98083 10296",
+   "skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "certifications": [
+    "ACLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ICU09",
+   "name": "Ishaan Sharma",
+   "role": "Intensive Nurse",
+   "department": "ICU",
+   "email": "ishaan.icu09@flagship.demo",
+   "phone": "+91 98093 10333",
+   "skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "certifications": [
+    "ACLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ICU10",
+   "name": "Ananya Sharma",
+   "role": "Intensive Nurse",
+   "department": "ICU",
+   "email": "ananya.icu10@flagship.demo",
+   "phone": "+91 98103 10370",
+   "skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "certifications": [
+    "ACLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ICU11",
+   "name": "Vihaan Sharma",
+   "role": "Intensive Nurse",
+   "department": "ICU",
+   "email": "vihaan.icu11@flagship.demo",
+   "phone": "+91 98113 10407",
+   "skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "certifications": [
+    "ACLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ICU12",
+   "name": "Saanvi Sharma",
+   "role": "Intensive Nurse",
+   "department": "ICU",
+   "email": "saanvi.icu12@flagship.demo",
+   "phone": "+91 98123 10444",
+   "skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "certifications": [
+    "ACLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 2,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ICU13",
+   "name": "Aditya Sharma",
+   "role": "Intensive Nurse",
+   "department": "ICU",
+   "email": "aditya.icu13@flagship.demo",
+   "phone": "+91 98133 10481",
+   "skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "certifications": [
+    "ACLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ICU14",
+   "name": "Kiara Sharma",
+   "role": "Intensive Nurse",
+   "department": "ICU",
+   "email": "kiara.icu14@flagship.demo",
+   "phone": "+91 98143 10518",
+   "skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "certifications": [
+    "ACLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ICU15",
+   "name": "Reyansh Sharma",
+   "role": "Intensive Nurse",
+   "department": "ICU",
+   "email": "reyansh.icu15@flagship.demo",
+   "phone": "+91 98153 10555",
+   "skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "certifications": [
+    "ACLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ICU16",
+   "name": "Myra Sharma",
+   "role": "Intensive Nurse",
+   "department": "ICU",
+   "email": "myra.icu16@flagship.demo",
+   "phone": "+91 98163 10592",
+   "skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "certifications": [
+    "ACLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ICU17",
+   "name": "Arnav Sharma",
+   "role": "Intensive Nurse",
+   "department": "ICU",
+   "email": "arnav.icu17@flagship.demo",
+   "phone": "+91 98173 10629",
+   "skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "certifications": [
+    "ACLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ICU18",
+   "name": "Aadhya Sharma",
+   "role": "Intensive Nurse",
+   "department": "ICU",
+   "email": "aadhya.icu18@flagship.demo",
+   "phone": "+91 98183 10666",
+   "skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "certifications": [
+    "ACLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ICU19",
+   "name": "Kabir Sharma",
+   "role": "Intensive Nurse",
+   "department": "ICU",
+   "email": "kabir.icu19@flagship.demo",
+   "phone": "+91 98193 10703",
+   "skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "certifications": [
+    "ACLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ICU20",
+   "name": "Anika Sharma",
+   "role": "Intensive Nurse",
+   "department": "ICU",
+   "email": "anika.icu20@flagship.demo",
+   "phone": "+91 98203 10740",
+   "skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "certifications": [
+    "ACLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ER01",
+   "name": "Rohan Das",
+   "role": "Emergency Nurse",
+   "department": "ER",
+   "email": "rohan.er01@flagship.demo",
+   "phone": "+91 98012 10037",
+   "skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ER02",
+   "name": "Neha Kulkarni",
+   "role": "Emergency Nurse",
+   "department": "ER",
+   "email": "neha.er02@flagship.demo",
+   "phone": "+91 98022 10074",
+   "skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": [
+     {
+      "date": "2026-10-04",
+      "kind": "additional",
+      "hours": 8,
+      "completed": true,
+      "ref": "hist-er-0"
+     },
+     {
+      "date": "2026-09-29",
+      "kind": "additional",
+      "hours": 8,
+      "completed": true,
+      "ref": "hist-er-1"
+     },
+     {
+      "date": "2026-09-21",
+      "kind": "additional",
+      "hours": 8,
+      "completed": true,
+      "ref": "hist-er-2"
+     },
+     {
+      "date": "2026-09-12",
+      "kind": "additional",
+      "hours": 8,
+      "completed": true,
+      "ref": "hist-er-3"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ER03",
+   "name": "Imran Shaikh",
+   "role": "Emergency Nurse",
+   "department": "ER",
+   "email": "imran.er03@flagship.demo",
+   "phone": "+91 98032 10111",
+   "skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": [
+     {
+      "date": "2026-07-02",
+      "kind": "volunteer",
+      "hours": 12,
+      "completed": true,
+      "ref": "hist-er-old"
+     }
+    ]
+   }
+  },
+  {
+   "id": "ER04",
+   "name": "Dhruv Sharma",
+   "role": "Emergency Nurse",
+   "department": "ER",
+   "email": "dhruv.er04@flagship.demo",
+   "phone": "+91 98042 10148",
+   "skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ER05",
+   "name": "Riya Sharma",
+   "role": "Emergency Nurse",
+   "department": "ER",
+   "email": "riya.er05@flagship.demo",
+   "phone": "+91 98052 10185",
+   "skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ER06",
+   "name": "Krishna Sharma",
+   "role": "Emergency Nurse",
+   "department": "ER",
+   "email": "krishna.er06@flagship.demo",
+   "phone": "+91 98062 10222",
+   "skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ER07",
+   "name": "Pari Sharma",
+   "role": "Emergency Nurse",
+   "department": "ER",
+   "email": "pari.er07@flagship.demo",
+   "phone": "+91 98072 10259",
+   "skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ER08",
+   "name": "Shaurya Sharma",
+   "role": "Emergency Nurse",
+   "department": "ER",
+   "email": "shaurya.er08@flagship.demo",
+   "phone": "+91 98082 10296",
+   "skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ER09",
+   "name": "Navya Sharma",
+   "role": "Emergency Nurse",
+   "department": "ER",
+   "email": "navya.er09@flagship.demo",
+   "phone": "+91 98092 10333",
+   "skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 1,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ER10",
+   "name": "Atharv Sharma",
+   "role": "Emergency Nurse",
+   "department": "ER",
+   "email": "atharv.er10@flagship.demo",
+   "phone": "+91 98102 10370",
+   "skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ER11",
+   "name": "Ira Sharma",
+   "role": "Emergency Nurse",
+   "department": "ER",
+   "email": "ira.er11@flagship.demo",
+   "phone": "+91 98112 10407",
+   "skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ER12",
+   "name": "Vivaan Sharma",
+   "role": "Emergency Nurse",
+   "department": "ER",
+   "email": "vivaan.er12@flagship.demo",
+   "phone": "+91 98122 10444",
+   "skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ER13",
+   "name": "Tara Sharma",
+   "role": "Emergency Nurse",
+   "department": "ER",
+   "email": "tara.er13@flagship.demo",
+   "phone": "+91 98132 10481",
+   "skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ER14",
+   "name": "Rudra Sharma",
+   "role": "Emergency Nurse",
+   "department": "ER",
+   "email": "rudra.er14@flagship.demo",
+   "phone": "+91 98142 10518",
+   "skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ER15",
+   "name": "Avni Sharma",
+   "role": "Emergency Nurse",
+   "department": "ER",
+   "email": "avni.er15@flagship.demo",
+   "phone": "+91 98152 10555",
+   "skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ER16",
+   "name": "Ayaan Sharma",
+   "role": "Emergency Nurse",
+   "department": "ER",
+   "email": "ayaan.er16@flagship.demo",
+   "phone": "+91 98162 10592",
+   "skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ER17",
+   "name": "Siya Sharma",
+   "role": "Emergency Nurse",
+   "department": "ER",
+   "email": "siya.er17@flagship.demo",
+   "phone": "+91 98172 10629",
+   "skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ER18",
+   "name": "Yash Sharma",
+   "role": "Emergency Nurse",
+   "department": "ER",
+   "email": "yash.er18@flagship.demo",
+   "phone": "+91 98182 10666",
+   "skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ER19",
+   "name": "Meher Sharma",
+   "role": "Emergency Nurse",
+   "department": "ER",
+   "email": "meher.er19@flagship.demo",
+   "phone": "+91 98192 10703",
+   "skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "ER20",
+   "name": "Om Sharma",
+   "role": "Emergency Nurse",
+   "department": "ER",
+   "email": "om.er20@flagship.demo",
+   "phone": "+91 98202 10740",
+   "skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD01",
+   "name": "Nitya Sharma",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "nitya.ward01@flagship.demo",
+   "phone": "+91 98014 10037",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD02",
+   "name": "Pranav Sharma",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "pranav.ward02@flagship.demo",
+   "phone": "+91 98024 10074",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD03",
+   "name": "Zara Sharma",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "zara.ward03@flagship.demo",
+   "phone": "+91 98034 10111",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 1,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD04",
+   "name": "Karthik Sharma",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "karthik.ward04@flagship.demo",
+   "phone": "+91 98044 10148",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD05",
+   "name": "Lavanya Sharma",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "lavanya.ward05@flagship.demo",
+   "phone": "+91 98054 10185",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD06",
+   "name": "Nikhil Sharma",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "nikhil.ward06@flagship.demo",
+   "phone": "+91 98064 10222",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD07",
+   "name": "Pooja Sharma",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "pooja.ward07@flagship.demo",
+   "phone": "+91 98074 10259",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD08",
+   "name": "Rahul Sharma",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "rahul.ward08@flagship.demo",
+   "phone": "+91 98084 10296",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD09",
+   "name": "Sneha Sharma",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "sneha.ward09@flagship.demo",
+   "phone": "+91 98094 10333",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD10",
+   "name": "Tanvi Sharma",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "tanvi.ward10@flagship.demo",
+   "phone": "+91 98104 10370",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD11",
+   "name": "Uday Sharma",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "uday.ward11@flagship.demo",
+   "phone": "+91 98114 10407",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 2,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD12",
+   "name": "Varun Sharma",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "varun.ward12@flagship.demo",
+   "phone": "+91 98124 10444",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD13",
+   "name": "Gauri Sharma",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "gauri.ward13@flagship.demo",
+   "phone": "+91 98134 10481",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD14",
+   "name": "Harsh Sharma",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "harsh.ward14@flagship.demo",
+   "phone": "+91 98144 10518",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD15",
+   "name": "Jaya Sharma",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "jaya.ward15@flagship.demo",
+   "phone": "+91 98154 10555",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD16",
+   "name": "Kunal Sharma",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "kunal.ward16@flagship.demo",
+   "phone": "+91 98164 10592",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD17",
+   "name": "Lakshmi Sharma",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "lakshmi.ward17@flagship.demo",
+   "phone": "+91 98174 10629",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD18",
+   "name": "Manav Sharma",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "manav.ward18@flagship.demo",
+   "phone": "+91 98184 10666",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD19",
+   "name": "Nisha Sharma",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "nisha.ward19@flagship.demo",
+   "phone": "+91 98194 10703",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD20",
+   "name": "Aarav Reddy",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "aarav.ward20@flagship.demo",
+   "phone": "+91 98204 10740",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD21",
+   "name": "Diya Reddy",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "diya.ward21@flagship.demo",
+   "phone": "+91 98214 10777",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD22",
+   "name": "Ishaan Reddy",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "ishaan.ward22@flagship.demo",
+   "phone": "+91 98224 10814",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD23",
+   "name": "Ananya Reddy",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "ananya.ward23@flagship.demo",
+   "phone": "+91 98234 10851",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD24",
+   "name": "Vihaan Reddy",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "vihaan.ward24@flagship.demo",
+   "phone": "+91 98244 10888",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD25",
+   "name": "Saanvi Reddy",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "saanvi.ward25@flagship.demo",
+   "phone": "+91 98254 10925",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD26",
+   "name": "Aditya Reddy",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "aditya.ward26@flagship.demo",
+   "phone": "+91 98264 10962",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD27",
+   "name": "Kiara Reddy",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "kiara.ward27@flagship.demo",
+   "phone": "+91 98274 10999",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD28",
+   "name": "Reyansh Reddy",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "reyansh.ward28@flagship.demo",
+   "phone": "+91 98284 11036",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD29",
+   "name": "Myra Reddy",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "myra.ward29@flagship.demo",
+   "phone": "+91 98294 11073",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "WARD30",
+   "name": "Arnav Reddy",
+   "role": "General Nurse",
+   "department": "WARD",
+   "email": "arnav.ward30@flagship.demo",
+   "phone": "+91 98304 11110",
+   "skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "PAEDS01",
+   "name": "Aadhya Reddy",
+   "role": "Paediatrics Nurse",
+   "department": "PAEDS",
+   "email": "aadhya.paeds01@flagship.demo",
+   "phone": "+91 98015 10037",
+   "skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "certifications": [
+    "PALS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "PAEDS02",
+   "name": "Kabir Reddy",
+   "role": "Paediatrics Nurse",
+   "department": "PAEDS",
+   "email": "kabir.paeds02@flagship.demo",
+   "phone": "+91 98025 10074",
+   "skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "certifications": [
+    "PALS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "PAEDS03",
+   "name": "Anika Reddy",
+   "role": "Paediatrics Nurse",
+   "department": "PAEDS",
+   "email": "anika.paeds03@flagship.demo",
+   "phone": "+91 98035 10111",
+   "skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "certifications": [
+    "PALS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "PAEDS04",
+   "name": "Dhruv Reddy",
+   "role": "Paediatrics Nurse",
+   "department": "PAEDS",
+   "email": "dhruv.paeds04@flagship.demo",
+   "phone": "+91 98045 10148",
+   "skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "certifications": [
+    "PALS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 1,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "PAEDS05",
+   "name": "Riya Reddy",
+   "role": "Paediatrics Nurse",
+   "department": "PAEDS",
+   "email": "riya.paeds05@flagship.demo",
+   "phone": "+91 98055 10185",
+   "skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "certifications": [
+    "PALS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "PAEDS06",
+   "name": "Krishna Reddy",
+   "role": "Paediatrics Nurse",
+   "department": "PAEDS",
+   "email": "krishna.paeds06@flagship.demo",
+   "phone": "+91 98065 10222",
+   "skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "certifications": [
+    "PALS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "PAEDS07",
+   "name": "Pari Reddy",
+   "role": "Paediatrics Nurse",
+   "department": "PAEDS",
+   "email": "pari.paeds07@flagship.demo",
+   "phone": "+91 98075 10259",
+   "skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "certifications": [
+    "PALS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "PAEDS08",
+   "name": "Shaurya Reddy",
+   "role": "Paediatrics Nurse",
+   "department": "PAEDS",
+   "email": "shaurya.paeds08@flagship.demo",
+   "phone": "+91 98085 10296",
+   "skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "certifications": [
+    "PALS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "PAEDS09",
+   "name": "Navya Reddy",
+   "role": "Paediatrics Nurse",
+   "department": "PAEDS",
+   "email": "navya.paeds09@flagship.demo",
+   "phone": "+91 98095 10333",
+   "skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "certifications": [
+    "PALS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "PAEDS10",
+   "name": "Atharv Reddy",
+   "role": "Paediatrics Nurse",
+   "department": "PAEDS",
+   "email": "atharv.paeds10@flagship.demo",
+   "phone": "+91 98105 10370",
+   "skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "certifications": [
+    "PALS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "PAEDS11",
+   "name": "Ira Reddy",
+   "role": "Paediatrics Nurse",
+   "department": "PAEDS",
+   "email": "ira.paeds11@flagship.demo",
+   "phone": "+91 98115 10407",
+   "skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "certifications": [
+    "PALS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "PAEDS12",
+   "name": "Vivaan Reddy",
+   "role": "Paediatrics Nurse",
+   "department": "PAEDS",
+   "email": "vivaan.paeds12@flagship.demo",
+   "phone": "+91 98125 10444",
+   "skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "certifications": [
+    "PALS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "PAEDS13",
+   "name": "Tara Reddy",
+   "role": "Paediatrics Nurse",
+   "department": "PAEDS",
+   "email": "tara.paeds13@flagship.demo",
+   "phone": "+91 98135 10481",
+   "skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "certifications": [
+    "PALS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "PAEDS14",
+   "name": "Rudra Reddy",
+   "role": "Paediatrics Nurse",
+   "department": "PAEDS",
+   "email": "rudra.paeds14@flagship.demo",
+   "phone": "+91 98145 10518",
+   "skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "certifications": [
+    "PALS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "PAEDS15",
+   "name": "Avni Reddy",
+   "role": "Paediatrics Nurse",
+   "department": "PAEDS",
+   "email": "avni.paeds15@flagship.demo",
+   "phone": "+91 98155 10555",
+   "skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "certifications": [
+    "PALS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "OT01",
+   "name": "Ayaan Reddy",
+   "role": "Theatre Nurse",
+   "department": "OT",
+   "email": "ayaan.ot01@flagship.demo",
+   "phone": "+91 98012 10037",
+   "skills": [
+    "RN",
+    "Theatre"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "OT02",
+   "name": "Siya Reddy",
+   "role": "Theatre Nurse",
+   "department": "OT",
+   "email": "siya.ot02@flagship.demo",
+   "phone": "+91 98022 10074",
+   "skills": [
+    "RN",
+    "Theatre"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "OT03",
+   "name": "Yash Reddy",
+   "role": "Theatre Nurse",
+   "department": "OT",
+   "email": "yash.ot03@flagship.demo",
+   "phone": "+91 98032 10111",
+   "skills": [
+    "RN",
+    "Theatre"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "OT04",
+   "name": "Meher Reddy",
+   "role": "Theatre Nurse",
+   "department": "OT",
+   "email": "meher.ot04@flagship.demo",
+   "phone": "+91 98042 10148",
+   "skills": [
+    "RN",
+    "Theatre"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "OT05",
+   "name": "Om Reddy",
+   "role": "Theatre Nurse",
+   "department": "OT",
+   "email": "om.ot05@flagship.demo",
+   "phone": "+91 98052 10185",
+   "skills": [
+    "RN",
+    "Theatre"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "OT06",
+   "name": "Nitya Reddy",
+   "role": "Theatre Nurse",
+   "department": "OT",
+   "email": "nitya.ot06@flagship.demo",
+   "phone": "+91 98062 10222",
+   "skills": [
+    "RN",
+    "Theatre"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "OT07",
+   "name": "Pranav Reddy",
+   "role": "Theatre Nurse",
+   "department": "OT",
+   "email": "pranav.ot07@flagship.demo",
+   "phone": "+91 98072 10259",
+   "skills": [
+    "RN",
+    "Theatre"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 2,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "OT08",
+   "name": "Zara Reddy",
+   "role": "Theatre Nurse",
+   "department": "OT",
+   "email": "zara.ot08@flagship.demo",
+   "phone": "+91 98082 10296",
+   "skills": [
+    "RN",
+    "Theatre"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "OT09",
+   "name": "Karthik Reddy",
+   "role": "Theatre Nurse",
+   "department": "OT",
+   "email": "karthik.ot09@flagship.demo",
+   "phone": "+91 98092 10333",
+   "skills": [
+    "RN",
+    "Theatre"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "OT10",
+   "name": "Lavanya Reddy",
+   "role": "Theatre Nurse",
+   "department": "OT",
+   "email": "lavanya.ot10@flagship.demo",
+   "phone": "+91 98102 10370",
+   "skills": [
+    "RN",
+    "Theatre"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "OT11",
+   "name": "Nikhil Reddy",
+   "role": "Theatre Nurse",
+   "department": "OT",
+   "email": "nikhil.ot11@flagship.demo",
+   "phone": "+91 98112 10407",
+   "skills": [
+    "RN",
+    "Theatre"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "OT12",
+   "name": "Pooja Reddy",
+   "role": "Theatre Nurse",
+   "department": "OT",
+   "email": "pooja.ot12@flagship.demo",
+   "phone": "+91 98122 10444",
+   "skills": [
+    "RN",
+    "Theatre"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "OT13",
+   "name": "Rahul Reddy",
+   "role": "Theatre Nurse",
+   "department": "OT",
+   "email": "rahul.ot13@flagship.demo",
+   "phone": "+91 98132 10481",
+   "skills": [
+    "RN",
+    "Theatre"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "OT14",
+   "name": "Sneha Reddy",
+   "role": "Theatre Nurse",
+   "department": "OT",
+   "email": "sneha.ot14@flagship.demo",
+   "phone": "+91 98142 10518",
+   "skills": [
+    "RN",
+    "Theatre"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 36,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  },
+  {
+   "id": "OT15",
+   "name": "Tanvi Reddy",
+   "role": "Theatre Nurse",
+   "department": "OT",
+   "email": "tanvi.ot15@flagship.demo",
+   "phone": "+91 98152 10555",
+   "skills": [
+    "RN",
+    "Theatre"
+   ],
+   "certifications": [
+    "BLS"
+   ],
+   "contracted_weekly_hours": 40,
+   "max_weekly_hours": 48,
+   "max_daily_hours": 12,
+   "location": "Main Campus",
+   "history": {
+    "disruptions_absorbed_30d": 0,
+    "schedule_changes_30d": 0,
+    "overtime_hours_30d": 0,
+    "contributions": []
+   }
+  }
+ ],
+ "shifts": [
+  {
+   "id": "ICU-D-1005-1",
+   "date": "2026-10-05",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Day",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-D-1005-2",
+   "date": "2026-10-05",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Day",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-D-1005-3",
+   "date": "2026-10-05",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Day",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1005-1",
+   "date": "2026-10-05",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1005-2",
+   "date": "2026-10-05",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1005-3",
+   "date": "2026-10-05",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-N-1005-1",
+   "date": "2026-10-05",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ICU Night",
+   "department": "ICU",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-N-1005-2",
+   "date": "2026-10-05",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ICU Night",
+   "department": "ICU",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1005-1",
+   "date": "2026-10-05",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1005-2",
+   "date": "2026-10-05",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1005-3",
+   "date": "2026-10-05",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1005-1",
+   "date": "2026-10-05",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1005-2",
+   "date": "2026-10-05",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1005-3",
+   "date": "2026-10-05",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-N-1005-1",
+   "date": "2026-10-05",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ER Night",
+   "department": "ER",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-N-1005-2",
+   "date": "2026-10-05",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ER Night",
+   "department": "ER",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1005-1",
+   "date": "2026-10-05",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1005-2",
+   "date": "2026-10-05",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1005-3",
+   "date": "2026-10-05",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1005-4",
+   "date": "2026-10-05",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1005-1",
+   "date": "2026-10-05",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1005-2",
+   "date": "2026-10-05",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1005-3",
+   "date": "2026-10-05",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1005-4",
+   "date": "2026-10-05",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1005-1",
+   "date": "2026-10-05",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1005-2",
+   "date": "2026-10-05",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1005-3",
+   "date": "2026-10-05",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-D-1005-1",
+   "date": "2026-10-05",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "PAEDS Day",
+   "department": "PAEDS",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-D-1005-2",
+   "date": "2026-10-05",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "PAEDS Day",
+   "department": "PAEDS",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-E-1005-1",
+   "date": "2026-10-05",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "PAEDS Evening",
+   "department": "PAEDS",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-E-1005-2",
+   "date": "2026-10-05",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "PAEDS Evening",
+   "department": "PAEDS",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-N-1005-1",
+   "date": "2026-10-05",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "PAEDS Night",
+   "department": "PAEDS",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1005-1",
+   "date": "2026-10-05",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1005-2",
+   "date": "2026-10-05",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1005-3",
+   "date": "2026-10-05",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-E-1005-1",
+   "date": "2026-10-05",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "OT Evening",
+   "department": "OT",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-E-1005-2",
+   "date": "2026-10-05",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "OT Evening",
+   "department": "OT",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-D-1006-1",
+   "date": "2026-10-06",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Day",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-D-1006-2",
+   "date": "2026-10-06",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Day",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-D-1006-3",
+   "date": "2026-10-06",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Day",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1006-1",
+   "date": "2026-10-06",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1006-2",
+   "date": "2026-10-06",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1006-3",
+   "date": "2026-10-06",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-N-1006-1",
+   "date": "2026-10-06",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ICU Night",
+   "department": "ICU",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-N-1006-2",
+   "date": "2026-10-06",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ICU Night",
+   "department": "ICU",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1006-1",
+   "date": "2026-10-06",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1006-2",
+   "date": "2026-10-06",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1006-3",
+   "date": "2026-10-06",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1006-1",
+   "date": "2026-10-06",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1006-2",
+   "date": "2026-10-06",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1006-3",
+   "date": "2026-10-06",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-N-1006-1",
+   "date": "2026-10-06",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ER Night",
+   "department": "ER",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-N-1006-2",
+   "date": "2026-10-06",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ER Night",
+   "department": "ER",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1006-1",
+   "date": "2026-10-06",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1006-2",
+   "date": "2026-10-06",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1006-3",
+   "date": "2026-10-06",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1006-4",
+   "date": "2026-10-06",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1006-1",
+   "date": "2026-10-06",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1006-2",
+   "date": "2026-10-06",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1006-3",
+   "date": "2026-10-06",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1006-4",
+   "date": "2026-10-06",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1006-1",
+   "date": "2026-10-06",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1006-2",
+   "date": "2026-10-06",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1006-3",
+   "date": "2026-10-06",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-D-1006-1",
+   "date": "2026-10-06",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "PAEDS Day",
+   "department": "PAEDS",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-D-1006-2",
+   "date": "2026-10-06",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "PAEDS Day",
+   "department": "PAEDS",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-E-1006-1",
+   "date": "2026-10-06",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "PAEDS Evening",
+   "department": "PAEDS",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-E-1006-2",
+   "date": "2026-10-06",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "PAEDS Evening",
+   "department": "PAEDS",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-N-1006-1",
+   "date": "2026-10-06",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "PAEDS Night",
+   "department": "PAEDS",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1006-1",
+   "date": "2026-10-06",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1006-2",
+   "date": "2026-10-06",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1006-3",
+   "date": "2026-10-06",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-E-1006-1",
+   "date": "2026-10-06",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "OT Evening",
+   "department": "OT",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-E-1006-2",
+   "date": "2026-10-06",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "OT Evening",
+   "department": "OT",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-D-1007-1",
+   "date": "2026-10-07",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Day",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-D-1007-2",
+   "date": "2026-10-07",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Day",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-D-1007-3",
+   "date": "2026-10-07",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Day",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1007-1",
+   "date": "2026-10-07",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1007-2",
+   "date": "2026-10-07",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1007-3",
+   "date": "2026-10-07",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-N-1007-1",
+   "date": "2026-10-07",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ICU Night",
+   "department": "ICU",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-N-1007-2",
+   "date": "2026-10-07",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ICU Night",
+   "department": "ICU",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1007-1",
+   "date": "2026-10-07",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1007-2",
+   "date": "2026-10-07",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1007-3",
+   "date": "2026-10-07",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1007-1",
+   "date": "2026-10-07",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1007-2",
+   "date": "2026-10-07",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1007-3",
+   "date": "2026-10-07",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-N-1007-1",
+   "date": "2026-10-07",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ER Night",
+   "department": "ER",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-N-1007-2",
+   "date": "2026-10-07",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ER Night",
+   "department": "ER",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1007-1",
+   "date": "2026-10-07",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1007-2",
+   "date": "2026-10-07",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1007-3",
+   "date": "2026-10-07",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1007-4",
+   "date": "2026-10-07",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1007-1",
+   "date": "2026-10-07",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1007-2",
+   "date": "2026-10-07",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1007-3",
+   "date": "2026-10-07",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1007-4",
+   "date": "2026-10-07",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1007-1",
+   "date": "2026-10-07",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1007-2",
+   "date": "2026-10-07",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1007-3",
+   "date": "2026-10-07",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-D-1007-1",
+   "date": "2026-10-07",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "PAEDS Day",
+   "department": "PAEDS",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-D-1007-2",
+   "date": "2026-10-07",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "PAEDS Day",
+   "department": "PAEDS",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-E-1007-1",
+   "date": "2026-10-07",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "PAEDS Evening",
+   "department": "PAEDS",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-E-1007-2",
+   "date": "2026-10-07",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "PAEDS Evening",
+   "department": "PAEDS",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-N-1007-1",
+   "date": "2026-10-07",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "PAEDS Night",
+   "department": "PAEDS",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1007-1",
+   "date": "2026-10-07",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1007-2",
+   "date": "2026-10-07",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1007-3",
+   "date": "2026-10-07",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-E-1007-1",
+   "date": "2026-10-07",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "OT Evening",
+   "department": "OT",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-E-1007-2",
+   "date": "2026-10-07",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "OT Evening",
+   "department": "OT",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-D-1008-1",
+   "date": "2026-10-08",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Day",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-D-1008-2",
+   "date": "2026-10-08",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Day",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-D-1008-3",
+   "date": "2026-10-08",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Day",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1008-1",
+   "date": "2026-10-08",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1008-2",
+   "date": "2026-10-08",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1008-3",
+   "date": "2026-10-08",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-N-1008-1",
+   "date": "2026-10-08",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ICU Night",
+   "department": "ICU",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-N-1008-2",
+   "date": "2026-10-08",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ICU Night",
+   "department": "ICU",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1008-1",
+   "date": "2026-10-08",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1008-2",
+   "date": "2026-10-08",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1008-3",
+   "date": "2026-10-08",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1008-1",
+   "date": "2026-10-08",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1008-2",
+   "date": "2026-10-08",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1008-3",
+   "date": "2026-10-08",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-N-1008-1",
+   "date": "2026-10-08",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ER Night",
+   "department": "ER",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-N-1008-2",
+   "date": "2026-10-08",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ER Night",
+   "department": "ER",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1008-1",
+   "date": "2026-10-08",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1008-2",
+   "date": "2026-10-08",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1008-3",
+   "date": "2026-10-08",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1008-4",
+   "date": "2026-10-08",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1008-1",
+   "date": "2026-10-08",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1008-2",
+   "date": "2026-10-08",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1008-3",
+   "date": "2026-10-08",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1008-4",
+   "date": "2026-10-08",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1008-1",
+   "date": "2026-10-08",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1008-2",
+   "date": "2026-10-08",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1008-3",
+   "date": "2026-10-08",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-D-1008-1",
+   "date": "2026-10-08",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "PAEDS Day",
+   "department": "PAEDS",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-D-1008-2",
+   "date": "2026-10-08",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "PAEDS Day",
+   "department": "PAEDS",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-E-1008-1",
+   "date": "2026-10-08",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "PAEDS Evening",
+   "department": "PAEDS",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-E-1008-2",
+   "date": "2026-10-08",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "PAEDS Evening",
+   "department": "PAEDS",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-N-1008-1",
+   "date": "2026-10-08",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "PAEDS Night",
+   "department": "PAEDS",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1008-1",
+   "date": "2026-10-08",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1008-2",
+   "date": "2026-10-08",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1008-3",
+   "date": "2026-10-08",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-E-1008-1",
+   "date": "2026-10-08",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "OT Evening",
+   "department": "OT",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-E-1008-2",
+   "date": "2026-10-08",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "OT Evening",
+   "department": "OT",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-D-1009-1",
+   "date": "2026-10-09",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Ventilator Bay",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care",
+    "Ventilator"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-D-1009-2",
+   "date": "2026-10-09",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Day",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-D-1009-3",
+   "date": "2026-10-09",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Day",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1009-1",
+   "date": "2026-10-09",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1009-2",
+   "date": "2026-10-09",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1009-3",
+   "date": "2026-10-09",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-N-1009-1",
+   "date": "2026-10-09",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ICU Night",
+   "department": "ICU",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-N-1009-2",
+   "date": "2026-10-09",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ICU Night",
+   "department": "ICU",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1009-1",
+   "date": "2026-10-09",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1009-2",
+   "date": "2026-10-09",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1009-3",
+   "date": "2026-10-09",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1009-1",
+   "date": "2026-10-09",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1009-2",
+   "date": "2026-10-09",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1009-3",
+   "date": "2026-10-09",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-N-1009-1",
+   "date": "2026-10-09",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ER Night",
+   "department": "ER",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-N-1009-2",
+   "date": "2026-10-09",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ER Night",
+   "department": "ER",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1009-1",
+   "date": "2026-10-09",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1009-2",
+   "date": "2026-10-09",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1009-3",
+   "date": "2026-10-09",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1009-4",
+   "date": "2026-10-09",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1009-1",
+   "date": "2026-10-09",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1009-2",
+   "date": "2026-10-09",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1009-3",
+   "date": "2026-10-09",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1009-4",
+   "date": "2026-10-09",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1009-1",
+   "date": "2026-10-09",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1009-2",
+   "date": "2026-10-09",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1009-3",
+   "date": "2026-10-09",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-D-1009-1",
+   "date": "2026-10-09",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "PAEDS Day",
+   "department": "PAEDS",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-D-1009-2",
+   "date": "2026-10-09",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "PAEDS Day",
+   "department": "PAEDS",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-E-1009-1",
+   "date": "2026-10-09",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "PAEDS Evening",
+   "department": "PAEDS",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-E-1009-2",
+   "date": "2026-10-09",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "PAEDS Evening",
+   "department": "PAEDS",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-N-1009-1",
+   "date": "2026-10-09",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "PAEDS Night",
+   "department": "PAEDS",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1009-1",
+   "date": "2026-10-09",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1009-2",
+   "date": "2026-10-09",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1009-3",
+   "date": "2026-10-09",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-E-1009-1",
+   "date": "2026-10-09",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "OT Evening",
+   "department": "OT",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-E-1009-2",
+   "date": "2026-10-09",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "OT Evening",
+   "department": "OT",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-D-1010-1",
+   "date": "2026-10-10",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Day",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-D-1010-2",
+   "date": "2026-10-10",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Day",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-D-1010-3",
+   "date": "2026-10-10",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Day",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1010-1",
+   "date": "2026-10-10",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1010-2",
+   "date": "2026-10-10",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1010-3",
+   "date": "2026-10-10",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-N-1010-1",
+   "date": "2026-10-10",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ICU Night",
+   "department": "ICU",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-N-1010-2",
+   "date": "2026-10-10",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ICU Night",
+   "department": "ICU",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1010-1",
+   "date": "2026-10-10",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1010-2",
+   "date": "2026-10-10",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1010-3",
+   "date": "2026-10-10",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1010-1",
+   "date": "2026-10-10",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1010-2",
+   "date": "2026-10-10",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1010-3",
+   "date": "2026-10-10",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-N-1010-1",
+   "date": "2026-10-10",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ER Night",
+   "department": "ER",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-N-1010-2",
+   "date": "2026-10-10",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ER Night",
+   "department": "ER",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1010-1",
+   "date": "2026-10-10",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1010-2",
+   "date": "2026-10-10",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1010-3",
+   "date": "2026-10-10",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1010-4",
+   "date": "2026-10-10",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1010-1",
+   "date": "2026-10-10",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1010-2",
+   "date": "2026-10-10",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1010-3",
+   "date": "2026-10-10",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1010-4",
+   "date": "2026-10-10",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1010-1",
+   "date": "2026-10-10",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1010-2",
+   "date": "2026-10-10",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1010-3",
+   "date": "2026-10-10",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-D-1010-1",
+   "date": "2026-10-10",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "PAEDS Day",
+   "department": "PAEDS",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-D-1010-2",
+   "date": "2026-10-10",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "PAEDS Day",
+   "department": "PAEDS",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-E-1010-1",
+   "date": "2026-10-10",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "PAEDS Evening",
+   "department": "PAEDS",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-E-1010-2",
+   "date": "2026-10-10",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "PAEDS Evening",
+   "department": "PAEDS",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-N-1010-1",
+   "date": "2026-10-10",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "PAEDS Night",
+   "department": "PAEDS",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1010-1",
+   "date": "2026-10-10",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1010-2",
+   "date": "2026-10-10",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1010-3",
+   "date": "2026-10-10",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-E-1010-1",
+   "date": "2026-10-10",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "OT Evening",
+   "department": "OT",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-E-1010-2",
+   "date": "2026-10-10",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "OT Evening",
+   "department": "OT",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-D-1011-1",
+   "date": "2026-10-11",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Day",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-D-1011-2",
+   "date": "2026-10-11",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Day",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-D-1011-3",
+   "date": "2026-10-11",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ICU Day",
+   "department": "ICU",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1011-1",
+   "date": "2026-10-11",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1011-2",
+   "date": "2026-10-11",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-E-1011-3",
+   "date": "2026-10-11",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ICU Evening",
+   "department": "ICU",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-N-1011-1",
+   "date": "2026-10-11",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ICU Night",
+   "department": "ICU",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ICU-N-1011-2",
+   "date": "2026-10-11",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ICU Night",
+   "department": "ICU",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "ICU Care"
+   ],
+   "required_certifications": [
+    "ACLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1011-1",
+   "date": "2026-10-11",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1011-2",
+   "date": "2026-10-11",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-D-1011-3",
+   "date": "2026-10-11",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "ER Day",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1011-1",
+   "date": "2026-10-11",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1011-2",
+   "date": "2026-10-11",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-E-1011-3",
+   "date": "2026-10-11",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "ER Evening",
+   "department": "ER",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-N-1011-1",
+   "date": "2026-10-11",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ER Night",
+   "department": "ER",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "ER-N-1011-2",
+   "date": "2026-10-11",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "ER Night",
+   "department": "ER",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1011-1",
+   "date": "2026-10-11",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1011-2",
+   "date": "2026-10-11",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1011-3",
+   "date": "2026-10-11",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-D-1011-4",
+   "date": "2026-10-11",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "WARD Day",
+   "department": "WARD",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1011-1",
+   "date": "2026-10-11",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1011-2",
+   "date": "2026-10-11",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1011-3",
+   "date": "2026-10-11",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-E-1011-4",
+   "date": "2026-10-11",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "WARD Evening",
+   "department": "WARD",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1011-1",
+   "date": "2026-10-11",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1011-2",
+   "date": "2026-10-11",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "WARD-N-1011-3",
+   "date": "2026-10-11",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "WARD Night",
+   "department": "WARD",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Ward Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "normal",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-D-1011-1",
+   "date": "2026-10-11",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "PAEDS Day",
+   "department": "PAEDS",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-D-1011-2",
+   "date": "2026-10-11",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "PAEDS Day",
+   "department": "PAEDS",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-E-1011-1",
+   "date": "2026-10-11",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "PAEDS Evening",
+   "department": "PAEDS",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-E-1011-2",
+   "date": "2026-10-11",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "PAEDS Evening",
+   "department": "PAEDS",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "PAEDS-N-1011-1",
+   "date": "2026-10-11",
+   "start": "23:00",
+   "end": "07:00",
+   "assignment": "PAEDS Night",
+   "department": "PAEDS",
+   "shift_type": "Night",
+   "required_skills": [
+    "RN",
+    "Paediatric Care"
+   ],
+   "required_certifications": [
+    "PALS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1011-1",
+   "date": "2026-10-11",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1011-2",
+   "date": "2026-10-11",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-D-1011-3",
+   "date": "2026-10-11",
+   "start": "07:00",
+   "end": "15:00",
+   "assignment": "OT Day",
+   "department": "OT",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-E-1011-1",
+   "date": "2026-10-11",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "OT Evening",
+   "department": "OT",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "OT-E-1011-2",
+   "date": "2026-10-11",
+   "start": "15:00",
+   "end": "23:00",
+   "assignment": "OT Evening",
+   "department": "OT",
+   "shift_type": "Evening",
+   "required_skills": [
+    "RN",
+    "Theatre"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "high",
+   "location": "Main Campus",
+   "attributes": {}
+  },
+  {
+   "id": "SURGE-1010-1",
+   "date": "2026-10-10",
+   "start": "07:00",
+   "end": "19:00",
+   "assignment": "Emergency Surge Team",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {
+    "required_headcount": 5
+   }
+  },
+  {
+   "id": "SURGE-1010-2",
+   "date": "2026-10-10",
+   "start": "07:00",
+   "end": "19:00",
+   "assignment": "Emergency Surge Team",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {
+    "required_headcount": 5
+   }
+  },
+  {
+   "id": "SURGE-1010-3",
+   "date": "2026-10-10",
+   "start": "07:00",
+   "end": "19:00",
+   "assignment": "Emergency Surge Team",
+   "department": "ER",
+   "shift_type": "Day",
+   "required_skills": [
+    "RN",
+    "Emergency Care"
+   ],
+   "required_certifications": [
+    "BLS"
+   ],
+   "priority": "critical",
+   "location": "Main Campus",
+   "attributes": {
+    "required_headcount": 5
+   }
+  }
+ ],
+ "existing_schedule": [
+  {
+   "shift_id": "ICU-D-1005-1",
+   "employee_id": "ICU02"
+  },
+  {
+   "shift_id": "ICU-D-1005-2",
+   "employee_id": "ICU04"
+  },
+  {
+   "shift_id": "ICU-D-1005-3",
+   "employee_id": "ICU07"
+  },
+  {
+   "shift_id": "ICU-E-1005-1",
+   "employee_id": "ICU03"
+  },
+  {
+   "shift_id": "ICU-E-1005-2",
+   "employee_id": "ICU08"
+  },
+  {
+   "shift_id": "ICU-E-1005-3",
+   "employee_id": "ICU09"
+  },
+  {
+   "shift_id": "ICU-N-1005-1",
+   "employee_id": "ICU10"
+  },
+  {
+   "shift_id": "ICU-N-1005-2",
+   "employee_id": "ICU11"
+  },
+  {
+   "shift_id": "ER-D-1005-1",
+   "employee_id": "ER04"
+  },
+  {
+   "shift_id": "ER-D-1005-2",
+   "employee_id": "ER05"
+  },
+  {
+   "shift_id": "ER-D-1005-3",
+   "employee_id": "ER06"
+  },
+  {
+   "shift_id": "ER-E-1005-1",
+   "employee_id": "ER07"
+  },
+  {
+   "shift_id": "ER-E-1005-2",
+   "employee_id": "ER08"
+  },
+  {
+   "shift_id": "ER-E-1005-3",
+   "employee_id": "ER09"
+  },
+  {
+   "shift_id": "ER-N-1005-1",
+   "employee_id": "ER13"
+  },
+  {
+   "shift_id": "ER-N-1005-2",
+   "employee_id": "ER14"
+  },
+  {
+   "shift_id": "WARD-D-1005-1",
+   "employee_id": "WARD01"
+  },
+  {
+   "shift_id": "WARD-D-1005-2",
+   "employee_id": "WARD02"
+  },
+  {
+   "shift_id": "WARD-D-1005-3",
+   "employee_id": "WARD03"
+  },
+  {
+   "shift_id": "WARD-D-1005-4",
+   "employee_id": "WARD04"
+  },
+  {
+   "shift_id": "WARD-E-1005-1",
+   "employee_id": "WARD05"
+  },
+  {
+   "shift_id": "WARD-E-1005-2",
+   "employee_id": "WARD06"
+  },
+  {
+   "shift_id": "WARD-E-1005-3",
+   "employee_id": "WARD07"
+  },
+  {
+   "shift_id": "WARD-E-1005-4",
+   "employee_id": "WARD08"
+  },
+  {
+   "shift_id": "WARD-N-1005-1",
+   "employee_id": "WARD09"
+  },
+  {
+   "shift_id": "WARD-N-1005-2",
+   "employee_id": "WARD10"
+  },
+  {
+   "shift_id": "WARD-N-1005-3",
+   "employee_id": "WARD11"
+  },
+  {
+   "shift_id": "PAEDS-D-1005-1",
+   "employee_id": "PAEDS01"
+  },
+  {
+   "shift_id": "PAEDS-D-1005-2",
+   "employee_id": "PAEDS02"
+  },
+  {
+   "shift_id": "PAEDS-E-1005-1",
+   "employee_id": "PAEDS03"
+  },
+  {
+   "shift_id": "PAEDS-E-1005-2",
+   "employee_id": "PAEDS04"
+  },
+  {
+   "shift_id": "PAEDS-N-1005-1",
+   "employee_id": "PAEDS05"
+  },
+  {
+   "shift_id": "OT-D-1005-1",
+   "employee_id": "OT01"
+  },
+  {
+   "shift_id": "OT-D-1005-2",
+   "employee_id": "OT02"
+  },
+  {
+   "shift_id": "OT-D-1005-3",
+   "employee_id": "OT03"
+  },
+  {
+   "shift_id": "OT-E-1005-1",
+   "employee_id": "OT04"
+  },
+  {
+   "shift_id": "OT-E-1005-2",
+   "employee_id": "OT05"
+  },
+  {
+   "shift_id": "ICU-D-1006-1",
+   "employee_id": "ICU02"
+  },
+  {
+   "shift_id": "ICU-D-1006-2",
+   "employee_id": "ICU04"
+  },
+  {
+   "shift_id": "ICU-D-1006-3",
+   "employee_id": "ICU01"
+  },
+  {
+   "shift_id": "ICU-E-1006-1",
+   "employee_id": "ICU03"
+  },
+  {
+   "shift_id": "ICU-E-1006-2",
+   "employee_id": "ICU12"
+  },
+  {
+   "shift_id": "ICU-E-1006-3",
+   "employee_id": "ICU13"
+  },
+  {
+   "shift_id": "ICU-N-1006-1",
+   "employee_id": "ICU14"
+  },
+  {
+   "shift_id": "ICU-N-1006-2",
+   "employee_id": "ICU15"
+  },
+  {
+   "shift_id": "ER-D-1006-1",
+   "employee_id": "ER15"
+  },
+  {
+   "shift_id": "ER-D-1006-2",
+   "employee_id": "ER16"
+  },
+  {
+   "shift_id": "ER-D-1006-3",
+   "employee_id": "ER17"
+  },
+  {
+   "shift_id": "ER-E-1006-1",
+   "employee_id": "ER18"
+  },
+  {
+   "shift_id": "ER-E-1006-2",
+   "employee_id": "ER19"
+  },
+  {
+   "shift_id": "ER-E-1006-3",
+   "employee_id": "ER20"
+  },
+  {
+   "shift_id": "ER-N-1006-1",
+   "employee_id": "ER04"
+  },
+  {
+   "shift_id": "ER-N-1006-2",
+   "employee_id": "ER05"
+  },
+  {
+   "shift_id": "WARD-D-1006-1",
+   "employee_id": "WARD12"
+  },
+  {
+   "shift_id": "WARD-D-1006-2",
+   "employee_id": "WARD13"
+  },
+  {
+   "shift_id": "WARD-D-1006-3",
+   "employee_id": "WARD14"
+  },
+  {
+   "shift_id": "WARD-D-1006-4",
+   "employee_id": "WARD15"
+  },
+  {
+   "shift_id": "WARD-E-1006-1",
+   "employee_id": "WARD16"
+  },
+  {
+   "shift_id": "WARD-E-1006-2",
+   "employee_id": "WARD17"
+  },
+  {
+   "shift_id": "WARD-E-1006-3",
+   "employee_id": "WARD18"
+  },
+  {
+   "shift_id": "WARD-E-1006-4",
+   "employee_id": "WARD19"
+  },
+  {
+   "shift_id": "WARD-N-1006-1",
+   "employee_id": "WARD20"
+  },
+  {
+   "shift_id": "WARD-N-1006-2",
+   "employee_id": "WARD21"
+  },
+  {
+   "shift_id": "WARD-N-1006-3",
+   "employee_id": "WARD22"
+  },
+  {
+   "shift_id": "PAEDS-D-1006-1",
+   "employee_id": "PAEDS06"
+  },
+  {
+   "shift_id": "PAEDS-D-1006-2",
+   "employee_id": "PAEDS07"
+  },
+  {
+   "shift_id": "PAEDS-E-1006-1",
+   "employee_id": "PAEDS08"
+  },
+  {
+   "shift_id": "PAEDS-E-1006-2",
+   "employee_id": "PAEDS09"
+  },
+  {
+   "shift_id": "PAEDS-N-1006-1",
+   "employee_id": "PAEDS10"
+  },
+  {
+   "shift_id": "OT-D-1006-1",
+   "employee_id": "OT06"
+  },
+  {
+   "shift_id": "OT-D-1006-2",
+   "employee_id": "OT07"
+  },
+  {
+   "shift_id": "OT-D-1006-3",
+   "employee_id": "OT08"
+  },
+  {
+   "shift_id": "OT-E-1006-1",
+   "employee_id": "OT09"
+  },
+  {
+   "shift_id": "OT-E-1006-2",
+   "employee_id": "OT10"
+  },
+  {
+   "shift_id": "ICU-D-1007-1",
+   "employee_id": "ICU02"
+  },
+  {
+   "shift_id": "ICU-D-1007-2",
+   "employee_id": "ICU04"
+  },
+  {
+   "shift_id": "ICU-D-1007-3",
+   "employee_id": "ICU16"
+  },
+  {
+   "shift_id": "ICU-E-1007-1",
+   "employee_id": "ICU03"
+  },
+  {
+   "shift_id": "ICU-E-1007-2",
+   "employee_id": "ICU17"
+  },
+  {
+   "shift_id": "ICU-E-1007-3",
+   "employee_id": "ICU18"
+  },
+  {
+   "shift_id": "ICU-N-1007-1",
+   "employee_id": "ICU19"
+  },
+  {
+   "shift_id": "ICU-N-1007-2",
+   "employee_id": "ICU20"
+  },
+  {
+   "shift_id": "ER-D-1007-1",
+   "employee_id": "ER06"
+  },
+  {
+   "shift_id": "ER-D-1007-2",
+   "employee_id": "ER07"
+  },
+  {
+   "shift_id": "ER-D-1007-3",
+   "employee_id": "ER08"
+  },
+  {
+   "shift_id": "ER-E-1007-1",
+   "employee_id": "ER09"
+  },
+  {
+   "shift_id": "ER-E-1007-2",
+   "employee_id": "ER10"
+  },
+  {
+   "shift_id": "ER-E-1007-3",
+   "employee_id": "ER11"
+  },
+  {
+   "shift_id": "ER-N-1007-1",
+   "employee_id": "ER12"
+  },
+  {
+   "shift_id": "ER-N-1007-2",
+   "employee_id": "ER13"
+  },
+  {
+   "shift_id": "WARD-D-1007-1",
+   "employee_id": "WARD23"
+  },
+  {
+   "shift_id": "WARD-D-1007-2",
+   "employee_id": "WARD24"
+  },
+  {
+   "shift_id": "WARD-D-1007-3",
+   "employee_id": "WARD25"
+  },
+  {
+   "shift_id": "WARD-D-1007-4",
+   "employee_id": "WARD26"
+  },
+  {
+   "shift_id": "WARD-E-1007-1",
+   "employee_id": "WARD27"
+  },
+  {
+   "shift_id": "WARD-E-1007-2",
+   "employee_id": "WARD28"
+  },
+  {
+   "shift_id": "WARD-E-1007-3",
+   "employee_id": "WARD29"
+  },
+  {
+   "shift_id": "WARD-E-1007-4",
+   "employee_id": "WARD30"
+  },
+  {
+   "shift_id": "WARD-N-1007-1",
+   "employee_id": "WARD01"
+  },
+  {
+   "shift_id": "WARD-N-1007-2",
+   "employee_id": "WARD02"
+  },
+  {
+   "shift_id": "WARD-N-1007-3",
+   "employee_id": "WARD03"
+  },
+  {
+   "shift_id": "PAEDS-D-1007-1",
+   "employee_id": "PAEDS11"
+  },
+  {
+   "shift_id": "PAEDS-D-1007-2",
+   "employee_id": "PAEDS12"
+  },
+  {
+   "shift_id": "PAEDS-E-1007-1",
+   "employee_id": "PAEDS13"
+  },
+  {
+   "shift_id": "PAEDS-E-1007-2",
+   "employee_id": "PAEDS14"
+  },
+  {
+   "shift_id": "PAEDS-N-1007-1",
+   "employee_id": "PAEDS15"
+  },
+  {
+   "shift_id": "OT-D-1007-1",
+   "employee_id": "OT11"
+  },
+  {
+   "shift_id": "OT-D-1007-2",
+   "employee_id": "OT12"
+  },
+  {
+   "shift_id": "OT-D-1007-3",
+   "employee_id": "OT13"
+  },
+  {
+   "shift_id": "OT-E-1007-1",
+   "employee_id": "OT14"
+  },
+  {
+   "shift_id": "OT-E-1007-2",
+   "employee_id": "OT15"
+  },
+  {
+   "shift_id": "ICU-D-1008-1",
+   "employee_id": "ICU02"
+  },
+  {
+   "shift_id": "ICU-D-1008-2",
+   "employee_id": "ICU04"
+  },
+  {
+   "shift_id": "ICU-D-1008-3",
+   "employee_id": "ICU07"
+  },
+  {
+   "shift_id": "ICU-E-1008-1",
+   "employee_id": "ICU08"
+  },
+  {
+   "shift_id": "ICU-E-1008-2",
+   "employee_id": "ICU09"
+  },
+  {
+   "shift_id": "ICU-E-1008-3",
+   "employee_id": "ICU10"
+  },
+  {
+   "shift_id": "ICU-N-1008-1",
+   "employee_id": "ICU05"
+  },
+  {
+   "shift_id": "ICU-N-1008-2",
+   "employee_id": "ICU11"
+  },
+  {
+   "shift_id": "ER-D-1008-1",
+   "employee_id": "ER14"
+  },
+  {
+   "shift_id": "ER-D-1008-2",
+   "employee_id": "ER15"
+  },
+  {
+   "shift_id": "ER-D-1008-3",
+   "employee_id": "ER16"
+  },
+  {
+   "shift_id": "ER-E-1008-1",
+   "employee_id": "ER17"
+  },
+  {
+   "shift_id": "ER-E-1008-2",
+   "employee_id": "ER18"
+  },
+  {
+   "shift_id": "ER-E-1008-3",
+   "employee_id": "ER19"
+  },
+  {
+   "shift_id": "ER-N-1008-1",
+   "employee_id": "ER20"
+  },
+  {
+   "shift_id": "ER-N-1008-2",
+   "employee_id": "ER04"
+  },
+  {
+   "shift_id": "WARD-D-1008-1",
+   "employee_id": "WARD04"
+  },
+  {
+   "shift_id": "WARD-D-1008-2",
+   "employee_id": "WARD05"
+  },
+  {
+   "shift_id": "WARD-D-1008-3",
+   "employee_id": "WARD06"
+  },
+  {
+   "shift_id": "WARD-D-1008-4",
+   "employee_id": "WARD07"
+  },
+  {
+   "shift_id": "WARD-E-1008-1",
+   "employee_id": "WARD08"
+  },
+  {
+   "shift_id": "WARD-E-1008-2",
+   "employee_id": "WARD09"
+  },
+  {
+   "shift_id": "WARD-E-1008-3",
+   "employee_id": "WARD10"
+  },
+  {
+   "shift_id": "WARD-E-1008-4",
+   "employee_id": "WARD11"
+  },
+  {
+   "shift_id": "WARD-N-1008-1",
+   "employee_id": "WARD12"
+  },
+  {
+   "shift_id": "WARD-N-1008-2",
+   "employee_id": "WARD13"
+  },
+  {
+   "shift_id": "WARD-N-1008-3",
+   "employee_id": "WARD14"
+  },
+  {
+   "shift_id": "PAEDS-D-1008-1",
+   "employee_id": "PAEDS01"
+  },
+  {
+   "shift_id": "PAEDS-D-1008-2",
+   "employee_id": "PAEDS02"
+  },
+  {
+   "shift_id": "PAEDS-E-1008-1",
+   "employee_id": "PAEDS03"
+  },
+  {
+   "shift_id": "PAEDS-E-1008-2",
+   "employee_id": "PAEDS04"
+  },
+  {
+   "shift_id": "PAEDS-N-1008-1",
+   "employee_id": "PAEDS05"
+  },
+  {
+   "shift_id": "OT-D-1008-1",
+   "employee_id": "OT01"
+  },
+  {
+   "shift_id": "OT-D-1008-2",
+   "employee_id": "OT02"
+  },
+  {
+   "shift_id": "OT-D-1008-3",
+   "employee_id": "OT03"
+  },
+  {
+   "shift_id": "OT-E-1008-1",
+   "employee_id": "OT04"
+  },
+  {
+   "shift_id": "OT-E-1008-2",
+   "employee_id": "OT05"
+  },
+  {
+   "shift_id": "ICU-D-1009-1",
+   "employee_id": "ICU01"
+  },
+  {
+   "shift_id": "ICU-D-1009-2",
+   "employee_id": "ICU12"
+  },
+  {
+   "shift_id": "ICU-D-1009-3",
+   "employee_id": "ICU13"
+  },
+  {
+   "shift_id": "ICU-E-1009-1",
+   "employee_id": "ICU14"
+  },
+  {
+   "shift_id": "ICU-E-1009-2",
+   "employee_id": "ICU15"
+  },
+  {
+   "shift_id": "ICU-E-1009-3",
+   "employee_id": "ICU16"
+  },
+  {
+   "shift_id": "ICU-N-1009-1",
+   "employee_id": "ICU17"
+  },
+  {
+   "shift_id": "ICU-N-1009-2",
+   "employee_id": "ICU18"
+  },
+  {
+   "shift_id": "ER-D-1009-1",
+   "employee_id": "ER05"
+  },
+  {
+   "shift_id": "ER-D-1009-2",
+   "employee_id": "ER06"
+  },
+  {
+   "shift_id": "ER-D-1009-3",
+   "employee_id": "ER07"
+  },
+  {
+   "shift_id": "ER-E-1009-1",
+   "employee_id": "ER08"
+  },
+  {
+   "shift_id": "ER-E-1009-2",
+   "employee_id": "ER09"
+  },
+  {
+   "shift_id": "ER-E-1009-3",
+   "employee_id": "ER13"
+  },
+  {
+   "shift_id": "ER-N-1009-1",
+   "employee_id": "ER14"
+  },
+  {
+   "shift_id": "ER-N-1009-2",
+   "employee_id": "ER15"
+  },
+  {
+   "shift_id": "WARD-D-1009-1",
+   "employee_id": "WARD15"
+  },
+  {
+   "shift_id": "WARD-D-1009-2",
+   "employee_id": "WARD16"
+  },
+  {
+   "shift_id": "WARD-D-1009-3",
+   "employee_id": "WARD17"
+  },
+  {
+   "shift_id": "WARD-D-1009-4",
+   "employee_id": "WARD18"
+  },
+  {
+   "shift_id": "WARD-E-1009-1",
+   "employee_id": "WARD19"
+  },
+  {
+   "shift_id": "WARD-E-1009-2",
+   "employee_id": "WARD20"
+  },
+  {
+   "shift_id": "WARD-E-1009-3",
+   "employee_id": "WARD21"
+  },
+  {
+   "shift_id": "WARD-E-1009-4",
+   "employee_id": "WARD22"
+  },
+  {
+   "shift_id": "WARD-N-1009-1",
+   "employee_id": "WARD23"
+  },
+  {
+   "shift_id": "WARD-N-1009-2",
+   "employee_id": "WARD24"
+  },
+  {
+   "shift_id": "WARD-N-1009-3",
+   "employee_id": "WARD25"
+  },
+  {
+   "shift_id": "PAEDS-D-1009-1",
+   "employee_id": "PAEDS06"
+  },
+  {
+   "shift_id": "PAEDS-D-1009-2",
+   "employee_id": "PAEDS07"
+  },
+  {
+   "shift_id": "PAEDS-E-1009-1",
+   "employee_id": "PAEDS08"
+  },
+  {
+   "shift_id": "PAEDS-E-1009-2",
+   "employee_id": "PAEDS09"
+  },
+  {
+   "shift_id": "PAEDS-N-1009-1",
+   "employee_id": "PAEDS10"
+  },
+  {
+   "shift_id": "OT-D-1009-1",
+   "employee_id": "OT06"
+  },
+  {
+   "shift_id": "OT-D-1009-2",
+   "employee_id": "OT07"
+  },
+  {
+   "shift_id": "OT-D-1009-3",
+   "employee_id": "OT08"
+  },
+  {
+   "shift_id": "OT-E-1009-1",
+   "employee_id": "OT09"
+  },
+  {
+   "shift_id": "OT-E-1009-2",
+   "employee_id": "OT10"
+  },
+  {
+   "shift_id": "ICU-D-1010-1",
+   "employee_id": "ICU03"
+  },
+  {
+   "shift_id": "ICU-D-1010-2",
+   "employee_id": "ICU19"
+  },
+  {
+   "shift_id": "ICU-D-1010-3",
+   "employee_id": "ICU20"
+  },
+  {
+   "shift_id": "ICU-E-1010-1",
+   "employee_id": "ICU04"
+  },
+  {
+   "shift_id": "ICU-E-1010-2",
+   "employee_id": "ICU07"
+  },
+  {
+   "shift_id": "ICU-E-1010-3",
+   "employee_id": "ICU08"
+  },
+  {
+   "shift_id": "ICU-N-1010-1",
+   "employee_id": "ICU09"
+  },
+  {
+   "shift_id": "ICU-N-1010-2",
+   "employee_id": "ICU10"
+  },
+  {
+   "shift_id": "ER-D-1010-1",
+   "employee_id": "ER16"
+  },
+  {
+   "shift_id": "ER-D-1010-2",
+   "employee_id": "ER17"
+  },
+  {
+   "shift_id": "ER-D-1010-3",
+   "employee_id": "ER18"
+  },
+  {
+   "shift_id": "ER-E-1010-1",
+   "employee_id": "ER19"
+  },
+  {
+   "shift_id": "ER-E-1010-2",
+   "employee_id": "ER20"
+  },
+  {
+   "shift_id": "ER-E-1010-3",
+   "employee_id": "ER04"
+  },
+  {
+   "shift_id": "ER-N-1010-1",
+   "employee_id": "ER05"
+  },
+  {
+   "shift_id": "ER-N-1010-2",
+   "employee_id": "ER06"
+  },
+  {
+   "shift_id": "WARD-D-1010-1",
+   "employee_id": "WARD26"
+  },
+  {
+   "shift_id": "WARD-D-1010-2",
+   "employee_id": "WARD27"
+  },
+  {
+   "shift_id": "WARD-D-1010-3",
+   "employee_id": "WARD28"
+  },
+  {
+   "shift_id": "WARD-D-1010-4",
+   "employee_id": "WARD29"
+  },
+  {
+   "shift_id": "WARD-E-1010-1",
+   "employee_id": "WARD30"
+  },
+  {
+   "shift_id": "WARD-E-1010-2",
+   "employee_id": "WARD01"
+  },
+  {
+   "shift_id": "WARD-E-1010-3",
+   "employee_id": "WARD02"
+  },
+  {
+   "shift_id": "WARD-E-1010-4",
+   "employee_id": "WARD03"
+  },
+  {
+   "shift_id": "WARD-N-1010-1",
+   "employee_id": "WARD04"
+  },
+  {
+   "shift_id": "WARD-N-1010-2",
+   "employee_id": "WARD05"
+  },
+  {
+   "shift_id": "WARD-N-1010-3",
+   "employee_id": "WARD06"
+  },
+  {
+   "shift_id": "PAEDS-D-1010-1",
+   "employee_id": "PAEDS11"
+  },
+  {
+   "shift_id": "PAEDS-D-1010-2",
+   "employee_id": "PAEDS12"
+  },
+  {
+   "shift_id": "PAEDS-E-1010-1",
+   "employee_id": "PAEDS13"
+  },
+  {
+   "shift_id": "PAEDS-E-1010-2",
+   "employee_id": "PAEDS14"
+  },
+  {
+   "shift_id": "PAEDS-N-1010-1",
+   "employee_id": "PAEDS15"
+  },
+  {
+   "shift_id": "OT-D-1010-1",
+   "employee_id": "OT11"
+  },
+  {
+   "shift_id": "OT-D-1010-2",
+   "employee_id": "OT12"
+  },
+  {
+   "shift_id": "OT-D-1010-3",
+   "employee_id": "OT13"
+  },
+  {
+   "shift_id": "OT-E-1010-1",
+   "employee_id": "OT14"
+  },
+  {
+   "shift_id": "OT-E-1010-2",
+   "employee_id": "OT15"
+  },
+  {
+   "shift_id": "ICU-D-1011-1",
+   "employee_id": "ICU11"
+  },
+  {
+   "shift_id": "ICU-D-1011-2",
+   "employee_id": "ICU12"
+  },
+  {
+   "shift_id": "ICU-D-1011-3",
+   "employee_id": "ICU13"
+  },
+  {
+   "shift_id": "ICU-E-1011-1",
+   "employee_id": "ICU02"
+  },
+  {
+   "shift_id": "ICU-E-1011-2",
+   "employee_id": "ICU14"
+  },
+  {
+   "shift_id": "ICU-E-1011-3",
+   "employee_id": "ICU15"
+  },
+  {
+   "shift_id": "ICU-N-1011-1",
+   "employee_id": "ICU16"
+  },
+  {
+   "shift_id": "ICU-N-1011-2",
+   "employee_id": "ICU17"
+  },
+  {
+   "shift_id": "ER-D-1011-1",
+   "employee_id": "ER10"
+  },
+  {
+   "shift_id": "ER-D-1011-2",
+   "employee_id": "ER11"
+  },
+  {
+   "shift_id": "ER-D-1011-3",
+   "employee_id": "ER12"
+  },
+  {
+   "shift_id": "ER-E-1011-1",
+   "employee_id": "ER07"
+  },
+  {
+   "shift_id": "ER-E-1011-2",
+   "employee_id": "ER08"
+  },
+  {
+   "shift_id": "ER-E-1011-3",
+   "employee_id": "ER09"
+  },
+  {
+   "shift_id": "ER-N-1011-1",
+   "employee_id": "ER13"
+  },
+  {
+   "shift_id": "ER-N-1011-2",
+   "employee_id": "ER14"
+  },
+  {
+   "shift_id": "WARD-D-1011-1",
+   "employee_id": "WARD07"
+  },
+  {
+   "shift_id": "WARD-D-1011-2",
+   "employee_id": "WARD08"
+  },
+  {
+   "shift_id": "WARD-D-1011-3",
+   "employee_id": "WARD09"
+  },
+  {
+   "shift_id": "WARD-D-1011-4",
+   "employee_id": "WARD10"
+  },
+  {
+   "shift_id": "WARD-E-1011-1",
+   "employee_id": "WARD11"
+  },
+  {
+   "shift_id": "WARD-E-1011-2",
+   "employee_id": "WARD12"
+  },
+  {
+   "shift_id": "WARD-E-1011-3",
+   "employee_id": "WARD13"
+  },
+  {
+   "shift_id": "WARD-E-1011-4",
+   "employee_id": "WARD14"
+  },
+  {
+   "shift_id": "WARD-N-1011-1",
+   "employee_id": "WARD15"
+  },
+  {
+   "shift_id": "WARD-N-1011-2",
+   "employee_id": "WARD16"
+  },
+  {
+   "shift_id": "WARD-N-1011-3",
+   "employee_id": "WARD17"
+  },
+  {
+   "shift_id": "PAEDS-D-1011-1",
+   "employee_id": "PAEDS01"
+  },
+  {
+   "shift_id": "PAEDS-D-1011-2",
+   "employee_id": "PAEDS02"
+  },
+  {
+   "shift_id": "PAEDS-E-1011-1",
+   "employee_id": "PAEDS03"
+  },
+  {
+   "shift_id": "PAEDS-E-1011-2",
+   "employee_id": "PAEDS04"
+  },
+  {
+   "shift_id": "PAEDS-N-1011-1",
+   "employee_id": "PAEDS05"
+  },
+  {
+   "shift_id": "OT-D-1011-1",
+   "employee_id": "OT01"
+  },
+  {
+   "shift_id": "OT-D-1011-2",
+   "employee_id": "OT02"
+  },
+  {
+   "shift_id": "OT-D-1011-3",
+   "employee_id": "OT03"
+  },
+  {
+   "shift_id": "OT-E-1011-1",
+   "employee_id": "OT04"
+  },
+  {
+   "shift_id": "OT-E-1011-2",
+   "employee_id": "OT05"
+  },
+  {
+   "shift_id": "SURGE-1010-1",
+   "employee_id": "ER10"
+  },
+  {
+   "shift_id": "SURGE-1010-2",
+   "employee_id": "ER11"
+  },
+  {
+   "shift_id": "SURGE-1010-3",
+   "employee_id": "ER12"
+  }
+ ],
+ "availability": [
+  {
+   "employee_id": "ICU06",
+   "date": "2026-10-09",
+   "kind": "leave",
+   "reason": "approved leave"
+  }
+ ],
+ "disruptions": [
+  {
+   "id": "FLAG-ICU",
+   "employee_id": "ICU01",
+   "date": "2026-10-09",
+   "start": "07:00",
+   "end": "15:00",
+   "reason": "sick",
+   "severity": "critical",
+   "label": "ICU ventilator nurse calls in sick"
+  }
+ ],
+ "constraints": {
+  "min_rest_hours": 11,
+  "allow_overtime": true,
+  "max_overtime_hours_per_week": 12,
+  "fairness_window_days": 30
+ }
+}

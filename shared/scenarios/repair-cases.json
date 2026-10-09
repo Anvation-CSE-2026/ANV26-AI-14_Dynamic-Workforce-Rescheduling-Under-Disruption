@@ -1,0 +1,354 @@
+{
+  "organization": {
+    "id": "scenario-repair",
+    "name": "Scenario Plant: repair cases",
+    "domain": "manufacturing",
+    "location": "Test plant",
+    "timezone": "Asia/Kolkata",
+    "size": "1 line"
+  },
+  "reference_date": "2026-10-14",
+  "reference_time": "00:00",
+  "departments": [
+    {
+      "id": "L1",
+      "name": "Line 1"
+    },
+    {
+      "id": "L2",
+      "name": "Line 2"
+    }
+  ],
+  "skills": [
+    "CNC Operation",
+    "Assembly",
+    "Safety Level 2"
+  ],
+  "constraints": {
+    "min_rest_hours": 11,
+    "allow_overtime": true,
+    "max_overtime_hours_per_week": 12
+  },
+  "employees": [
+    {
+      "id": "E01",
+      "name": "Asha Rao",
+      "role": "CNC Operator",
+      "department": "L1",
+      "skills": [
+        "CNC Operation"
+      ],
+      "certifications": [
+        "Safety Level 2"
+      ],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      }
+    },
+    {
+      "id": "E02",
+      "name": "Bala Krishnan",
+      "role": "CNC Operator",
+      "department": "L1",
+      "skills": [
+        "CNC Operation",
+        "Assembly"
+      ],
+      "certifications": [
+        "Safety Level 2"
+      ],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      }
+    },
+    {
+      "id": "E03",
+      "name": "Chitra Nair",
+      "role": "CNC Operator",
+      "department": "L1",
+      "skills": [
+        "CNC Operation"
+      ],
+      "certifications": [
+        "Safety Level 2"
+      ],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      }
+    },
+    {
+      "id": "E04",
+      "name": "Dev Patel",
+      "role": "CNC Operator",
+      "department": "L1",
+      "skills": [
+        "CNC Operation"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      }
+    },
+    {
+      "id": "E05",
+      "name": "Esha Menon",
+      "role": "Assembler",
+      "department": "L2",
+      "skills": [
+        "Assembly"
+      ],
+      "certifications": [
+        "Safety Level 2"
+      ],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      }
+    },
+    {
+      "id": "E06",
+      "name": "Farid Khan",
+      "role": "CNC Operator",
+      "department": "L1",
+      "skills": [
+        "CNC Operation"
+      ],
+      "certifications": [
+        "Safety Level 2"
+      ],
+      "contracted_weekly_hours": 32,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      }
+    },
+    {
+      "id": "E07",
+      "name": "Gita Shah",
+      "role": "Assembler",
+      "department": "L2",
+      "skills": [
+        "Assembly"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      }
+    }
+  ],
+  "shifts": [
+    {
+      "id": "CNC-F-12",
+      "date": "2026-10-12",
+      "start": "06:00",
+      "end": "14:00",
+      "assignment": "Line 1 \u00b7 CNC (Farid)",
+      "department": "L1",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "normal"
+    },
+    {
+      "id": "CNC-F-13",
+      "date": "2026-10-13",
+      "start": "06:00",
+      "end": "14:00",
+      "assignment": "Line 1 \u00b7 CNC (Farid)",
+      "department": "L1",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "normal"
+    },
+    {
+      "id": "CNC-F-14",
+      "date": "2026-10-14",
+      "start": "06:00",
+      "end": "14:00",
+      "assignment": "Line 1 \u00b7 CNC (Farid)",
+      "department": "L1",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "normal"
+    },
+    {
+      "id": "CNC-F-15",
+      "date": "2026-10-15",
+      "start": "06:00",
+      "end": "14:00",
+      "assignment": "Line 1 \u00b7 CNC (Farid)",
+      "department": "L1",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "normal"
+    },
+    {
+      "id": "CNC-A-16",
+      "date": "2026-10-16",
+      "start": "06:00",
+      "end": "14:00",
+      "assignment": "Line 1 \u00b7 CNC Machining (Task A)",
+      "department": "L1",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "critical"
+    },
+    {
+      "id": "ASM-B-16",
+      "date": "2026-10-16",
+      "start": "08:00",
+      "end": "12:00",
+      "assignment": "Line 2 \u00b7 Assembly (Task B)",
+      "department": "L2",
+      "required_skills": [
+        "Assembly"
+      ],
+      "required_certifications": [],
+      "priority": "normal"
+    },
+    {
+      "id": "CNC-C-16",
+      "date": "2026-10-16",
+      "start": "06:00",
+      "end": "14:00",
+      "assignment": "Line 1 \u00b7 CNC Machining (Task C)",
+      "department": "L1",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "critical"
+    },
+    {
+      "id": "ASM-D-16",
+      "date": "2026-10-16",
+      "start": "14:00",
+      "end": "22:00",
+      "assignment": "Line 2 \u00b7 Assembly (evening)",
+      "department": "L2",
+      "required_skills": [
+        "Assembly"
+      ],
+      "required_certifications": [],
+      "priority": "normal"
+    },
+    {
+      "id": "CNC-E-17",
+      "date": "2026-10-17",
+      "start": "06:00",
+      "end": "14:00",
+      "assignment": "Line 1 \u00b7 CNC Machining",
+      "department": "L1",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "high"
+    }
+  ],
+  "existing_schedule": [
+    {
+      "shift_id": "CNC-F-12",
+      "employee_id": "E06"
+    },
+    {
+      "shift_id": "CNC-F-13",
+      "employee_id": "E06"
+    },
+    {
+      "shift_id": "CNC-F-14",
+      "employee_id": "E06"
+    },
+    {
+      "shift_id": "CNC-F-15",
+      "employee_id": "E06"
+    },
+    {
+      "shift_id": "CNC-A-16",
+      "employee_id": "E01"
+    },
+    {
+      "shift_id": "ASM-B-16",
+      "employee_id": "E02"
+    },
+    {
+      "shift_id": "CNC-C-16",
+      "employee_id": "E02"
+    },
+    {
+      "shift_id": "ASM-D-16",
+      "employee_id": "E07"
+    },
+    {
+      "shift_id": "CNC-E-17",
+      "employee_id": "E03"
+    }
+  ],
+  "disruptions": [
+    {
+      "id": "E01-out",
+      "employee_id": "E01",
+      "date": "2026-10-16",
+      "start": "06:00",
+      "end": "14:00",
+      "reason": "sick",
+      "severity": "critical",
+      "label": "E01 unavailable 06:00\u201314:00"
+    }
+  ]
+}

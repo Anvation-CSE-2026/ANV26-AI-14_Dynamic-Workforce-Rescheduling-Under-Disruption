@@ -1,0 +1,7 @@
+# Optional extras. The start scripts try them and carry on without them if they fail to install.
+ortools>=9.10                # OR-Tools CP-SAT solver (otherwise: built-in exact search, fine for demo-sized teams)
+anthropic>=0.40              # Claude for AI parsing/explanations when ANTHROPIC_API_KEY is set (otherwise rule-based)
+# Postgres / Supabase (only when DATABASE_URL points at Postgres):
+#   sqlalchemy>=2.0  psycopg[binary]>=3.1
+# Google sign-in (only when GOOGLE_CLIENT_ID is set):
+#   google-auth>=2.30

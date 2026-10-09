@@ -1,0 +1,193 @@
+{
+  "candidates": [
+    {
+      "candidate_id": "A",
+      "label": "Option A",
+      "strategy": "minimize_changes",
+      "status": "OPTIMAL",
+      "metrics": {
+        "assignments_changed": 1,
+        "employees_affected": 1,
+        "shift_changes": 0,
+        "overtime_hours": 0.0,
+        "hard_constraint_violations": 0,
+        "unfilled_requirements": 0,
+        "preference_violations": 0,
+        "impact_score": 14.0,
+        "impact_level": null,
+        "fairness_score": 86.0
+      },
+      "changes": [
+        {
+          "employee_id": "EMP001",
+          "employee_name": "Rahul Sharma",
+          "change_type": "unassigned",
+          "date": "2026-10-09",
+          "from_assignment": "SUPPORT_L2",
+          "to_assignment": null,
+          "from_shift": "09:00-17:00",
+          "to_shift": null
+        },
+        {
+          "employee_id": "EMP003",
+          "employee_name": "Arjun Mehta",
+          "change_type": "reassigned",
+          "date": "2026-10-09",
+          "from_assignment": "KANNADA_DESK",
+          "to_assignment": "SUPPORT_L2",
+          "from_shift": "13:00-21:00",
+          "to_shift": "09:00-17:00"
+        }
+      ],
+      "policy_violations": 0,
+      "policy_warnings": []
+    },
+    {
+      "candidate_id": "B",
+      "label": "Option B",
+      "strategy": "fairness",
+      "status": "FEASIBLE",
+      "metrics": {
+        "assignments_changed": 2,
+        "employees_affected": 2,
+        "shift_changes": 0,
+        "overtime_hours": 0.0,
+        "hard_constraint_violations": 0,
+        "unfilled_requirements": 0,
+        "preference_violations": 0,
+        "impact_score": 22.0,
+        "impact_level": null,
+        "fairness_score": 92.0
+      },
+      "changes": [
+        {
+          "employee_id": "EMP001",
+          "employee_name": "Rahul Sharma",
+          "change_type": "unassigned",
+          "date": "2026-10-09",
+          "from_assignment": "SUPPORT_L2",
+          "to_assignment": null,
+          "from_shift": "09:00-17:00",
+          "to_shift": null
+        },
+        {
+          "employee_id": "EMP003",
+          "employee_name": "Arjun Mehta",
+          "change_type": "reassigned",
+          "date": "2026-10-09",
+          "from_assignment": "KANNADA_DESK",
+          "to_assignment": "SUPPORT_L2",
+          "from_shift": "13:00-21:00",
+          "to_shift": "09:00-17:00"
+        },
+        {
+          "employee_id": "EMP006",
+          "employee_name": "Meera Iyer",
+          "change_type": "shift_moved",
+          "date": "2026-10-09",
+          "from_assignment": "SUPPORT_L2",
+          "to_assignment": "KANNADA_DESK",
+          "from_shift": "07:00-15:00",
+          "to_shift": "13:00-21:00"
+        }
+      ],
+      "policy_violations": 0,
+      "policy_warnings": []
+    },
+    {
+      "candidate_id": "C",
+      "label": "Option C",
+      "strategy": "minimize_overtime",
+      "status": "FEASIBLE",
+      "metrics": {
+        "assignments_changed": 2,
+        "employees_affected": 2,
+        "shift_changes": 0,
+        "overtime_hours": 2.0,
+        "hard_constraint_violations": 0,
+        "unfilled_requirements": 0,
+        "preference_violations": 0,
+        "impact_score": 31.0,
+        "impact_level": null,
+        "fairness_score": 84.0
+      },
+      "changes": [],
+      "policy_violations": 0,
+      "policy_warnings": []
+    }
+  ],
+  "compliant": [
+    "A",
+    "B",
+    "C"
+  ],
+  "non_compliant": {},
+  "best_by": {
+    "assignments_changed": [
+      "A"
+    ],
+    "employees_affected": [
+      "A"
+    ],
+    "overtime_hours": [
+      "A",
+      "B"
+    ],
+    "impact_score": [
+      "A"
+    ],
+    "fairness_score": [
+      "B"
+    ],
+    "preference_violations": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  "dominated": {
+    "C": "A"
+  },
+  "tradeoffs": [
+    {
+      "candidate_id": "B",
+      "versus": "A",
+      "better": {
+        "fairness_score": 6.0
+      },
+      "worse": {
+        "assignments_changed": 1.0,
+        "employees_affected": 1.0,
+        "impact_score": 8.0
+      },
+      "text": "Option B vs Option A: better on fairness score 92 vs 86; worse on assignment changes 2 vs 1, employees affected 2 vs 1, impact score 22 vs 14."
+    }
+  ],
+  "recommended_id": "A",
+  "recommendation_reason": "best on employees affected, your stated priority",
+  "headline": "Option A is suggested (best on employees affected, your stated priority): 1 assignment change, 0h overtime.",
+  "points": [
+    {
+      "text": "Option B vs Option A: better on fairness score 92 vs 86; worse on assignment changes 2 vs 1, employees affected 2 vs 1, impact score 22 vs 14.",
+      "fact_refs": [
+        "tradeoffs.0"
+      ]
+    },
+    {
+      "text": "Option C is no better than Option A on any measure.",
+      "fact_refs": [
+        "dominated.C"
+      ]
+    }
+  ],
+  "source": "template",
+  "grounding_warnings": [
+    "candidate_comparison: offline demo: deterministic text used"
+  ],
+  "meta": {
+    "prompt": "",
+    "provider": "",
+    "model": "",
+    "trace_id": ""
+  }
+}

@@ -1,0 +1,1155 @@
+{
+  "organization": {
+    "id": "vega",
+    "name": "Vega Precision Components",
+    "domain": "manufacturing",
+    "location": "Peenya, Bengaluru",
+    "timezone": "Asia/Kolkata",
+    "size": "3 lines"
+  },
+  "reference_date": "2026-10-08",
+  "reference_time": "23:00",
+  "departments": [
+    {
+      "id": "L1",
+      "name": "Line 1 \u00b7 CNC",
+      "kind": "line"
+    },
+    {
+      "id": "L2",
+      "name": "Line 2 \u00b7 Assembly",
+      "kind": "line"
+    },
+    {
+      "id": "L3",
+      "name": "Line 3 \u00b7 Packaging",
+      "kind": "line"
+    },
+    {
+      "id": "QC",
+      "name": "Quality Control",
+      "kind": "line"
+    },
+    {
+      "id": "MAINT",
+      "name": "Maintenance",
+      "kind": "line"
+    }
+  ],
+  "skills": [
+    "CNC Operation",
+    "Assembly",
+    "Packaging",
+    "Forklift",
+    "Quality Inspection",
+    "Maintenance",
+    "Safety Level 2"
+  ],
+  "employees": [
+    {
+      "id": "M01",
+      "name": "Ravi Kumar",
+      "role": "CNC Operator",
+      "department": "L1",
+      "skills": [
+        "CNC Operation"
+      ],
+      "certifications": [
+        "Safety Level 2"
+      ],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "email": "ravi@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 1,
+        "schedule_changes_30d": 1,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "M02",
+      "name": "Suresh Pillai",
+      "role": "CNC Operator",
+      "department": "L1",
+      "skills": [
+        "CNC Operation"
+      ],
+      "certifications": [
+        "Safety Level 2"
+      ],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "email": "suresh@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 1,
+        "overtime_hours_30d": 6
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "M03",
+      "name": "Anil Deshmukh",
+      "role": "Senior Operator",
+      "department": "L2",
+      "skills": [
+        "CNC Operation",
+        "Assembly"
+      ],
+      "certifications": [
+        "Safety Level 2"
+      ],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "email": "anil@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "M04",
+      "name": "Kiran Bhat",
+      "role": "CNC Operator",
+      "department": "L1",
+      "skills": [
+        "CNC Operation"
+      ],
+      "certifications": [
+        "Safety Level 2"
+      ],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "email": "kiran@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "M05",
+      "name": "Deepa Menon",
+      "role": "Assembly Technician",
+      "department": "L2",
+      "skills": [
+        "Assembly"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "email": "deepa@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "M06",
+      "name": "Farhan Ali",
+      "role": "Assembly Technician",
+      "department": "L2",
+      "skills": [
+        "Assembly"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "email": "farhan@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 2,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "M07",
+      "name": "Lakshmi Nair",
+      "role": "Packaging Operator",
+      "department": "L3",
+      "skills": [
+        "Packaging",
+        "Forklift"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "email": "lakshmi@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "M08",
+      "name": "Joseph D'Souza",
+      "role": "Quality Inspector",
+      "department": "QC",
+      "skills": [
+        "Quality Inspection"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "email": "joseph@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "M09",
+      "name": "Pooja Shetty",
+      "role": "CNC Trainee",
+      "department": "L1",
+      "skills": [
+        "CNC Operation"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "email": "pooja@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "M10",
+      "name": "Vinod Rao",
+      "role": "Assembly Technician",
+      "department": "L2",
+      "skills": [
+        "Assembly"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "email": "vinod@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "M11",
+      "name": "Sunita Verma",
+      "role": "Packaging Operator",
+      "department": "L3",
+      "skills": [
+        "Packaging"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "email": "sunita@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "M12",
+      "name": "Mohan Das",
+      "role": "CNC Operator",
+      "department": "L1",
+      "skills": [
+        "CNC Operation"
+      ],
+      "certifications": [
+        "Safety Level 2"
+      ],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "email": "mohan@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 3,
+        "schedule_changes_30d": 5,
+        "overtime_hours_30d": 12
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "M13",
+      "name": "Rekha Iyer",
+      "role": "Quality Inspector",
+      "department": "QC",
+      "skills": [
+        "Quality Inspection",
+        "Assembly"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "email": "rekha@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "M14",
+      "name": "Ajay Singh",
+      "role": "Maintenance Tech",
+      "department": "MAINT",
+      "skills": [
+        "Maintenance",
+        "CNC Operation"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "email": "ajay@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "M15",
+      "name": "Harish Gowda",
+      "role": "CNC Operator",
+      "department": "L1",
+      "skills": [
+        "CNC Operation"
+      ],
+      "certifications": [
+        "Safety Level 2"
+      ],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 10,
+      "email": "harish@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    }
+  ],
+  "shifts": [
+    {
+      "id": "CNC-A-1007-1",
+      "date": "2026-10-07",
+      "assignment": "Line 1 \u00b7 CNC Machining (Shift A)",
+      "department": "L1",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "machine": "HAAS VF-4"
+      }
+    },
+    {
+      "id": "CNC-A-1007-2",
+      "date": "2026-10-07",
+      "assignment": "Line 1 \u00b7 CNC Machining (Shift A)",
+      "department": "L1",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "machine": "HAAS VF-4"
+      }
+    },
+    {
+      "id": "CNC-B-1007-1",
+      "date": "2026-10-07",
+      "assignment": "Line 1 \u00b7 CNC Machining (Shift B)",
+      "department": "L1",
+      "start": "14:00",
+      "end": "22:00",
+      "shift_type": "Shift B",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "machine": "HAAS VF-4"
+      }
+    },
+    {
+      "id": "CNC-C-1007-1",
+      "date": "2026-10-07",
+      "assignment": "Line 1 \u00b7 CNC Machining (Shift C)",
+      "department": "L1",
+      "start": "22:00",
+      "end": "06:00",
+      "shift_type": "Shift C",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "high",
+      "attributes": {
+        "machine": "HAAS VF-4"
+      }
+    },
+    {
+      "id": "ASM-A-1007-1",
+      "date": "2026-10-07",
+      "assignment": "Line 2 \u00b7 Assembly (Shift A)",
+      "department": "L2",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "Assembly"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "ASM-A-1007-2",
+      "date": "2026-10-07",
+      "assignment": "Line 2 \u00b7 Assembly (Shift A)",
+      "department": "L2",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "Assembly"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "ASM-B-1007-1",
+      "date": "2026-10-07",
+      "assignment": "Line 2 \u00b7 Assembly (Shift B)",
+      "department": "L2",
+      "start": "14:00",
+      "end": "22:00",
+      "shift_type": "Shift B",
+      "required_skills": [
+        "Assembly"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "PKG-A-1007-1",
+      "date": "2026-10-07",
+      "assignment": "Line 3 \u00b7 Packaging (Shift A)",
+      "department": "L3",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "Packaging",
+        "Forklift"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "QC-A-1007-1",
+      "date": "2026-10-07",
+      "assignment": "Quality Control (Shift A)",
+      "department": "QC",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "Quality Inspection"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "CNC-A-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Line 1 \u00b7 CNC Machining (Shift A)",
+      "department": "L1",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "machine": "HAAS VF-4"
+      }
+    },
+    {
+      "id": "CNC-A-1008-2",
+      "date": "2026-10-08",
+      "assignment": "Line 1 \u00b7 CNC Machining (Shift A)",
+      "department": "L1",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "machine": "HAAS VF-4"
+      }
+    },
+    {
+      "id": "CNC-B-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Line 1 \u00b7 CNC Machining (Shift B)",
+      "department": "L1",
+      "start": "14:00",
+      "end": "22:00",
+      "shift_type": "Shift B",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "machine": "HAAS VF-4"
+      }
+    },
+    {
+      "id": "CNC-C-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Line 1 \u00b7 CNC Machining (Shift C)",
+      "department": "L1",
+      "start": "22:00",
+      "end": "06:00",
+      "shift_type": "Shift C",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "high",
+      "attributes": {
+        "machine": "HAAS VF-4"
+      }
+    },
+    {
+      "id": "ASM-A-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Line 2 \u00b7 Assembly (Shift A)",
+      "department": "L2",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "Assembly"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "ASM-A-1008-2",
+      "date": "2026-10-08",
+      "assignment": "Line 2 \u00b7 Assembly (Shift A)",
+      "department": "L2",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "Assembly"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "ASM-B-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Line 2 \u00b7 Assembly (Shift B)",
+      "department": "L2",
+      "start": "14:00",
+      "end": "22:00",
+      "shift_type": "Shift B",
+      "required_skills": [
+        "Assembly"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "PKG-A-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Line 3 \u00b7 Packaging (Shift A)",
+      "department": "L3",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "Packaging",
+        "Forklift"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "QC-A-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Quality Control (Shift A)",
+      "department": "QC",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "Quality Inspection"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "CNC-A-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Line 1 \u00b7 CNC Machining (Shift A)",
+      "department": "L1",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "machine": "HAAS VF-4"
+      }
+    },
+    {
+      "id": "CNC-A-1009-2",
+      "date": "2026-10-09",
+      "assignment": "Line 1 \u00b7 CNC Machining (Shift A)",
+      "department": "L1",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "machine": "HAAS VF-4"
+      }
+    },
+    {
+      "id": "CNC-B-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Line 1 \u00b7 CNC Machining (Shift B)",
+      "department": "L1",
+      "start": "14:00",
+      "end": "22:00",
+      "shift_type": "Shift B",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "machine": "HAAS VF-4"
+      }
+    },
+    {
+      "id": "CNC-C-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Line 1 \u00b7 CNC Machining (Shift C)",
+      "department": "L1",
+      "start": "22:00",
+      "end": "06:00",
+      "shift_type": "Shift C",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "high",
+      "attributes": {
+        "machine": "HAAS VF-4"
+      }
+    },
+    {
+      "id": "ASM-A-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Line 2 \u00b7 Assembly (Shift A)",
+      "department": "L2",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "Assembly"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "ASM-A-1009-2",
+      "date": "2026-10-09",
+      "assignment": "Line 2 \u00b7 Assembly (Shift A)",
+      "department": "L2",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "Assembly"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "ASM-B-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Line 2 \u00b7 Assembly (Shift B)",
+      "department": "L2",
+      "start": "14:00",
+      "end": "22:00",
+      "shift_type": "Shift B",
+      "required_skills": [
+        "Assembly"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "PKG-A-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Line 3 \u00b7 Packaging (Shift A)",
+      "department": "L3",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "Packaging",
+        "Forklift"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "QC-A-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Quality Control (Shift A)",
+      "department": "QC",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "Quality Inspection"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "CNC-A-1010-1",
+      "date": "2026-10-10",
+      "assignment": "Line 1 \u00b7 CNC Machining (Shift A)",
+      "department": "L1",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "machine": "HAAS VF-4"
+      }
+    },
+    {
+      "id": "CNC-A-1010-2",
+      "date": "2026-10-10",
+      "assignment": "Line 1 \u00b7 CNC Machining (Shift A)",
+      "department": "L1",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "machine": "HAAS VF-4"
+      }
+    },
+    {
+      "id": "ASM-A-1010-1",
+      "date": "2026-10-10",
+      "assignment": "Line 2 \u00b7 Assembly (Shift A)",
+      "department": "L2",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "Assembly"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "ASM-A-1010-2",
+      "date": "2026-10-10",
+      "assignment": "Line 2 \u00b7 Assembly (Shift A)",
+      "department": "L2",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "Assembly"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "PKG-A-1010-1",
+      "date": "2026-10-10",
+      "assignment": "Line 3 \u00b7 Packaging (Shift A)",
+      "department": "L3",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "Packaging",
+        "Forklift"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "QC-A-1010-1",
+      "date": "2026-10-10",
+      "assignment": "Quality Control (Shift A)",
+      "department": "QC",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "Quality Inspection"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {}
+    },
+    {
+      "id": "CNC-A-1005-1",
+      "date": "2026-10-05",
+      "assignment": "Line 1 \u00b7 CNC Machining (Shift A)",
+      "department": "L1",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "machine": "HAAS VF-4"
+      }
+    },
+    {
+      "id": "CNC-A-1006-1",
+      "date": "2026-10-06",
+      "assignment": "Line 1 \u00b7 CNC Machining (Shift A)",
+      "department": "L1",
+      "start": "06:00",
+      "end": "14:00",
+      "shift_type": "Shift A",
+      "required_skills": [
+        "CNC Operation"
+      ],
+      "required_certifications": [
+        "Safety Level 2"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "machine": "HAAS VF-4"
+      }
+    }
+  ],
+  "existing_schedule": [
+    {
+      "shift_id": "CNC-A-1007-1",
+      "employee_id": "M04"
+    },
+    {
+      "shift_id": "CNC-A-1007-2",
+      "employee_id": "M01"
+    },
+    {
+      "shift_id": "CNC-B-1007-1",
+      "employee_id": "M12"
+    },
+    {
+      "shift_id": "CNC-C-1007-1",
+      "employee_id": "M02"
+    },
+    {
+      "shift_id": "ASM-A-1007-1",
+      "employee_id": "M05"
+    },
+    {
+      "shift_id": "ASM-A-1007-2",
+      "employee_id": "M06"
+    },
+    {
+      "shift_id": "ASM-B-1007-1",
+      "employee_id": "M10"
+    },
+    {
+      "shift_id": "PKG-A-1007-1",
+      "employee_id": "M07"
+    },
+    {
+      "shift_id": "QC-A-1007-1",
+      "employee_id": "M08"
+    },
+    {
+      "shift_id": "CNC-A-1008-1",
+      "employee_id": "M04"
+    },
+    {
+      "shift_id": "CNC-A-1008-2",
+      "employee_id": "M01"
+    },
+    {
+      "shift_id": "CNC-B-1008-1",
+      "employee_id": "M12"
+    },
+    {
+      "shift_id": "CNC-C-1008-1",
+      "employee_id": "M02"
+    },
+    {
+      "shift_id": "ASM-A-1008-1",
+      "employee_id": "M03"
+    },
+    {
+      "shift_id": "ASM-A-1008-2",
+      "employee_id": "M06"
+    },
+    {
+      "shift_id": "ASM-B-1008-1",
+      "employee_id": "M10"
+    },
+    {
+      "shift_id": "PKG-A-1008-1",
+      "employee_id": "M07"
+    },
+    {
+      "shift_id": "QC-A-1008-1",
+      "employee_id": "M13"
+    },
+    {
+      "shift_id": "CNC-A-1009-1",
+      "employee_id": "M01"
+    },
+    {
+      "shift_id": "CNC-A-1009-2",
+      "employee_id": "M15"
+    },
+    {
+      "shift_id": "CNC-B-1009-1",
+      "employee_id": "M12"
+    },
+    {
+      "shift_id": "CNC-C-1009-1",
+      "employee_id": "M02"
+    },
+    {
+      "shift_id": "ASM-A-1009-1",
+      "employee_id": "M03"
+    },
+    {
+      "shift_id": "ASM-A-1009-2",
+      "employee_id": "M06"
+    },
+    {
+      "shift_id": "ASM-B-1009-1",
+      "employee_id": "M10"
+    },
+    {
+      "shift_id": "PKG-A-1009-1",
+      "employee_id": "M07"
+    },
+    {
+      "shift_id": "QC-A-1009-1",
+      "employee_id": "M08"
+    },
+    {
+      "shift_id": "CNC-A-1010-1",
+      "employee_id": "M15"
+    },
+    {
+      "shift_id": "CNC-A-1010-2",
+      "employee_id": "M01"
+    },
+    {
+      "shift_id": "ASM-A-1010-1",
+      "employee_id": "M05"
+    },
+    {
+      "shift_id": "ASM-A-1010-2",
+      "employee_id": "M03"
+    },
+    {
+      "shift_id": "PKG-A-1010-1",
+      "employee_id": "M07"
+    },
+    {
+      "shift_id": "QC-A-1010-1",
+      "employee_id": "M13"
+    },
+    {
+      "shift_id": "CNC-A-1005-1",
+      "employee_id": "M04"
+    },
+    {
+      "shift_id": "CNC-A-1006-1",
+      "employee_id": "M04"
+    }
+  ],
+  "availability": [],
+  "disruptions": [
+    {
+      "id": "DEMO-CNC",
+      "employee_id": "M01",
+      "date": "2026-10-09",
+      "start": "06:00",
+      "end": "14:00",
+      "reason": "sick",
+      "severity": "critical",
+      "label": "CNC operator unavailable"
+    },
+    {
+      "id": "DEMO-ASM",
+      "employee_id": "M06",
+      "date": "2026-10-09",
+      "start": "06:00",
+      "end": "14:00",
+      "reason": "personal",
+      "severity": "high",
+      "label": "Assembly technician unavailable"
+    }
+  ],
+  "constraints": {
+    "min_rest_hours": 11,
+    "allow_overtime": true,
+    "max_overtime_hours_per_week": 8,
+    "extra": {
+      "min_operators_per_line": 1
+    }
+  },
+  "optimization": {
+    "minimum_change": true,
+    "fairness": true,
+    "skill_coverage": true,
+    "overtime_penalty": true
+  }
+}

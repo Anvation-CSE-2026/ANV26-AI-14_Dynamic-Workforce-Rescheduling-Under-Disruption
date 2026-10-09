@@ -1,0 +1,206 @@
+{
+  "$defs": {
+    "ChangeFact": {
+      "additionalProperties": false,
+      "properties": {
+        "employee_id": {
+          "title": "Employee Id",
+          "type": "string"
+        },
+        "employee_name": {
+          "title": "Employee Name",
+          "type": "string"
+        },
+        "change_type": {
+          "enum": [
+            "unassigned",
+            "reassigned",
+            "shift_moved",
+            "added"
+          ],
+          "title": "Change Type",
+          "type": "string"
+        },
+        "date": {
+          "title": "Date",
+          "type": "string"
+        },
+        "from_assignment": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "From Assignment"
+        },
+        "to_assignment": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "To Assignment"
+        },
+        "from_shift": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "e.g. '09:00-17:00'",
+          "title": "From Shift"
+        },
+        "to_shift": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "To Shift"
+        }
+      },
+      "required": [
+        "employee_id",
+        "employee_name",
+        "change_type",
+        "date"
+      ],
+      "title": "ChangeFact",
+      "type": "object"
+    },
+    "PolicyCitation": {
+      "additionalProperties": false,
+      "description": "A policy constraint the optimizer enforced, with its source (from rag.PolicyBundle).",
+      "properties": {
+        "policy_id": {
+          "title": "Policy Id",
+          "type": "string"
+        },
+        "document": {
+          "title": "Document",
+          "type": "string"
+        },
+        "section": {
+          "title": "Section",
+          "type": "string"
+        },
+        "constraint_type": {
+          "title": "Constraint Type",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "Value"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        },
+        "satisfied": {
+          "default": true,
+          "title": "Satisfied",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "policy_id",
+        "document",
+        "section",
+        "constraint_type",
+        "value"
+      ],
+      "title": "PolicyCitation",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "employee_id": {
+      "title": "Employee Id",
+      "type": "string"
+    },
+    "title": {
+      "title": "Title",
+      "type": "string"
+    },
+    "body": {
+      "title": "Body",
+      "type": "string"
+    },
+    "changes": {
+      "items": {
+        "$ref": "#/$defs/ChangeFact"
+      },
+      "title": "Changes",
+      "type": "array"
+    },
+    "policies": {
+      "items": {
+        "$ref": "#/$defs/PolicyCitation"
+      },
+      "title": "Policies",
+      "type": "array"
+    },
+    "requires_acknowledgement": {
+      "default": true,
+      "title": "Requires Acknowledgement",
+      "type": "boolean"
+    },
+    "schedule_version": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Schedule Version"
+    }
+  },
+  "required": [
+    "employee_id",
+    "title",
+    "body",
+    "changes"
+  ],
+  "title": "EmployeeNotice",
+  "type": "object"
+}

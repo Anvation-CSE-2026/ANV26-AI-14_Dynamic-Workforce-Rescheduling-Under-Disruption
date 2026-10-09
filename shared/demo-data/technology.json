@@ -1,0 +1,922 @@
+{
+  "organization": {
+    "id": "nimbus",
+    "name": "Nimbus Pay",
+    "domain": "technology",
+    "location": "Bengaluru",
+    "timezone": "Asia/Kolkata",
+    "size": "120 engineers"
+  },
+  "reference_date": "2026-10-08",
+  "reference_time": "18:00",
+  "departments": [
+    {
+      "id": "PAY",
+      "name": "Payments",
+      "kind": "team"
+    },
+    {
+      "id": "SEARCH",
+      "name": "Search",
+      "kind": "team"
+    },
+    {
+      "id": "WEB",
+      "name": "Web",
+      "kind": "team"
+    },
+    {
+      "id": "PLAT",
+      "name": "Platform & SRE",
+      "kind": "team"
+    },
+    {
+      "id": "DATA",
+      "name": "Data",
+      "kind": "team"
+    }
+  ],
+  "skills": [
+    "Python",
+    "Go",
+    "Payments Domain",
+    "PostgreSQL",
+    "Elasticsearch",
+    "React",
+    "TypeScript",
+    "Kubernetes",
+    "AWS",
+    "Spark",
+    "Test Automation",
+    "On-call Certified"
+  ],
+  "employees": [
+    {
+      "id": "E01",
+      "name": "Rohit Verma",
+      "role": "Senior Backend Engineer",
+      "department": "PAY",
+      "skills": [
+        "Python",
+        "Payments Domain",
+        "PostgreSQL"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "rohit@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 1,
+        "overtime_hours_30d": 2
+      },
+      "preferences": {},
+      "attributes": {
+        "programming_languages": [
+          "Python",
+          "Go"
+        ]
+      }
+    },
+    {
+      "id": "E02",
+      "name": "Sara Thomas",
+      "role": "Backend Engineer",
+      "department": "PAY",
+      "skills": [
+        "Python",
+        "Payments Domain",
+        "Go"
+      ],
+      "certifications": [
+        "On-call Certified"
+      ],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "sara@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 1,
+        "schedule_changes_30d": 1,
+        "overtime_hours_30d": 6
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "E03",
+      "name": "Vikram Shah",
+      "role": "Backend Engineer",
+      "department": "SEARCH",
+      "skills": [
+        "Python",
+        "Payments Domain",
+        "Elasticsearch"
+      ],
+      "certifications": [
+        "On-call Certified"
+      ],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "vikram@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "E04",
+      "name": "Ananya Gupta",
+      "role": "Backend Engineer",
+      "department": "SEARCH",
+      "skills": [
+        "Python",
+        "Elasticsearch"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "ananya@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "E05",
+      "name": "Kunal Mehra",
+      "role": "Staff Engineer",
+      "department": "PAY",
+      "skills": [
+        "Python",
+        "Payments Domain",
+        "Go",
+        "PostgreSQL"
+      ],
+      "certifications": [
+        "On-call Certified"
+      ],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "kunal@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "E06",
+      "name": "Divya Saxena",
+      "role": "Frontend Engineer",
+      "department": "WEB",
+      "skills": [
+        "React",
+        "TypeScript"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "divya@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "E07",
+      "name": "Arjun Pillai",
+      "role": "SRE",
+      "department": "PLAT",
+      "skills": [
+        "Kubernetes",
+        "AWS",
+        "Python"
+      ],
+      "certifications": [
+        "On-call Certified"
+      ],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "arjun@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "E08",
+      "name": "Neha Kapoor",
+      "role": "Backend Engineer",
+      "department": "PAY",
+      "skills": [
+        "Python",
+        "Payments Domain"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "neha@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 4,
+        "schedule_changes_30d": 5,
+        "overtime_hours_30d": 14
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "E09",
+      "name": "Imran Qureshi",
+      "role": "SRE",
+      "department": "PLAT",
+      "skills": [
+        "Kubernetes",
+        "AWS",
+        "Go",
+        "Python"
+      ],
+      "certifications": [
+        "On-call Certified"
+      ],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "imran@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "E10",
+      "name": "Priyanka Das",
+      "role": "QA Engineer",
+      "department": "PAY",
+      "skills": [
+        "Test Automation",
+        "Python"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "priyanka@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "E11",
+      "name": "Tom Fernandes",
+      "role": "Frontend Engineer",
+      "department": "WEB",
+      "skills": [
+        "React",
+        "TypeScript",
+        "Node.js"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "tom@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    },
+    {
+      "id": "E12",
+      "name": "Meghna Rao",
+      "role": "Data Engineer",
+      "department": "DATA",
+      "skills": [
+        "Python",
+        "Spark",
+        "PostgreSQL"
+      ],
+      "certifications": [],
+      "contracted_weekly_hours": 40,
+      "max_weekly_hours": 48,
+      "max_daily_hours": 12,
+      "email": "meghna@demo.resqwork.app",
+      "history": {
+        "disruptions_absorbed_30d": 0,
+        "schedule_changes_30d": 0,
+        "overtime_hours_30d": 0
+      },
+      "preferences": {},
+      "attributes": {}
+    }
+  ],
+  "shifts": [
+    {
+      "id": "PAY-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Payments API \u00b7 Release 4.2 build",
+      "department": "PAY",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "Python",
+        "Payments Domain"
+      ],
+      "required_certifications": [],
+      "priority": "critical",
+      "attributes": {
+        "project": "Payments API",
+        "deadline": "2026-10-10"
+      }
+    },
+    {
+      "id": "PAY-1008-2",
+      "date": "2026-10-08",
+      "assignment": "Payments API \u00b7 Release 4.2 build",
+      "department": "PAY",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "Python",
+        "Payments Domain"
+      ],
+      "required_certifications": [],
+      "priority": "critical",
+      "attributes": {
+        "project": "Payments API",
+        "deadline": "2026-10-10"
+      }
+    },
+    {
+      "id": "SRCH-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Search Service \u00b7 Indexing sprint",
+      "department": "SEARCH",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "Python",
+        "Elasticsearch"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "project": "Search Service"
+      }
+    },
+    {
+      "id": "SRCH-1008-2",
+      "date": "2026-10-08",
+      "assignment": "Search Service \u00b7 Indexing sprint",
+      "department": "SEARCH",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "Python",
+        "Elasticsearch"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "project": "Search Service"
+      }
+    },
+    {
+      "id": "WEB-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Checkout UI \u00b7 Sprint 18",
+      "department": "WEB",
+      "start": "10:00",
+      "end": "18:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "React",
+        "TypeScript"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "project": "Checkout UI"
+      }
+    },
+    {
+      "id": "WEB-1008-2",
+      "date": "2026-10-08",
+      "assignment": "Checkout UI \u00b7 Sprint 18",
+      "department": "WEB",
+      "start": "10:00",
+      "end": "18:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "React",
+        "TypeScript"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "project": "Checkout UI"
+      }
+    },
+    {
+      "id": "OC1-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Primary on-call (evening)",
+      "department": "PLAT",
+      "start": "17:00",
+      "end": "01:00",
+      "shift_type": "On-call",
+      "required_skills": [
+        "Python"
+      ],
+      "required_certifications": [
+        "On-call Certified"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "on_call": true
+      }
+    },
+    {
+      "id": "PLAT-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Platform \u00b7 Kubernetes upgrade",
+      "department": "PLAT",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "Kubernetes"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "project": "K8s 1.31"
+      }
+    },
+    {
+      "id": "DATA-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Data \u00b7 Settlement pipeline",
+      "department": "DATA",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "Python",
+        "Spark"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "project": "Settlements"
+      }
+    },
+    {
+      "id": "QA-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Payments API \u00b7 Regression testing",
+      "department": "PAY",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "Test Automation"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "project": "Payments API"
+      }
+    },
+    {
+      "id": "PAY-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Payments API \u00b7 Release 4.2 build",
+      "department": "PAY",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "Python",
+        "Payments Domain"
+      ],
+      "required_certifications": [],
+      "priority": "critical",
+      "attributes": {
+        "project": "Payments API",
+        "deadline": "2026-10-10"
+      }
+    },
+    {
+      "id": "PAY-1009-2",
+      "date": "2026-10-09",
+      "assignment": "Payments API \u00b7 Release 4.2 build",
+      "department": "PAY",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "Python",
+        "Payments Domain"
+      ],
+      "required_certifications": [],
+      "priority": "critical",
+      "attributes": {
+        "project": "Payments API",
+        "deadline": "2026-10-10"
+      }
+    },
+    {
+      "id": "SRCH-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Search Service \u00b7 Indexing sprint",
+      "department": "SEARCH",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "Python",
+        "Elasticsearch"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "project": "Search Service"
+      }
+    },
+    {
+      "id": "SRCH-1009-2",
+      "date": "2026-10-09",
+      "assignment": "Search Service \u00b7 Indexing sprint",
+      "department": "SEARCH",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "Python",
+        "Elasticsearch"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "project": "Search Service"
+      }
+    },
+    {
+      "id": "WEB-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Checkout UI \u00b7 Sprint 18",
+      "department": "WEB",
+      "start": "10:00",
+      "end": "18:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "React",
+        "TypeScript"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "project": "Checkout UI"
+      }
+    },
+    {
+      "id": "WEB-1009-2",
+      "date": "2026-10-09",
+      "assignment": "Checkout UI \u00b7 Sprint 18",
+      "department": "WEB",
+      "start": "10:00",
+      "end": "18:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "React",
+        "TypeScript"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "project": "Checkout UI"
+      }
+    },
+    {
+      "id": "OC1-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Primary on-call (evening)",
+      "department": "PLAT",
+      "start": "17:00",
+      "end": "01:00",
+      "shift_type": "On-call",
+      "required_skills": [
+        "Python"
+      ],
+      "required_certifications": [
+        "On-call Certified"
+      ],
+      "priority": "critical",
+      "attributes": {
+        "on_call": true
+      }
+    },
+    {
+      "id": "PLAT-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Platform \u00b7 Kubernetes upgrade",
+      "department": "PLAT",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "Kubernetes"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "project": "K8s 1.31"
+      }
+    },
+    {
+      "id": "DATA-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Data \u00b7 Settlement pipeline",
+      "department": "DATA",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "Python",
+        "Spark"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {
+        "project": "Settlements"
+      }
+    },
+    {
+      "id": "QA-1009-1",
+      "date": "2026-10-09",
+      "assignment": "Payments API \u00b7 Regression testing",
+      "department": "PAY",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "Test Automation"
+      ],
+      "required_certifications": [],
+      "priority": "high",
+      "attributes": {
+        "project": "Payments API"
+      }
+    },
+    {
+      "id": "ARCH-1005-1",
+      "date": "2026-10-05",
+      "assignment": "Architecture review board",
+      "department": "PAY",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "Payments Domain"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "ARCH-1006-1",
+      "date": "2026-10-06",
+      "assignment": "Architecture review board",
+      "department": "PAY",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "Payments Domain"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "ARCH-1007-1",
+      "date": "2026-10-07",
+      "assignment": "Architecture review board",
+      "department": "PAY",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "Payments Domain"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "ARCH-1008-1",
+      "date": "2026-10-08",
+      "assignment": "Architecture review board",
+      "department": "PAY",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "Payments Domain"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    },
+    {
+      "id": "ARCH-1010-1",
+      "date": "2026-10-10",
+      "assignment": "Architecture review board",
+      "department": "PAY",
+      "start": "09:00",
+      "end": "17:00",
+      "shift_type": "Day",
+      "required_skills": [
+        "Payments Domain"
+      ],
+      "required_certifications": [],
+      "priority": "normal",
+      "attributes": {}
+    }
+  ],
+  "existing_schedule": [
+    {
+      "shift_id": "PAY-1008-1",
+      "employee_id": "E01"
+    },
+    {
+      "shift_id": "PAY-1008-2",
+      "employee_id": "E08"
+    },
+    {
+      "shift_id": "SRCH-1008-1",
+      "employee_id": "E03"
+    },
+    {
+      "shift_id": "SRCH-1008-2",
+      "employee_id": "E04"
+    },
+    {
+      "shift_id": "WEB-1008-1",
+      "employee_id": "E06"
+    },
+    {
+      "shift_id": "WEB-1008-2",
+      "employee_id": "E11"
+    },
+    {
+      "shift_id": "OC1-1008-1",
+      "employee_id": "E02"
+    },
+    {
+      "shift_id": "PLAT-1008-1",
+      "employee_id": "E07"
+    },
+    {
+      "shift_id": "DATA-1008-1",
+      "employee_id": "E12"
+    },
+    {
+      "shift_id": "QA-1008-1",
+      "employee_id": "E10"
+    },
+    {
+      "shift_id": "PAY-1009-1",
+      "employee_id": "E01"
+    },
+    {
+      "shift_id": "PAY-1009-2",
+      "employee_id": "E08"
+    },
+    {
+      "shift_id": "SRCH-1009-1",
+      "employee_id": "E03"
+    },
+    {
+      "shift_id": "SRCH-1009-2",
+      "employee_id": "E04"
+    },
+    {
+      "shift_id": "WEB-1009-1",
+      "employee_id": "E06"
+    },
+    {
+      "shift_id": "WEB-1009-2",
+      "employee_id": "E11"
+    },
+    {
+      "shift_id": "OC1-1009-1",
+      "employee_id": "E09"
+    },
+    {
+      "shift_id": "PLAT-1009-1",
+      "employee_id": "E07"
+    },
+    {
+      "shift_id": "DATA-1009-1",
+      "employee_id": "E12"
+    },
+    {
+      "shift_id": "QA-1009-1",
+      "employee_id": "E10"
+    },
+    {
+      "shift_id": "ARCH-1005-1",
+      "employee_id": "E05"
+    },
+    {
+      "shift_id": "ARCH-1006-1",
+      "employee_id": "E05"
+    },
+    {
+      "shift_id": "ARCH-1007-1",
+      "employee_id": "E05"
+    },
+    {
+      "shift_id": "ARCH-1008-1",
+      "employee_id": "E05"
+    },
+    {
+      "shift_id": "ARCH-1010-1",
+      "employee_id": "E05"
+    }
+  ],
+  "availability": [],
+  "disruptions": [
+    {
+      "id": "DEMO-BACKEND",
+      "employee_id": "E01",
+      "date": "2026-10-09",
+      "start": "09:00",
+      "end": "17:00",
+      "reason": "sick",
+      "severity": "critical",
+      "label": "Backend engineer unavailable"
+    },
+    {
+      "id": "DEMO-ONCALL",
+      "employee_id": "E09",
+      "date": "2026-10-09",
+      "start": "17:00",
+      "end": "01:00",
+      "reason": "personal",
+      "severity": "critical",
+      "label": "On-call engineer unavailable"
+    }
+  ],
+  "constraints": {
+    "min_rest_hours": 10,
+    "allow_overtime": true,
+    "max_overtime_hours_per_week": 8,
+    "extra": {
+      "on_call_rotation": "weekly"
+    }
+  },
+  "optimization": {
+    "minimum_change": true,
+    "fairness": true,
+    "skill_coverage": true,
+    "overtime_penalty": true
+  }
+}

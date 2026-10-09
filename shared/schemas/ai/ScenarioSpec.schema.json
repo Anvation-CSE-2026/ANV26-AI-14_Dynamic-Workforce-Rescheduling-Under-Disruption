@@ -1,0 +1,515 @@
+{
+  "$defs": {
+    "AddUnavailability": {
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "add_unavailability",
+          "default": "add_unavailability",
+          "title": "Op",
+          "type": "string"
+        },
+        "disruption": {
+          "$ref": "#/$defs/Disruption"
+        },
+        "employee_name": {
+          "title": "Employee Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "disruption",
+        "employee_name"
+      ],
+      "title": "AddUnavailability",
+      "type": "object"
+    },
+    "Candidate": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "Candidate",
+      "type": "object"
+    },
+    "Confidence": {
+      "additionalProperties": false,
+      "description": "Deterministic confidence: starts at 1.0, reduced by each disclosed factor.\n\nNot model self-assessment. Blocking issues force ``level='none'``.",
+      "properties": {
+        "score": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Score",
+          "type": "number"
+        },
+        "level": {
+          "enum": [
+            "high",
+            "medium",
+            "low",
+            "none"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "factors": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Factors",
+          "type": "array"
+        }
+      },
+      "required": [
+        "score",
+        "level"
+      ],
+      "title": "Confidence",
+      "type": "object"
+    },
+    "Disruption": {
+      "additionalProperties": false,
+      "description": "Canonical disruption passed to the optimizer. Matches the master contract.",
+      "properties": {
+        "type": {
+          "const": "employee_unavailability",
+          "title": "Type",
+          "type": "string"
+        },
+        "employee_id": {
+          "minLength": 1,
+          "title": "Employee Id",
+          "type": "string"
+        },
+        "date": {
+          "description": "ISO date YYYY-MM-DD",
+          "title": "Date",
+          "type": "string"
+        },
+        "start_time": {
+          "description": "HH:MM, 24h",
+          "title": "Start Time",
+          "type": "string"
+        },
+        "end_time": {
+          "description": "HH:MM, 24h",
+          "title": "End Time",
+          "type": "string"
+        },
+        "reason": {
+          "default": "unspecified",
+          "enum": [
+            "sick",
+            "emergency",
+            "leave",
+            "personal",
+            "other",
+            "unspecified"
+          ],
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "employee_id",
+        "date",
+        "start_time",
+        "end_time"
+      ],
+      "title": "Disruption",
+      "type": "object"
+    },
+    "ExcludeEmployee": {
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "exclude_employee",
+          "default": "exclude_employee",
+          "title": "Op",
+          "type": "string"
+        },
+        "employee_id": {
+          "title": "Employee Id",
+          "type": "string"
+        },
+        "employee_name": {
+          "title": "Employee Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "employee_id",
+        "employee_name"
+      ],
+      "title": "ExcludeEmployee",
+      "type": "object"
+    },
+    "IncludeEmployee": {
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "include_employee",
+          "default": "include_employee",
+          "title": "Op",
+          "type": "string"
+        },
+        "employee_id": {
+          "title": "Employee Id",
+          "type": "string"
+        },
+        "employee_name": {
+          "title": "Employee Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "employee_id",
+        "employee_name"
+      ],
+      "title": "IncludeEmployee",
+      "type": "object"
+    },
+    "Issue": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "enum": [
+            "UNKNOWN_EMPLOYEE",
+            "AMBIGUOUS_EMPLOYEE",
+            "MISSING_EMPLOYEE",
+            "UNKNOWN_ASSIGNMENT",
+            "AMBIGUOUS_ASSIGNMENT",
+            "MISSING_DATE",
+            "INVALID_DATE",
+            "DATE_IN_PAST",
+            "DATE_OUT_OF_HORIZON",
+            "MISSING_TIME",
+            "INVALID_TIME",
+            "UNSUPPORTED_DISRUPTION",
+            "UNSUPPORTED_CONSTRAINT",
+            "UNSUPPORTED_CHANGE",
+            "NOT_A_DISRUPTION",
+            "NOT_A_WHAT_IF",
+            "NOT_FEEDBACK",
+            "LOCKED_EMPLOYEE_CONFLICT",
+            "CONTRADICTORY_CHANGES",
+            "NEEDS_NAMES",
+            "INVALID_VALUE",
+            "LLM_ERROR"
+          ],
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "field": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Field"
+        },
+        "blocking": {
+          "default": true,
+          "title": "Blocking",
+          "type": "boolean"
+        },
+        "candidates": {
+          "items": {
+            "$ref": "#/$defs/Candidate"
+          },
+          "title": "Candidates",
+          "type": "array"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "title": "Issue",
+      "type": "object"
+    },
+    "LockEmployee": {
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "lock_employee",
+          "default": "lock_employee",
+          "title": "Op",
+          "type": "string"
+        },
+        "employee_id": {
+          "title": "Employee Id",
+          "type": "string"
+        },
+        "employee_name": {
+          "title": "Employee Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "employee_id",
+        "employee_name"
+      ],
+      "title": "LockEmployee",
+      "type": "object"
+    },
+    "Meta": {
+      "additionalProperties": false,
+      "description": "Audit metadata attached to every AI result.",
+      "properties": {
+        "prompt": {
+          "default": "",
+          "title": "Prompt",
+          "type": "string"
+        },
+        "provider": {
+          "default": "",
+          "title": "Provider",
+          "type": "string"
+        },
+        "model": {
+          "default": "",
+          "title": "Model",
+          "type": "string"
+        },
+        "trace_id": {
+          "default": "",
+          "title": "Trace Id",
+          "type": "string"
+        }
+      },
+      "title": "Meta",
+      "type": "object"
+    },
+    "OverridePolicy": {
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "override_policy",
+          "default": "override_policy",
+          "title": "Op",
+          "type": "string"
+        },
+        "constraint_type": {
+          "title": "Constraint Type",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "integer"
+            }
+          ],
+          "title": "Value"
+        }
+      },
+      "required": [
+        "constraint_type",
+        "value"
+      ],
+      "title": "OverridePolicy",
+      "type": "object"
+    },
+    "Priority": {
+      "enum": [
+        "minimize_changes",
+        "minimize_affected_employees",
+        "minimize_overtime",
+        "fairness",
+        "employee_preferences"
+      ],
+      "title": "Priority",
+      "type": "string"
+    },
+    "RemoveUnavailability": {
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "remove_unavailability",
+          "default": "remove_unavailability",
+          "title": "Op",
+          "type": "string"
+        },
+        "employee_id": {
+          "title": "Employee Id",
+          "type": "string"
+        },
+        "employee_name": {
+          "title": "Employee Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "employee_id",
+        "employee_name"
+      ],
+      "title": "RemoveUnavailability",
+      "type": "object"
+    },
+    "SetOvertime": {
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "set_overtime",
+          "default": "set_overtime",
+          "title": "Op",
+          "type": "string"
+        },
+        "allow": {
+          "title": "Allow",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "allow"
+      ],
+      "title": "SetOvertime",
+      "type": "object"
+    },
+    "SetPriority": {
+      "additionalProperties": false,
+      "properties": {
+        "op": {
+          "const": "set_priority",
+          "default": "set_priority",
+          "title": "Op",
+          "type": "string"
+        },
+        "priority": {
+          "$ref": "#/$defs/Priority"
+        }
+      },
+      "required": [
+        "priority"
+      ],
+      "title": "SetPriority",
+      "type": "object"
+    }
+  },
+  "description": "Changes to apply on top of the current scenario before re-optimizing.",
+  "properties": {
+    "status": {
+      "enum": [
+        "READY",
+        "NEEDS_CLARIFICATION",
+        "UNSUPPORTED",
+        "ERROR"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "changes": {
+      "items": {
+        "discriminator": {
+          "mapping": {
+            "add_unavailability": "#/$defs/AddUnavailability",
+            "exclude_employee": "#/$defs/ExcludeEmployee",
+            "include_employee": "#/$defs/IncludeEmployee",
+            "lock_employee": "#/$defs/LockEmployee",
+            "override_policy": "#/$defs/OverridePolicy",
+            "remove_unavailability": "#/$defs/RemoveUnavailability",
+            "set_overtime": "#/$defs/SetOvertime",
+            "set_priority": "#/$defs/SetPriority"
+          },
+          "propertyName": "op"
+        },
+        "oneOf": [
+          {
+            "$ref": "#/$defs/SetOvertime"
+          },
+          {
+            "$ref": "#/$defs/SetPriority"
+          },
+          {
+            "$ref": "#/$defs/AddUnavailability"
+          },
+          {
+            "$ref": "#/$defs/RemoveUnavailability"
+          },
+          {
+            "$ref": "#/$defs/LockEmployee"
+          },
+          {
+            "$ref": "#/$defs/ExcludeEmployee"
+          },
+          {
+            "$ref": "#/$defs/IncludeEmployee"
+          },
+          {
+            "$ref": "#/$defs/OverridePolicy"
+          }
+        ]
+      },
+      "title": "Changes",
+      "type": "array"
+    },
+    "unsupported": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Unsupported",
+      "type": "array"
+    },
+    "issues": {
+      "items": {
+        "$ref": "#/$defs/Issue"
+      },
+      "title": "Issues",
+      "type": "array"
+    },
+    "assumptions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Assumptions",
+      "type": "array"
+    },
+    "summary": {
+      "default": "",
+      "title": "Summary",
+      "type": "string"
+    },
+    "confidence": {
+      "$ref": "#/$defs/Confidence"
+    },
+    "raw_request": {
+      "default": "",
+      "title": "Raw Request",
+      "type": "string"
+    },
+    "meta": {
+      "$ref": "#/$defs/Meta"
+    }
+  },
+  "required": [
+    "status"
+  ],
+  "title": "ScenarioSpec",
+  "type": "object"
+}

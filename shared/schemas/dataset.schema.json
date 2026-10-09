@@ -1,0 +1,868 @@
+{
+  "$defs": {
+    "Assignment": {
+      "additionalProperties": false,
+      "properties": {
+        "shift_id": {
+          "minLength": 1,
+          "title": "Shift Id",
+          "type": "string"
+        },
+        "employee_id": {
+          "minLength": 1,
+          "title": "Employee Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "shift_id",
+        "employee_id"
+      ],
+      "title": "Assignment",
+      "type": "object"
+    },
+    "Availability": {
+      "additionalProperties": false,
+      "properties": {
+        "employee_id": {
+          "minLength": 1,
+          "title": "Employee Id",
+          "type": "string"
+        },
+        "date": {
+          "title": "Date",
+          "type": "string"
+        },
+        "start": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Start"
+        },
+        "end": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "End"
+        },
+        "kind": {
+          "default": "unavailable",
+          "enum": [
+            "unavailable",
+            "leave",
+            "preferred_off"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reason"
+        }
+      },
+      "required": [
+        "employee_id",
+        "date"
+      ],
+      "title": "Availability",
+      "type": "object"
+    },
+    "Contribution": {
+      "additionalProperties": false,
+      "description": "One piece of extra work someone took on: the fairness engine's raw data (never reward points).",
+      "properties": {
+        "date": {
+          "title": "Date",
+          "type": "string"
+        },
+        "kind": {
+          "default": "additional",
+          "enum": [
+            "additional",
+            "volunteer",
+            "emergency",
+            "reschedule",
+            "overtime"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "hours": {
+          "default": 0,
+          "maximum": 48,
+          "minimum": 0,
+          "title": "Hours",
+          "type": "number"
+        },
+        "completed": {
+          "default": true,
+          "title": "Completed",
+          "type": "boolean"
+        },
+        "ref": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Ref"
+        }
+      },
+      "required": [
+        "date"
+      ],
+      "title": "Contribution",
+      "type": "object"
+    },
+    "Department": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "kind": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "unit, line, grade, team, depot \u2026",
+          "title": "Kind"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "Department",
+      "type": "object"
+    },
+    "Disruption": {
+      "additionalProperties": false,
+      "description": "Something that breaks the existing schedule. Round 2 repairs employee unavailability.",
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "type": {
+          "const": "employee_unavailability",
+          "default": "employee_unavailability",
+          "title": "Type",
+          "type": "string"
+        },
+        "employee_id": {
+          "minLength": 1,
+          "title": "Employee Id",
+          "type": "string"
+        },
+        "date": {
+          "title": "Date",
+          "type": "string"
+        },
+        "start": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Start"
+        },
+        "end": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "End"
+        },
+        "reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Reason"
+        },
+        "severity": {
+          "default": "high",
+          "enum": [
+            "critical",
+            "high",
+            "medium",
+            "low"
+          ],
+          "title": "Severity",
+          "type": "string"
+        },
+        "label": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Demo button text, e.g. 'ICU nurse unavailable'",
+          "title": "Label"
+        }
+      },
+      "required": [
+        "id",
+        "employee_id",
+        "date"
+      ],
+      "title": "Disruption",
+      "type": "object"
+    },
+    "Employee": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "role": {
+          "minLength": 1,
+          "title": "Role",
+          "type": "string"
+        },
+        "department": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Department"
+        },
+        "location": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Location"
+        },
+        "email": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Email"
+        },
+        "phone": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Phone"
+        },
+        "status": {
+          "default": "active",
+          "enum": [
+            "active",
+            "inactive"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "skills": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Skills",
+          "type": "array"
+        },
+        "certifications": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Certifications",
+          "type": "array"
+        },
+        "max_daily_hours": {
+          "default": 12,
+          "exclusiveMinimum": 0,
+          "maximum": 24,
+          "title": "Max Daily Hours",
+          "type": "number"
+        },
+        "contracted_weekly_hours": {
+          "default": 40,
+          "description": "Hours above this are overtime",
+          "exclusiveMinimum": 0,
+          "maximum": 168,
+          "title": "Contracted Weekly Hours",
+          "type": "number"
+        },
+        "max_weekly_hours": {
+          "default": 48,
+          "description": "Hard cap including overtime",
+          "exclusiveMinimum": 0,
+          "maximum": 168,
+          "title": "Max Weekly Hours",
+          "type": "number"
+        },
+        "preferences": {
+          "$ref": "#/$defs/Preferences"
+        },
+        "history": {
+          "$ref": "#/$defs/History"
+        },
+        "attributes": {
+          "additionalProperties": true,
+          "description": "Domain-specific fields",
+          "title": "Attributes",
+          "type": "object"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "role"
+      ],
+      "title": "Employee",
+      "type": "object"
+    },
+    "History": {
+      "additionalProperties": false,
+      "description": "Recent history used for historical fairness.\n\nThe ``*_30d`` counters are the imported baseline; ``contributions`` is the dated ledger ResQWork keeps\nfrom then on (and that imports may provide). The fairness engine reads both, with time decay.",
+      "properties": {
+        "disruptions_absorbed_30d": {
+          "default": 0,
+          "title": "Disruptions Absorbed 30D",
+          "type": "integer"
+        },
+        "overtime_hours_30d": {
+          "default": 0,
+          "title": "Overtime Hours 30D",
+          "type": "number"
+        },
+        "schedule_changes_30d": {
+          "default": 0,
+          "title": "Schedule Changes 30D",
+          "type": "integer"
+        },
+        "contributions": {
+          "items": {
+            "$ref": "#/$defs/Contribution"
+          },
+          "title": "Contributions",
+          "type": "array"
+        }
+      },
+      "title": "History",
+      "type": "object"
+    },
+    "OptimizationSettings": {
+      "additionalProperties": false,
+      "properties": {
+        "minimum_change": {
+          "default": true,
+          "title": "Minimum Change",
+          "type": "boolean"
+        },
+        "fairness": {
+          "default": true,
+          "title": "Fairness",
+          "type": "boolean"
+        },
+        "skill_coverage": {
+          "default": true,
+          "title": "Skill Coverage",
+          "type": "boolean"
+        },
+        "overtime_penalty": {
+          "default": true,
+          "title": "Overtime Penalty",
+          "type": "boolean"
+        },
+        "weights": {
+          "$ref": "#/$defs/Weights"
+        }
+      },
+      "title": "OptimizationSettings",
+      "type": "object"
+    },
+    "OrgConstraints": {
+      "additionalProperties": false,
+      "description": "Organization-wide hard limits. Policy RAG can tighten these per run.",
+      "properties": {
+        "min_rest_hours": {
+          "default": 11,
+          "maximum": 48,
+          "minimum": 0,
+          "title": "Min Rest Hours",
+          "type": "number"
+        },
+        "max_daily_hours": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "maximum": 24,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Daily Hours"
+        },
+        "max_weekly_hours": {
+          "anyOf": [
+            {
+              "exclusiveMinimum": 0,
+              "maximum": 168,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Weekly Hours"
+        },
+        "allow_overtime": {
+          "default": true,
+          "title": "Allow Overtime",
+          "type": "boolean"
+        },
+        "max_overtime_hours_per_week": {
+          "default": 12,
+          "maximum": 80,
+          "minimum": 0,
+          "title": "Max Overtime Hours Per Week",
+          "type": "number"
+        },
+        "fairness_window_days": {
+          "default": 30,
+          "description": "Rolling fairness window",
+          "maximum": 365,
+          "minimum": 1,
+          "title": "Fairness Window Days",
+          "type": "integer"
+        },
+        "extra": {
+          "additionalProperties": true,
+          "description": "Domain-specific constraint settings",
+          "title": "Extra",
+          "type": "object"
+        }
+      },
+      "title": "OrgConstraints",
+      "type": "object"
+    },
+    "Organization": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "default": "org-demo",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "domain": {
+          "enum": [
+            "healthcare",
+            "manufacturing",
+            "education",
+            "technology",
+            "logistics"
+          ],
+          "title": "Domain",
+          "type": "string"
+        },
+        "location": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Location"
+        },
+        "timezone": {
+          "default": "Asia/Kolkata",
+          "title": "Timezone",
+          "type": "string"
+        },
+        "size": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Size"
+        }
+      },
+      "required": [
+        "name",
+        "domain"
+      ],
+      "title": "Organization",
+      "type": "object"
+    },
+    "Preferences": {
+      "additionalProperties": false,
+      "properties": {
+        "avoid_weekends": {
+          "default": false,
+          "title": "Avoid Weekends",
+          "type": "boolean"
+        },
+        "preferred_shift_types": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Preferred Shift Types",
+          "type": "array"
+        },
+        "avoid_shift_types": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Avoid Shift Types",
+          "type": "array"
+        }
+      },
+      "title": "Preferences",
+      "type": "object"
+    },
+    "Shift": {
+      "additionalProperties": false,
+      "description": "A unit of demand: one person, one time window, one place.",
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "date": {
+          "title": "Date",
+          "type": "string"
+        },
+        "start": {
+          "title": "Start",
+          "type": "string"
+        },
+        "end": {
+          "title": "End",
+          "type": "string"
+        },
+        "assignment": {
+          "description": "What is being covered: 'ICU Day', 'Line 2', 'Class 8B Maths'",
+          "minLength": 1,
+          "title": "Assignment",
+          "type": "string"
+        },
+        "department": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Department"
+        },
+        "shift_type": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Day, Night, Morning, Period 2, On-call \u2026",
+          "title": "Shift Type"
+        },
+        "required_skills": {
+          "description": "ALL are required",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required Skills",
+          "type": "array"
+        },
+        "required_certifications": {
+          "description": "ALL are required",
+          "items": {
+            "type": "string"
+          },
+          "title": "Required Certifications",
+          "type": "array"
+        },
+        "priority": {
+          "default": "normal",
+          "enum": [
+            "critical",
+            "high",
+            "normal"
+          ],
+          "title": "Priority",
+          "type": "string"
+        },
+        "location": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Location"
+        },
+        "attributes": {
+          "additionalProperties": true,
+          "title": "Attributes",
+          "type": "object"
+        }
+      },
+      "required": [
+        "id",
+        "date",
+        "start",
+        "end",
+        "assignment"
+      ],
+      "title": "Shift",
+      "type": "object"
+    },
+    "Weights": {
+      "additionalProperties": false,
+      "properties": {
+        "unfilled": {
+          "default": 100000,
+          "title": "Unfilled",
+          "type": "integer"
+        },
+        "assignment_change": {
+          "default": 1000,
+          "title": "Assignment Change",
+          "type": "integer"
+        },
+        "employee_affected": {
+          "default": 400,
+          "title": "Employee Affected",
+          "type": "integer"
+        },
+        "overtime_hour": {
+          "default": 150,
+          "title": "Overtime Hour",
+          "type": "integer"
+        },
+        "fairness": {
+          "default": 60,
+          "title": "Fairness",
+          "type": "integer"
+        },
+        "preference": {
+          "default": 40,
+          "title": "Preference",
+          "type": "integer"
+        },
+        "location": {
+          "default": 30,
+          "title": "Location",
+          "type": "integer"
+        },
+        "continuity": {
+          "default": 20,
+          "title": "Continuity",
+          "type": "integer"
+        }
+      },
+      "title": "Weights",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "One organization's employees, shifts and existing schedule. Upload as JSON, or as CSV (converted to this shape server-side).",
+  "properties": {
+    "organization": {
+      "$ref": "#/$defs/Organization"
+    },
+    "reference_date": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "'Today'; shifts that started before 'now' are frozen",
+      "title": "Reference Date"
+    },
+    "reference_time": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "'Now' (HH:MM) on reference_date; default 00:00",
+      "title": "Reference Time"
+    },
+    "departments": {
+      "items": {
+        "$ref": "#/$defs/Department"
+      },
+      "title": "Departments",
+      "type": "array"
+    },
+    "skills": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Skills",
+      "type": "array"
+    },
+    "employees": {
+      "items": {
+        "$ref": "#/$defs/Employee"
+      },
+      "title": "Employees",
+      "type": "array"
+    },
+    "shifts": {
+      "items": {
+        "$ref": "#/$defs/Shift"
+      },
+      "title": "Shifts",
+      "type": "array"
+    },
+    "existing_schedule": {
+      "items": {
+        "$ref": "#/$defs/Assignment"
+      },
+      "title": "Existing Schedule",
+      "type": "array"
+    },
+    "availability": {
+      "items": {
+        "$ref": "#/$defs/Availability"
+      },
+      "title": "Availability",
+      "type": "array"
+    },
+    "disruptions": {
+      "items": {
+        "$ref": "#/$defs/Disruption"
+      },
+      "title": "Disruptions",
+      "type": "array"
+    },
+    "constraints": {
+      "$ref": "#/$defs/OrgConstraints"
+    },
+    "optimization": {
+      "$ref": "#/$defs/OptimizationSettings"
+    }
+  },
+  "required": [
+    "organization",
+    "employees",
+    "shifts",
+    "existing_schedule"
+  ],
+  "title": "ResQWork dataset",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

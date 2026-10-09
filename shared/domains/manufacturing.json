@@ -1,0 +1,245 @@
+{
+  "id": "manufacturing",
+  "label": "Manufacturing",
+  "tagline": "Plants, lines & shifts",
+  "icon": "Factory",
+  "accent": "#b45309",
+  "identity": "operations",
+  "dashboardName": "Plant Operations Command Center",
+  "terminology": {
+    "employee": "Operator",
+    "employees": "Operators",
+    "shift": "Shift",
+    "assignment": "Line station",
+    "department": "Line",
+    "departments": "Lines",
+    "skill": "Machine skill",
+    "skills": "Machine skills",
+    "manager": "Shift supervisor",
+    "disruption": "Line staffing disruption",
+    "organization": "Plant"
+  },
+  "kpis": [
+    {
+      "id": "production_coverage",
+      "label": "Production Coverage",
+      "metric": "coverage_pct",
+      "format": "percent",
+      "good": "high",
+      "hint": "Line stations staffed"
+    },
+    {
+      "id": "at_risk_lines",
+      "label": "At-Risk Lines",
+      "metric": "at_risk_departments",
+      "format": "count",
+      "good": "low",
+      "hint": "Lines with an open disruption"
+    },
+    {
+      "id": "skill_gaps",
+      "label": "Skill Gaps",
+      "metric": "skill_gap_count",
+      "format": "count",
+      "good": "low",
+      "hint": "Stations whose skill only 1 person has"
+    },
+    {
+      "id": "overtime",
+      "label": "Overtime",
+      "metric": "overtime_hours",
+      "format": "hours",
+      "good": "low",
+      "hint": "Hours above contracted this week"
+    },
+    {
+      "id": "availability",
+      "label": "Operator Availability",
+      "metric": "available_staff",
+      "format": "ratio",
+      "good": "high",
+      "hint": "Available operators"
+    }
+  ],
+  "subDashboards": [
+    {
+      "id": "supervisor",
+      "name": "Shift Supervisor Dashboard",
+      "audience": "Shift supervisors",
+      "widgets": [
+        "department_coverage",
+        "roster",
+        "qualification_matrix",
+        "fatigue_risk"
+      ]
+    },
+    {
+      "id": "hr",
+      "name": "Workforce / HR Dashboard",
+      "audience": "Plant HR",
+      "widgets": [
+        "overtime_by_person",
+        "fairness_distribution",
+        "disruption_history",
+        "compliance"
+      ]
+    }
+  ],
+  "constraintLabels": {
+    "required_skills": "Machine & safety certification",
+    "min_rest_hours": "Rest between shifts",
+    "max_daily_hours": "Maximum shift length",
+    "max_weekly_hours": "Weekly hours limit",
+    "overtime": "Overtime cap",
+    "priority": "Line criticality"
+  },
+  "riskIndicators": [
+    {
+      "id": "single_point",
+      "label": "Single-skill stations",
+      "metric": "skill_gap_count"
+    },
+    {
+      "id": "fatigue",
+      "label": "Rotation fatigue",
+      "metric": "fatigue_risk_count"
+    }
+  ],
+  "recommendedActions": [
+    "Brief the replacement on the machine setup",
+    "Cross-train a second CNC operator",
+    "Check maintenance windows before reassigning"
+  ],
+  "recognition": {
+    "categories": [
+      {
+        "id": "emergency_support",
+        "label": "Emergency Support",
+        "description": "Covered a colleague's shift at short notice",
+        "signals": [
+          "disruption_cover"
+        ],
+        "points": 20,
+        "managerAwardable": true
+      },
+      {
+        "id": "production_reliability",
+        "label": "Production Reliability",
+        "description": "Kept a critical line running",
+        "signals": [
+          "critical_cover"
+        ],
+        "points": 10,
+        "managerAwardable": true
+      },
+      {
+        "id": "reliability",
+        "label": "Reliability",
+        "description": "Acknowledged changes promptly and gave early notice of absences",
+        "signals": [
+          "prompt_acknowledgement",
+          "advance_notice"
+        ],
+        "points": 5,
+        "managerAwardable": true
+      },
+      {
+        "id": "safety_champion",
+        "label": "Safety Champion",
+        "description": "Spotted or prevented a safety hazard",
+        "signals": [],
+        "points": 15,
+        "managerAwardable": true
+      },
+      {
+        "id": "quality_excellence",
+        "label": "Quality Excellence",
+        "description": "Zero-defect run or quality improvement",
+        "signals": [],
+        "points": 15,
+        "managerAwardable": true
+      },
+      {
+        "id": "skill_development",
+        "label": "Skill Development",
+        "description": "Certified on a new machine or process",
+        "signals": [],
+        "points": 15,
+        "managerAwardable": true
+      }
+    ],
+    "tiers": [
+      {
+        "points": 40,
+        "label": "Recognized",
+        "benefit": "Shift-floor recognition board"
+      },
+      {
+        "points": 100,
+        "label": "Valued",
+        "benefit": "Priority for preferred shift pattern"
+      },
+      {
+        "points": 200,
+        "label": "Outstanding",
+        "benefit": "Spot award or paid training course"
+      }
+    ]
+  },
+  "charts": [
+    "department_coverage",
+    "overtime_trend",
+    "qualification_gaps"
+  ],
+  "commonKpis": [
+    {
+      "id": "workforce",
+      "label": "Workforce Status",
+      "metric": "available_staff",
+      "format": "ratio",
+      "good": "high",
+      "hint": "Available vs total people today and tomorrow"
+    },
+    {
+      "id": "coverage",
+      "label": "Schedule Coverage",
+      "metric": "coverage_pct",
+      "format": "percent",
+      "good": "high",
+      "hint": "Shifts with a qualified person assigned"
+    },
+    {
+      "id": "disruptions",
+      "label": "Active Disruptions",
+      "metric": "active_disruptions",
+      "format": "count",
+      "good": "low",
+      "hint": "Disruptions not yet repaired"
+    },
+    {
+      "id": "at_risk",
+      "label": "At-Risk Assignments",
+      "metric": "at_risk_assignments",
+      "format": "count",
+      "good": "low",
+      "hint": "Shifts affected by an open disruption"
+    },
+    {
+      "id": "overtime",
+      "label": "Overtime",
+      "metric": "overtime_hours",
+      "format": "hours",
+      "good": "low",
+      "hint": "Scheduled hours above contracted hours this week"
+    },
+    {
+      "id": "skills",
+      "label": "Skill Coverage",
+      "metric": "skill_coverage_pct",
+      "format": "percent",
+      "good": "high",
+      "hint": "Covered shifts staffed by fully qualified people"
+    }
+  ],
+  "demoDataset": "shared/demo-data/manufacturing.json"
+}

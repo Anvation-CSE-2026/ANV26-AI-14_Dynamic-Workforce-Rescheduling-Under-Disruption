@@ -1,0 +1,98 @@
+{
+  "$defs": {
+    "ExplanationPoint": {
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "fact_refs": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Fact Refs",
+          "type": "array"
+        }
+      },
+      "required": [
+        "text"
+      ],
+      "title": "ExplanationPoint",
+      "type": "object"
+    },
+    "Meta": {
+      "additionalProperties": false,
+      "description": "Audit metadata attached to every AI result.",
+      "properties": {
+        "prompt": {
+          "default": "",
+          "title": "Prompt",
+          "type": "string"
+        },
+        "provider": {
+          "default": "",
+          "title": "Provider",
+          "type": "string"
+        },
+        "model": {
+          "default": "",
+          "title": "Model",
+          "type": "string"
+        },
+        "trace_id": {
+          "default": "",
+          "title": "Trace Id",
+          "type": "string"
+        }
+      },
+      "title": "Meta",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "headline": {
+      "title": "Headline",
+      "type": "string"
+    },
+    "points": {
+      "items": {
+        "$ref": "#/$defs/ExplanationPoint"
+      },
+      "title": "Points",
+      "type": "array"
+    },
+    "why_not_others": {
+      "items": {
+        "$ref": "#/$defs/ExplanationPoint"
+      },
+      "title": "Why Not Others",
+      "type": "array"
+    },
+    "source": {
+      "default": "template",
+      "enum": [
+        "llm",
+        "template"
+      ],
+      "title": "Source",
+      "type": "string"
+    },
+    "grounding_warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Grounding Warnings",
+      "type": "array"
+    },
+    "meta": {
+      "$ref": "#/$defs/Meta"
+    }
+  },
+  "required": [
+    "headline"
+  ],
+  "title": "Explanation",
+  "type": "object"
+}

@@ -1,0 +1,5 @@
+# Everything needed to run ResQWork (website + API) on SQLite. Pure-Python wheels for Windows, macOS and Linux.
+fastapi>=0.115
+uvicorn>=0.30
+pydantic>=2.5
+python-multipart>=0.0.9      # CSV and policy file uploads

@@ -1,0 +1,536 @@
+{
+  "$defs": {
+    "ChangeFact": {
+      "additionalProperties": false,
+      "properties": {
+        "employee_id": {
+          "title": "Employee Id",
+          "type": "string"
+        },
+        "employee_name": {
+          "title": "Employee Name",
+          "type": "string"
+        },
+        "change_type": {
+          "enum": [
+            "unassigned",
+            "reassigned",
+            "shift_moved",
+            "added"
+          ],
+          "title": "Change Type",
+          "type": "string"
+        },
+        "date": {
+          "title": "Date",
+          "type": "string"
+        },
+        "from_assignment": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "From Assignment"
+        },
+        "to_assignment": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "To Assignment"
+        },
+        "from_shift": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "e.g. '09:00-17:00'",
+          "title": "From Shift"
+        },
+        "to_shift": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "To Shift"
+        }
+      },
+      "required": [
+        "employee_id",
+        "employee_name",
+        "change_type",
+        "date"
+      ],
+      "title": "ChangeFact",
+      "type": "object"
+    },
+    "Disruption": {
+      "additionalProperties": false,
+      "description": "Canonical disruption passed to the optimizer. Matches the master contract.",
+      "properties": {
+        "type": {
+          "const": "employee_unavailability",
+          "title": "Type",
+          "type": "string"
+        },
+        "employee_id": {
+          "minLength": 1,
+          "title": "Employee Id",
+          "type": "string"
+        },
+        "date": {
+          "description": "ISO date YYYY-MM-DD",
+          "title": "Date",
+          "type": "string"
+        },
+        "start_time": {
+          "description": "HH:MM, 24h",
+          "title": "Start Time",
+          "type": "string"
+        },
+        "end_time": {
+          "description": "HH:MM, 24h",
+          "title": "End Time",
+          "type": "string"
+        },
+        "reason": {
+          "default": "unspecified",
+          "enum": [
+            "sick",
+            "emergency",
+            "leave",
+            "personal",
+            "other",
+            "unspecified"
+          ],
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "employee_id",
+        "date",
+        "start_time",
+        "end_time"
+      ],
+      "title": "Disruption",
+      "type": "object"
+    },
+    "MetricsFact": {
+      "additionalProperties": false,
+      "properties": {
+        "assignments_changed": {
+          "title": "Assignments Changed",
+          "type": "integer"
+        },
+        "employees_affected": {
+          "title": "Employees Affected",
+          "type": "integer"
+        },
+        "shift_changes": {
+          "default": 0,
+          "title": "Shift Changes",
+          "type": "integer"
+        },
+        "overtime_hours": {
+          "default": 0,
+          "title": "Overtime Hours",
+          "type": "number"
+        },
+        "hard_constraint_violations": {
+          "default": 0,
+          "title": "Hard Constraint Violations",
+          "type": "integer"
+        },
+        "unfilled_requirements": {
+          "default": 0,
+          "title": "Unfilled Requirements",
+          "type": "integer"
+        },
+        "preference_violations": {
+          "default": 0,
+          "title": "Preference Violations",
+          "type": "integer"
+        },
+        "impact_score": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Impact Score"
+        },
+        "impact_level": {
+          "anyOf": [
+            {
+              "enum": [
+                "LOW",
+                "MEDIUM",
+                "HIGH"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Impact Level"
+        },
+        "fairness_score": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Fairness Score"
+        }
+      },
+      "required": [
+        "assignments_changed",
+        "employees_affected"
+      ],
+      "title": "MetricsFact",
+      "type": "object"
+    },
+    "PolicyCitation": {
+      "additionalProperties": false,
+      "description": "A policy constraint the optimizer enforced, with its source (from rag.PolicyBundle).",
+      "properties": {
+        "policy_id": {
+          "title": "Policy Id",
+          "type": "string"
+        },
+        "document": {
+          "title": "Document",
+          "type": "string"
+        },
+        "section": {
+          "title": "Section",
+          "type": "string"
+        },
+        "constraint_type": {
+          "title": "Constraint Type",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "string"
+            }
+          ],
+          "title": "Value"
+        },
+        "unit": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Unit"
+        },
+        "satisfied": {
+          "default": true,
+          "title": "Satisfied",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "policy_id",
+        "document",
+        "section",
+        "constraint_type",
+        "value"
+      ],
+      "title": "PolicyCitation",
+      "type": "object"
+    },
+    "RejectedFact": {
+      "additionalProperties": false,
+      "properties": {
+        "employee_id": {
+          "title": "Employee Id",
+          "type": "string"
+        },
+        "employee_name": {
+          "title": "Employee Name",
+          "type": "string"
+        },
+        "reason_code": {
+          "enum": [
+            "UNAVAILABLE",
+            "MISSING_SKILL",
+            "WOULD_EXCEED_MAX_HOURS",
+            "WOULD_CREATE_OVERTIME",
+            "REST_PERIOD_VIOLATION",
+            "SHIFT_OVERLAP",
+            "LOCKED_BY_MANAGER",
+            "EXCLUDED_BY_MANAGER",
+            "MANAGER_FEEDBACK",
+            "HIGHER_IMPACT",
+            "MISSING_CERTIFICATION",
+            "WOULD_UNCOVER_SHIFT",
+            "SCHEDULE_CONFLICT"
+          ],
+          "title": "Reason Code",
+          "type": "string"
+        },
+        "detail": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Short factual detail, e.g. 'impact 22 vs 14'",
+          "title": "Detail"
+        },
+        "policy_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "Policy behind the rejection, if any",
+          "title": "Policy Id"
+        }
+      },
+      "required": [
+        "employee_id",
+        "employee_name",
+        "reason_code"
+      ],
+      "title": "RejectedFact",
+      "type": "object"
+    },
+    "SelectedFact": {
+      "additionalProperties": false,
+      "properties": {
+        "employee_id": {
+          "title": "Employee Id",
+          "type": "string"
+        },
+        "employee_name": {
+          "title": "Employee Name",
+          "type": "string"
+        },
+        "covers_assignment": {
+          "title": "Covers Assignment",
+          "type": "string"
+        },
+        "available": {
+          "title": "Available",
+          "type": "boolean"
+        },
+        "skills_match": {
+          "title": "Skills Match",
+          "type": "boolean"
+        },
+        "matched_skills": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Matched Skills",
+          "type": "array"
+        },
+        "overtime_hours": {
+          "default": 0,
+          "title": "Overtime Hours",
+          "type": "number"
+        },
+        "weekly_hours_before": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Weekly Hours Before"
+        },
+        "weekly_hours_after": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Weekly Hours After"
+        },
+        "max_weekly_hours": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Max Weekly Hours"
+        },
+        "rest_hours_before_shift": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rest Hours Before Shift"
+        },
+        "previous_changes_this_period": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Previous Changes This Period"
+        }
+      },
+      "required": [
+        "employee_id",
+        "employee_name",
+        "covers_assignment",
+        "available",
+        "skills_match"
+      ],
+      "title": "SelectedFact",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Everything the explainer may talk about. If it's not here, it can't be said.",
+  "properties": {
+    "status": {
+      "enum": [
+        "FEASIBLE",
+        "OPTIMAL",
+        "INFEASIBLE",
+        "PARTIAL"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "disruption": {
+      "$ref": "#/$defs/Disruption"
+    },
+    "disrupted_employee_name": {
+      "title": "Disrupted Employee Name",
+      "type": "string"
+    },
+    "changes": {
+      "items": {
+        "$ref": "#/$defs/ChangeFact"
+      },
+      "title": "Changes",
+      "type": "array"
+    },
+    "selected": {
+      "items": {
+        "$ref": "#/$defs/SelectedFact"
+      },
+      "title": "Selected",
+      "type": "array"
+    },
+    "rejected": {
+      "items": {
+        "$ref": "#/$defs/RejectedFact"
+      },
+      "title": "Rejected",
+      "type": "array"
+    },
+    "metrics": {
+      "$ref": "#/$defs/MetricsFact"
+    },
+    "constraints_checked": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Constraints Checked",
+      "type": "array"
+    },
+    "policies_applied": {
+      "items": {
+        "$ref": "#/$defs/PolicyCitation"
+      },
+      "title": "Policies Applied",
+      "type": "array"
+    },
+    "infeasibility_reasons": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Infeasibility Reasons",
+      "type": "array"
+    }
+  },
+  "required": [
+    "status",
+    "disruption",
+    "disrupted_employee_name",
+    "metrics"
+  ],
+  "title": "ExplanationFacts",
+  "type": "object"
+}

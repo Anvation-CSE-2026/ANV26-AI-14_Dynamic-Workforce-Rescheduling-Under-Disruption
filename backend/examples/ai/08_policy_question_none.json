@@ -1,0 +1,9 @@
+{
+  "question": "What is the dress code for the support floor?",
+  "response": {
+    "query": "What is the dress code for the support floor?",
+    "status": "no_applicable_policy",
+    "hits": [],
+    "message": "no applicable policy found"
+  }
+}

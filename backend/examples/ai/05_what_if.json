@@ -1,0 +1,50 @@
+{
+  "request": "What if overtime is forbidden and Priya is also out tomorrow?",
+  "response": {
+    "status": "READY",
+    "changes": [
+      {
+        "op": "set_overtime",
+        "allow": false
+      },
+      {
+        "op": "add_unavailability",
+        "disruption": {
+          "type": "employee_unavailability",
+          "employee_id": "EMP002",
+          "date": "2026-10-09",
+          "start_time": "09:00",
+          "end_time": "17:00",
+          "reason": "unspecified"
+        },
+        "employee_name": "Priya Nair"
+      }
+    ],
+    "unsupported": [],
+    "issues": [],
+    "assumptions": [
+      "No times given; using the scheduled shift 09:00–17:00."
+    ],
+    "summary": "Scenario: overtime forbidden; Priya Nair also unavailable 2026-10-09 09:00–17:00.",
+    "confidence": {
+      "score": 0.95,
+      "level": "high",
+      "factors": [
+        "time window taken from the schedule"
+      ]
+    },
+    "raw_request": "What if overtime is forbidden and Priya is also out tomorrow?",
+    "meta": {
+      "prompt": "what_if_extraction@2.0.0",
+      "provider": "mock",
+      "model": "mock-1",
+      "trace_id": "66cbea54481b43cb"
+    }
+  },
+  "preferences_after": {
+    "locked_employee_ids": [],
+    "excluded_employee_ids": [],
+    "allow_overtime": false,
+    "priority": "minimize_affected_employees"
+  }
+}

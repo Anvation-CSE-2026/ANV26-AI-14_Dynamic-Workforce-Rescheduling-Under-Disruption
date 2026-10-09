@@ -1,0 +1,53 @@
+{
+  "additionalProperties": false,
+  "description": "Canonical disruption passed to the optimizer. Matches the master contract.",
+  "properties": {
+    "type": {
+      "const": "employee_unavailability",
+      "title": "Type",
+      "type": "string"
+    },
+    "employee_id": {
+      "minLength": 1,
+      "title": "Employee Id",
+      "type": "string"
+    },
+    "date": {
+      "description": "ISO date YYYY-MM-DD",
+      "title": "Date",
+      "type": "string"
+    },
+    "start_time": {
+      "description": "HH:MM, 24h",
+      "title": "Start Time",
+      "type": "string"
+    },
+    "end_time": {
+      "description": "HH:MM, 24h",
+      "title": "End Time",
+      "type": "string"
+    },
+    "reason": {
+      "default": "unspecified",
+      "enum": [
+        "sick",
+        "emergency",
+        "leave",
+        "personal",
+        "other",
+        "unspecified"
+      ],
+      "title": "Reason",
+      "type": "string"
+    }
+  },
+  "required": [
+    "type",
+    "employee_id",
+    "date",
+    "start_time",
+    "end_time"
+  ],
+  "title": "Disruption",
+  "type": "object"
+}

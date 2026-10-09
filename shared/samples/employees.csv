@@ -1,0 +1,16 @@
+id,name,role,department,skills,certifications,max_daily_hours,contracted_weekly_hours,max_weekly_hours
+M01,Ravi Kumar,CNC Operator,L1,CNC Operation,Safety Level 2,10,40,48
+M02,Suresh Pillai,CNC Operator,L1,CNC Operation,Safety Level 2,10,40,48
+M03,Anil Deshmukh,Senior Operator,L2,CNC Operation;Assembly,Safety Level 2,10,40,48
+M04,Kiran Bhat,CNC Operator,L1,CNC Operation,Safety Level 2,10,40,48
+M05,Deepa Menon,Assembly Technician,L2,Assembly,,10,40,48
+M06,Farhan Ali,Assembly Technician,L2,Assembly,,10,40,48
+M07,Lakshmi Nair,Packaging Operator,L3,Packaging;Forklift,,10,40,48
+M08,Joseph D'Souza,Quality Inspector,QC,Quality Inspection,,10,40,48
+M09,Pooja Shetty,CNC Trainee,L1,CNC Operation,,10,40,48
+M10,Vinod Rao,Assembly Technician,L2,Assembly,,10,40,48
+M11,Sunita Verma,Packaging Operator,L3,Packaging,,10,40,48
+M12,Mohan Das,CNC Operator,L1,CNC Operation,Safety Level 2,10,40,48
+M13,Rekha Iyer,Quality Inspector,QC,Quality Inspection;Assembly,,10,40,48
+M14,Ajay Singh,Maintenance Tech,MAINT,Maintenance;CNC Operation,,10,40,48
+M15,Harish Gowda,CNC Operator,L1,CNC Operation,Safety Level 2,10,40,48

@@ -1,0 +1,36 @@
+shift_id,date,start,end,assignment,department,required_skills,required_certifications,priority,employee_id
+CNC-A-1007-1,2026-10-07,06:00,14:00,Line 1 · CNC Machining (Shift A),L1,CNC Operation,Safety Level 2,critical,M04
+CNC-A-1007-2,2026-10-07,06:00,14:00,Line 1 · CNC Machining (Shift A),L1,CNC Operation,Safety Level 2,critical,M01
+CNC-B-1007-1,2026-10-07,14:00,22:00,Line 1 · CNC Machining (Shift B),L1,CNC Operation,Safety Level 2,critical,M12
+CNC-C-1007-1,2026-10-07,22:00,06:00,Line 1 · CNC Machining (Shift C),L1,CNC Operation,Safety Level 2,high,M02
+ASM-A-1007-1,2026-10-07,06:00,14:00,Line 2 · Assembly (Shift A),L2,Assembly,,high,M05
+ASM-A-1007-2,2026-10-07,06:00,14:00,Line 2 · Assembly (Shift A),L2,Assembly,,high,M06
+ASM-B-1007-1,2026-10-07,14:00,22:00,Line 2 · Assembly (Shift B),L2,Assembly,,normal,M10
+PKG-A-1007-1,2026-10-07,06:00,14:00,Line 3 · Packaging (Shift A),L3,Packaging;Forklift,,normal,M07
+QC-A-1007-1,2026-10-07,06:00,14:00,Quality Control (Shift A),QC,Quality Inspection,,high,M08
+CNC-A-1008-1,2026-10-08,06:00,14:00,Line 1 · CNC Machining (Shift A),L1,CNC Operation,Safety Level 2,critical,M04
+CNC-A-1008-2,2026-10-08,06:00,14:00,Line 1 · CNC Machining (Shift A),L1,CNC Operation,Safety Level 2,critical,M01
+CNC-B-1008-1,2026-10-08,14:00,22:00,Line 1 · CNC Machining (Shift B),L1,CNC Operation,Safety Level 2,critical,M12
+CNC-C-1008-1,2026-10-08,22:00,06:00,Line 1 · CNC Machining (Shift C),L1,CNC Operation,Safety Level 2,high,M02
+ASM-A-1008-1,2026-10-08,06:00,14:00,Line 2 · Assembly (Shift A),L2,Assembly,,high,M03
+ASM-A-1008-2,2026-10-08,06:00,14:00,Line 2 · Assembly (Shift A),L2,Assembly,,high,M06
+ASM-B-1008-1,2026-10-08,14:00,22:00,Line 2 · Assembly (Shift B),L2,Assembly,,normal,M10
+PKG-A-1008-1,2026-10-08,06:00,14:00,Line 3 · Packaging (Shift A),L3,Packaging;Forklift,,normal,M07
+QC-A-1008-1,2026-10-08,06:00,14:00,Quality Control (Shift A),QC,Quality Inspection,,high,M13
+CNC-A-1009-1,2026-10-09,06:00,14:00,Line 1 · CNC Machining (Shift A),L1,CNC Operation,Safety Level 2,critical,M01
+CNC-A-1009-2,2026-10-09,06:00,14:00,Line 1 · CNC Machining (Shift A),L1,CNC Operation,Safety Level 2,critical,M15
+CNC-B-1009-1,2026-10-09,14:00,22:00,Line 1 · CNC Machining (Shift B),L1,CNC Operation,Safety Level 2,critical,M12
+CNC-C-1009-1,2026-10-09,22:00,06:00,Line 1 · CNC Machining (Shift C),L1,CNC Operation,Safety Level 2,high,M02
+ASM-A-1009-1,2026-10-09,06:00,14:00,Line 2 · Assembly (Shift A),L2,Assembly,,high,M03
+ASM-A-1009-2,2026-10-09,06:00,14:00,Line 2 · Assembly (Shift A),L2,Assembly,,high,M06
+ASM-B-1009-1,2026-10-09,14:00,22:00,Line 2 · Assembly (Shift B),L2,Assembly,,normal,M10
+PKG-A-1009-1,2026-10-09,06:00,14:00,Line 3 · Packaging (Shift A),L3,Packaging;Forklift,,normal,M07
+QC-A-1009-1,2026-10-09,06:00,14:00,Quality Control (Shift A),QC,Quality Inspection,,high,M08
+CNC-A-1010-1,2026-10-10,06:00,14:00,Line 1 · CNC Machining (Shift A),L1,CNC Operation,Safety Level 2,critical,M15
+CNC-A-1010-2,2026-10-10,06:00,14:00,Line 1 · CNC Machining (Shift A),L1,CNC Operation,Safety Level 2,critical,M01
+ASM-A-1010-1,2026-10-10,06:00,14:00,Line 2 · Assembly (Shift A),L2,Assembly,,high,M05
+ASM-A-1010-2,2026-10-10,06:00,14:00,Line 2 · Assembly (Shift A),L2,Assembly,,high,M03
+PKG-A-1010-1,2026-10-10,06:00,14:00,Line 3 · Packaging (Shift A),L3,Packaging;Forklift,,normal,M07
+QC-A-1010-1,2026-10-10,06:00,14:00,Quality Control (Shift A),QC,Quality Inspection,,high,M13
+CNC-A-1005-1,2026-10-05,06:00,14:00,Line 1 · CNC Machining (Shift A),L1,CNC Operation,Safety Level 2,critical,M04
+CNC-A-1006-1,2026-10-06,06:00,14:00,Line 1 · CNC Machining (Shift A),L1,CNC Operation,Safety Level 2,critical,M04

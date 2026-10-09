@@ -1,0 +1,245 @@
+{
+  "id": "healthcare",
+  "label": "Healthcare",
+  "tagline": "Hospitals, clinics & care homes",
+  "icon": "HeartPulse",
+  "accent": "#0f766e",
+  "identity": "calm",
+  "dashboardName": "Hospital Command Center",
+  "terminology": {
+    "employee": "Staff member",
+    "employees": "Clinical staff",
+    "shift": "Shift",
+    "assignment": "Unit assignment",
+    "department": "Unit",
+    "departments": "Units",
+    "skill": "Certification",
+    "skills": "Certifications",
+    "manager": "Nurse manager",
+    "disruption": "Staffing disruption",
+    "organization": "Hospital"
+  },
+  "kpis": [
+    {
+      "id": "staff_coverage",
+      "label": "Staff Coverage",
+      "metric": "coverage_pct",
+      "format": "percent",
+      "good": "high",
+      "hint": "Shifts with a qualified nurse assigned"
+    },
+    {
+      "id": "critical",
+      "label": "Critical Shortages",
+      "metric": "critical_uncovered",
+      "format": "count",
+      "good": "low",
+      "hint": "Uncovered ICU/critical shifts"
+    },
+    {
+      "id": "skills",
+      "label": "Skill Coverage",
+      "metric": "skill_coverage_pct",
+      "format": "percent",
+      "good": "high",
+      "hint": "Shifts staffed with all required certifications"
+    },
+    {
+      "id": "overtime",
+      "label": "Overtime",
+      "metric": "overtime_hours",
+      "format": "hours",
+      "good": "low",
+      "hint": "Hours above contracted this week"
+    },
+    {
+      "id": "at_risk_units",
+      "label": "At-Risk Units",
+      "metric": "at_risk_departments",
+      "format": "count",
+      "good": "low",
+      "hint": "Units with an open disruption"
+    }
+  ],
+  "subDashboards": [
+    {
+      "id": "clinical",
+      "name": "Clinical Staff Dashboard",
+      "audience": "Charge nurses & unit leads",
+      "widgets": [
+        "department_coverage",
+        "roster",
+        "qualification_matrix",
+        "fatigue_risk"
+      ]
+    },
+    {
+      "id": "hr",
+      "name": "Hospital Workforce / HR Dashboard",
+      "audience": "HR & workforce planning",
+      "widgets": [
+        "overtime_by_person",
+        "fairness_distribution",
+        "disruption_history",
+        "compliance"
+      ]
+    }
+  ],
+  "constraintLabels": {
+    "required_skills": "Required certifications",
+    "min_rest_hours": "Minimum rest between shifts",
+    "max_daily_hours": "Maximum shift length",
+    "max_weekly_hours": "Weekly hours limit",
+    "overtime": "Overtime cap",
+    "priority": "Patient-care priority"
+  },
+  "riskIndicators": [
+    {
+      "id": "fatigue",
+      "label": "Fatigue risk",
+      "metric": "fatigue_risk_count"
+    },
+    {
+      "id": "critical_units",
+      "label": "Critical units affected",
+      "metric": "critical_uncovered"
+    }
+  ],
+  "recommendedActions": [
+    "Confirm the replacement with the charge nurse",
+    "Check float-pool availability for the next 48h",
+    "Review overtime approvals for ICU staff"
+  ],
+  "recognition": {
+    "categories": [
+      {
+        "id": "shift_rescue",
+        "label": "Shift Rescue",
+        "description": "Covered a colleague's shift at short notice",
+        "signals": [
+          "disruption_cover"
+        ],
+        "points": 20,
+        "managerAwardable": true
+      },
+      {
+        "id": "critical_care",
+        "label": "Critical Care Support",
+        "description": "Covered a critical-unit shift (ICU, ED)",
+        "signals": [
+          "critical_cover"
+        ],
+        "points": 10,
+        "managerAwardable": true
+      },
+      {
+        "id": "reliability",
+        "label": "Reliability",
+        "description": "Acknowledged changes promptly and gave early notice of absences",
+        "signals": [
+          "prompt_acknowledgement",
+          "advance_notice"
+        ],
+        "points": 5,
+        "managerAwardable": true
+      },
+      {
+        "id": "patient_safety",
+        "label": "Patient Safety Champion",
+        "description": "Raised or prevented a patient-safety risk",
+        "signals": [],
+        "points": 15,
+        "managerAwardable": true
+      },
+      {
+        "id": "teamwork",
+        "label": "Teamwork",
+        "description": "Went out of the way to support the unit",
+        "signals": [],
+        "points": 15,
+        "managerAwardable": true
+      },
+      {
+        "id": "skill_development",
+        "label": "Skill Development",
+        "description": "Completed a certification or cross-training",
+        "signals": [],
+        "points": 15,
+        "managerAwardable": true
+      }
+    ],
+    "tiers": [
+      {
+        "points": 40,
+        "label": "Recognized",
+        "benefit": "Name in the monthly unit newsletter"
+      },
+      {
+        "points": 100,
+        "label": "Valued",
+        "benefit": "First pick of preferred shifts next roster"
+      },
+      {
+        "points": 200,
+        "label": "Outstanding",
+        "benefit": "Half-day paid leave or a training voucher"
+      }
+    ]
+  },
+  "charts": [
+    "department_coverage",
+    "overtime_trend",
+    "qualification_gaps"
+  ],
+  "commonKpis": [
+    {
+      "id": "workforce",
+      "label": "Workforce Status",
+      "metric": "available_staff",
+      "format": "ratio",
+      "good": "high",
+      "hint": "Available vs total people today and tomorrow"
+    },
+    {
+      "id": "coverage",
+      "label": "Schedule Coverage",
+      "metric": "coverage_pct",
+      "format": "percent",
+      "good": "high",
+      "hint": "Shifts with a qualified person assigned"
+    },
+    {
+      "id": "disruptions",
+      "label": "Active Disruptions",
+      "metric": "active_disruptions",
+      "format": "count",
+      "good": "low",
+      "hint": "Disruptions not yet repaired"
+    },
+    {
+      "id": "at_risk",
+      "label": "At-Risk Assignments",
+      "metric": "at_risk_assignments",
+      "format": "count",
+      "good": "low",
+      "hint": "Shifts affected by an open disruption"
+    },
+    {
+      "id": "overtime",
+      "label": "Overtime",
+      "metric": "overtime_hours",
+      "format": "hours",
+      "good": "low",
+      "hint": "Scheduled hours above contracted hours this week"
+    },
+    {
+      "id": "skills",
+      "label": "Skill Coverage",
+      "metric": "skill_coverage_pct",
+      "format": "percent",
+      "good": "high",
+      "hint": "Covered shifts staffed by fully qualified people"
+    }
+  ],
+  "demoDataset": "shared/demo-data/healthcare.json"
+}

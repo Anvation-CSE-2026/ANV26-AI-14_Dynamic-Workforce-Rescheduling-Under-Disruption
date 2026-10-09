@@ -1,0 +1,422 @@
+{
+  "$defs": {
+    "AdHocConstraint": {
+      "additionalProperties": false,
+      "description": "A one-off requirement the manager stated for this repair.",
+      "properties": {
+        "kind": {
+          "enum": [
+            "required_skill",
+            "max_daily_hours",
+            "only_team"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            }
+          ],
+          "title": "Value"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "value",
+        "text"
+      ],
+      "title": "AdHocConstraint",
+      "type": "object"
+    },
+    "Candidate": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name"
+      ],
+      "title": "Candidate",
+      "type": "object"
+    },
+    "Confidence": {
+      "additionalProperties": false,
+      "description": "Deterministic confidence: starts at 1.0, reduced by each disclosed factor.\n\nNot model self-assessment. Blocking issues force ``level='none'``.",
+      "properties": {
+        "score": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Score",
+          "type": "number"
+        },
+        "level": {
+          "enum": [
+            "high",
+            "medium",
+            "low",
+            "none"
+          ],
+          "title": "Level",
+          "type": "string"
+        },
+        "factors": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Factors",
+          "type": "array"
+        }
+      },
+      "required": [
+        "score",
+        "level"
+      ],
+      "title": "Confidence",
+      "type": "object"
+    },
+    "Disruption": {
+      "additionalProperties": false,
+      "description": "Canonical disruption passed to the optimizer. Matches the master contract.",
+      "properties": {
+        "type": {
+          "const": "employee_unavailability",
+          "title": "Type",
+          "type": "string"
+        },
+        "employee_id": {
+          "minLength": 1,
+          "title": "Employee Id",
+          "type": "string"
+        },
+        "date": {
+          "description": "ISO date YYYY-MM-DD",
+          "title": "Date",
+          "type": "string"
+        },
+        "start_time": {
+          "description": "HH:MM, 24h",
+          "title": "Start Time",
+          "type": "string"
+        },
+        "end_time": {
+          "description": "HH:MM, 24h",
+          "title": "End Time",
+          "type": "string"
+        },
+        "reason": {
+          "default": "unspecified",
+          "enum": [
+            "sick",
+            "emergency",
+            "leave",
+            "personal",
+            "other",
+            "unspecified"
+          ],
+          "title": "Reason",
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "employee_id",
+        "date",
+        "start_time",
+        "end_time"
+      ],
+      "title": "Disruption",
+      "type": "object"
+    },
+    "DisruptionDetail": {
+      "additionalProperties": false,
+      "description": "Extra parse information aligned with ``ParseResult.disruptions`` (same index).",
+      "properties": {
+        "employee_name": {
+          "title": "Employee Name",
+          "type": "string"
+        },
+        "assignment_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Assignment Id"
+        },
+        "assignment_source": {
+          "default": "none",
+          "enum": [
+            "stated",
+            "schedule",
+            "none"
+          ],
+          "title": "Assignment Source",
+          "type": "string"
+        }
+      },
+      "required": [
+        "employee_name"
+      ],
+      "title": "DisruptionDetail",
+      "type": "object"
+    },
+    "Issue": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "enum": [
+            "UNKNOWN_EMPLOYEE",
+            "AMBIGUOUS_EMPLOYEE",
+            "MISSING_EMPLOYEE",
+            "UNKNOWN_ASSIGNMENT",
+            "AMBIGUOUS_ASSIGNMENT",
+            "MISSING_DATE",
+            "INVALID_DATE",
+            "DATE_IN_PAST",
+            "DATE_OUT_OF_HORIZON",
+            "MISSING_TIME",
+            "INVALID_TIME",
+            "UNSUPPORTED_DISRUPTION",
+            "UNSUPPORTED_CONSTRAINT",
+            "UNSUPPORTED_CHANGE",
+            "NOT_A_DISRUPTION",
+            "NOT_A_WHAT_IF",
+            "NOT_FEEDBACK",
+            "LOCKED_EMPLOYEE_CONFLICT",
+            "CONTRADICTORY_CHANGES",
+            "NEEDS_NAMES",
+            "INVALID_VALUE",
+            "LLM_ERROR"
+          ],
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "field": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Field"
+        },
+        "blocking": {
+          "default": true,
+          "title": "Blocking",
+          "type": "boolean"
+        },
+        "candidates": {
+          "items": {
+            "$ref": "#/$defs/Candidate"
+          },
+          "title": "Candidates",
+          "type": "array"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "title": "Issue",
+      "type": "object"
+    },
+    "ManagerPreferences": {
+      "additionalProperties": false,
+      "description": "Request-level manager intent, resolved to IDs.",
+      "properties": {
+        "locked_employee_ids": {
+          "description": "Schedules that must not change",
+          "items": {
+            "type": "string"
+          },
+          "title": "Locked Employee Ids",
+          "type": "array"
+        },
+        "excluded_employee_ids": {
+          "description": "Must not be used as replacements",
+          "items": {
+            "type": "string"
+          },
+          "title": "Excluded Employee Ids",
+          "type": "array"
+        },
+        "allow_overtime": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "None = organization policy",
+          "title": "Allow Overtime"
+        },
+        "priority": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Priority"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "description": "None = default weights"
+        }
+      },
+      "title": "ManagerPreferences",
+      "type": "object"
+    },
+    "Meta": {
+      "additionalProperties": false,
+      "description": "Audit metadata attached to every AI result.",
+      "properties": {
+        "prompt": {
+          "default": "",
+          "title": "Prompt",
+          "type": "string"
+        },
+        "provider": {
+          "default": "",
+          "title": "Provider",
+          "type": "string"
+        },
+        "model": {
+          "default": "",
+          "title": "Model",
+          "type": "string"
+        },
+        "trace_id": {
+          "default": "",
+          "title": "Trace Id",
+          "type": "string"
+        }
+      },
+      "title": "Meta",
+      "type": "object"
+    },
+    "Priority": {
+      "enum": [
+        "minimize_changes",
+        "minimize_affected_employees",
+        "minimize_overtime",
+        "fairness",
+        "employee_preferences"
+      ],
+      "title": "Priority",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Only when ``status == \"READY\"`` may disruptions/preferences/constraints go to the optimizer.",
+  "properties": {
+    "status": {
+      "enum": [
+        "READY",
+        "NEEDS_CLARIFICATION",
+        "UNSUPPORTED",
+        "ERROR"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "disruptions": {
+      "items": {
+        "$ref": "#/$defs/Disruption"
+      },
+      "title": "Disruptions",
+      "type": "array"
+    },
+    "details": {
+      "items": {
+        "$ref": "#/$defs/DisruptionDetail"
+      },
+      "title": "Details",
+      "type": "array"
+    },
+    "preferences": {
+      "$ref": "#/$defs/ManagerPreferences"
+    },
+    "ad_hoc_constraints": {
+      "items": {
+        "$ref": "#/$defs/AdHocConstraint"
+      },
+      "title": "Ad Hoc Constraints",
+      "type": "array"
+    },
+    "unsupported_constraints": {
+      "description": "Stated by the manager but NOT enforced. Show on the card.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Unsupported Constraints",
+      "type": "array"
+    },
+    "issues": {
+      "items": {
+        "$ref": "#/$defs/Issue"
+      },
+      "title": "Issues",
+      "type": "array"
+    },
+    "assumptions": {
+      "description": "What the parser filled in. Show on the card.",
+      "items": {
+        "type": "string"
+      },
+      "title": "Assumptions",
+      "type": "array"
+    },
+    "confidence": {
+      "$ref": "#/$defs/Confidence"
+    },
+    "confirmation_summary": {
+      "default": "",
+      "title": "Confirmation Summary",
+      "type": "string"
+    },
+    "raw_request": {
+      "default": "",
+      "title": "Raw Request",
+      "type": "string"
+    },
+    "meta": {
+      "$ref": "#/$defs/Meta"
+    }
+  },
+  "required": [
+    "status"
+  ],
+  "title": "ParseResult",
+  "type": "object"
+}

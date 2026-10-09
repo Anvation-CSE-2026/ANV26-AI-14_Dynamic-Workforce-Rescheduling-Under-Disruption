@@ -1,0 +1,43 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ResQWork: set up (first time)",
+      "type": "shell",
+      "options": { "cwd": "${workspaceFolder}/backend" },
+      "linux": { "command": "python3 -m venv .venv && .venv/bin/python -m pip install -r requirements.txt && (.venv/bin/python -m pip install -r requirements-optional.txt || true)" },
+      "osx": { "command": "python3 -m venv .venv && .venv/bin/python -m pip install -r requirements.txt && (.venv/bin/python -m pip install -r requirements-optional.txt || true)" },
+      "windows": { "command": "py -3 -m venv .venv; .venv\\Scripts\\python.exe -m pip install -r requirements.txt; .venv\\Scripts\\python.exe -m pip install -r requirements-optional.txt" },
+      "problemMatcher": []
+    },
+    {
+      "label": "ResQWork: run (http://localhost:8000)",
+      "type": "shell",
+      "options": { "cwd": "${workspaceFolder}/backend" },
+      "linux": { "command": ".venv/bin/python run.py" },
+      "osx": { "command": ".venv/bin/python run.py" },
+      "windows": { "command": ".venv\\Scripts\\python.exe run.py" },
+      "group": { "kind": "build", "isDefault": true },
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "ResQWork: run tests",
+      "type": "shell",
+      "options": { "cwd": "${workspaceFolder}/backend" },
+      "linux": { "command": ".venv/bin/python -m unittest discover -s tests -t ." },
+      "osx": { "command": ".venv/bin/python -m unittest discover -s tests -t ." },
+      "windows": { "command": ".venv\\Scripts\\python.exe -m unittest discover -s tests -t ." },
+      "group": "test",
+      "problemMatcher": []
+    },
+    {
+      "label": "ResQWork: website dev server (hot reload, needs Node)",
+      "type": "shell",
+      "options": { "cwd": "${workspaceFolder}/frontend" },
+      "command": "npm install && npm run dev",
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}

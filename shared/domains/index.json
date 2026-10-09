@@ -1,0 +1,42 @@
+[
+  {
+    "id": "healthcare",
+    "label": "Healthcare",
+    "tagline": "Hospitals, clinics & care homes",
+    "icon": "HeartPulse",
+    "accent": "#0f766e",
+    "dashboardName": "Hospital Command Center"
+  },
+  {
+    "id": "manufacturing",
+    "label": "Manufacturing",
+    "tagline": "Plants, lines & shifts",
+    "icon": "Factory",
+    "accent": "#b45309",
+    "dashboardName": "Plant Operations Command Center"
+  },
+  {
+    "id": "education",
+    "label": "Education",
+    "tagline": "Schools & colleges",
+    "icon": "GraduationCap",
+    "accent": "#4338ca",
+    "dashboardName": "Academic Operations Dashboard"
+  },
+  {
+    "id": "technology",
+    "label": "IT / Technology",
+    "tagline": "Engineering teams & on-call",
+    "icon": "Cpu",
+    "accent": "#2563eb",
+    "dashboardName": "Technology Workforce Command Center"
+  },
+  {
+    "id": "logistics",
+    "label": "Logistics / Field Services",
+    "tagline": "Fleets, routes & technicians",
+    "icon": "Truck",
+    "accent": "#be123c",
+    "dashboardName": "Field Operations Command Center"
+  }
+]

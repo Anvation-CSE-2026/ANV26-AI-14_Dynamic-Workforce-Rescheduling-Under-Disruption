@@ -1,0 +1,37 @@
+RESQWORK: HOW TO OPEN IT
+========================
+
+1. Install Python 3.10 or newer (one time only)
+   https://www.python.org/downloads/
+   Windows: tick "Add python.exe to PATH" on the first installer screen.
+
+2. Start ResQWork
+   Windows : double-click  start.bat
+   macOS   : double-click  start.command   (if blocked: right-click > Open)
+   Linux   : run           ./start.sh
+
+   The first start sets everything up (about a minute; internet needed once).
+   Your browser then opens http://localhost:8000 by itself.
+   Keep the black window open while you use ResQWork; close it to stop.
+
+3. Sign in with a demo account (password for all: demo1234)
+   Healthcare     manager@healthcare.demo     neha@healthcare.demo     rahul@healthcare.demo
+   Manufacturing  manager@manufacturing.demo  kiran@manufacturing.demo ravi@manufacturing.demo
+   Education      manager@education.demo      kavitha@education.demo   anjali@education.demo
+   Technology     manager@technology.demo     kunal@technology.demo    rohit@technology.demo
+   Logistics      manager@logistics.demo      ganesh@logistics.demo    ramesh@logistics.demo
+   Or click any name on the home page. Switch users from the drop-down at the top.
+
+Optional
+   Gemini voice    : put your key in backend/.env  as  GEMINI_API_KEY=...  then restart.
+                     (copy backend/.env.example to backend/.env first)
+                     Without it, voice uses Chrome/Edge speech recognition, or you can type.
+   Claude AI text  : ANTHROPIC_API_KEY=... in the same file (otherwise rule-based parsing).
+   Different port  : set PORT=8080 in backend/.env.
+
+Opening in Antigravity / VS Code
+   File > Open Folder > select this ResQWork folder.
+   Terminal > Run Task > "ResQWork: set up (first time)", then "ResQWork: run".
+   (Or just run start.bat / start.command from the folder.)
+
+Demo walkthrough: docs/demo-script.md

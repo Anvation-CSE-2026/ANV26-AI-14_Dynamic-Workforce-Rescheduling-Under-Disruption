@@ -1,0 +1,111 @@
+{
+  "$defs": {
+    "PolicyChunk": {
+      "properties": {
+        "chunk_id": {
+          "title": "Chunk Id",
+          "type": "string"
+        },
+        "policy_id": {
+          "title": "Policy Id",
+          "type": "string"
+        },
+        "document": {
+          "title": "Document",
+          "type": "string"
+        },
+        "section": {
+          "title": "Section",
+          "type": "string"
+        },
+        "heading_path": {
+          "title": "Heading Path",
+          "type": "string"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "position": {
+          "title": "Position",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "chunk_id",
+        "policy_id",
+        "document",
+        "section",
+        "heading_path",
+        "text",
+        "position"
+      ],
+      "title": "PolicyChunk",
+      "type": "object"
+    },
+    "RetrievedPolicy": {
+      "properties": {
+        "chunk": {
+          "$ref": "#/$defs/PolicyChunk"
+        },
+        "confidence": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        },
+        "score": {
+          "title": "Score",
+          "type": "number"
+        },
+        "matched_terms": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Matched Terms",
+          "type": "array"
+        }
+      },
+      "required": [
+        "chunk",
+        "confidence",
+        "score",
+        "matched_terms"
+      ],
+      "title": "RetrievedPolicy",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "query": {
+      "title": "Query",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "found",
+        "no_applicable_policy"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "hits": {
+      "items": {
+        "$ref": "#/$defs/RetrievedPolicy"
+      },
+      "title": "Hits",
+      "type": "array"
+    },
+    "message": {
+      "default": "",
+      "title": "Message",
+      "type": "string"
+    }
+  },
+  "required": [
+    "query",
+    "status"
+  ],
+  "title": "RetrievalResult",
+  "type": "object"
+}

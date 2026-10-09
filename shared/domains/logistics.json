@@ -1,0 +1,245 @@
+{
+  "id": "logistics",
+  "label": "Logistics / Field Services",
+  "tagline": "Fleets, routes & technicians",
+  "icon": "Truck",
+  "accent": "#be123c",
+  "identity": "control",
+  "dashboardName": "Field Operations Command Center",
+  "terminology": {
+    "employee": "Driver",
+    "employees": "Drivers & technicians",
+    "shift": "Run",
+    "assignment": "Route",
+    "department": "Depot",
+    "departments": "Depots",
+    "skill": "License",
+    "skills": "Licenses",
+    "manager": "Dispatcher",
+    "disruption": "Driver unavailability",
+    "organization": "Fleet"
+  },
+  "kpis": [
+    {
+      "id": "assignment_coverage",
+      "label": "Assignment Coverage",
+      "metric": "coverage_pct",
+      "format": "percent",
+      "good": "high",
+      "hint": "Routes with a driver"
+    },
+    {
+      "id": "route_risk",
+      "label": "Route Risk",
+      "metric": "route_risk",
+      "format": "count",
+      "good": "low",
+      "hint": "Routes affected by an open disruption"
+    },
+    {
+      "id": "drivers",
+      "label": "Driver Availability",
+      "metric": "available_staff",
+      "format": "ratio",
+      "good": "high",
+      "hint": "Drivers available"
+    },
+    {
+      "id": "certs",
+      "label": "Certification Coverage",
+      "metric": "skill_coverage_pct",
+      "format": "percent",
+      "good": "high",
+      "hint": "Routes driven with all required licenses"
+    },
+    {
+      "id": "overtime",
+      "label": "Overtime",
+      "metric": "overtime_hours",
+      "format": "hours",
+      "good": "low",
+      "hint": "Driving hours above contracted"
+    }
+  ],
+  "subDashboards": [
+    {
+      "id": "dispatch",
+      "name": "Dispatch Dashboard",
+      "audience": "Dispatchers",
+      "widgets": [
+        "department_coverage",
+        "roster",
+        "qualification_matrix",
+        "fatigue_risk"
+      ]
+    },
+    {
+      "id": "resources",
+      "name": "Resource Management Dashboard",
+      "audience": "Fleet managers",
+      "widgets": [
+        "overtime_by_person",
+        "fairness_distribution",
+        "disruption_history",
+        "compliance"
+      ]
+    }
+  ],
+  "constraintLabels": {
+    "required_skills": "License & permits",
+    "min_rest_hours": "Rest between runs",
+    "max_daily_hours": "Daily driving limit",
+    "max_weekly_hours": "Weekly driving limit",
+    "overtime": "Overtime cap",
+    "priority": "Delivery-window criticality"
+  },
+  "riskIndicators": [
+    {
+      "id": "hazmat",
+      "label": "Hazmat routes at risk",
+      "metric": "route_risk"
+    },
+    {
+      "id": "fatigue",
+      "label": "Driver fatigue",
+      "metric": "fatigue_risk_count"
+    }
+  ],
+  "recommendedActions": [
+    "Confirm the tanker handover at North Depot",
+    "Notify the customer of the driver change",
+    "Check the replacement's hazmat permit expiry"
+  ],
+  "recognition": {
+    "categories": [
+      {
+        "id": "peak_coverage",
+        "label": "Peak Coverage",
+        "description": "Covered a colleague's run at short notice",
+        "signals": [
+          "disruption_cover"
+        ],
+        "points": 20,
+        "managerAwardable": true
+      },
+      {
+        "id": "delivery_reliability",
+        "label": "Delivery Reliability",
+        "description": "Kept a critical delivery on schedule",
+        "signals": [
+          "critical_cover"
+        ],
+        "points": 10,
+        "managerAwardable": true
+      },
+      {
+        "id": "dependability",
+        "label": "Schedule Dependability",
+        "description": "Acknowledged changes promptly and gave early notice of absences",
+        "signals": [
+          "prompt_acknowledgement",
+          "advance_notice"
+        ],
+        "points": 5,
+        "managerAwardable": true
+      },
+      {
+        "id": "safety",
+        "label": "Road Safety",
+        "description": "Incident-free driving or a safety report",
+        "signals": [],
+        "points": 15,
+        "managerAwardable": true
+      },
+      {
+        "id": "customer_service",
+        "label": "Customer Service",
+        "description": "Praised by a customer",
+        "signals": [],
+        "points": 15,
+        "managerAwardable": true
+      },
+      {
+        "id": "skill_development",
+        "label": "Skill Development",
+        "description": "New licence, permit or certification",
+        "signals": [],
+        "points": 15,
+        "managerAwardable": true
+      }
+    ],
+    "tiers": [
+      {
+        "points": 40,
+        "label": "Recognized",
+        "benefit": "Depot recognition board"
+      },
+      {
+        "points": 100,
+        "label": "Valued",
+        "benefit": "Preferred route or run pattern next month"
+      },
+      {
+        "points": 200,
+        "label": "Outstanding",
+        "benefit": "Fuel card or spot award"
+      }
+    ]
+  },
+  "charts": [
+    "department_coverage",
+    "overtime_trend",
+    "qualification_gaps"
+  ],
+  "commonKpis": [
+    {
+      "id": "workforce",
+      "label": "Workforce Status",
+      "metric": "available_staff",
+      "format": "ratio",
+      "good": "high",
+      "hint": "Available vs total people today and tomorrow"
+    },
+    {
+      "id": "coverage",
+      "label": "Schedule Coverage",
+      "metric": "coverage_pct",
+      "format": "percent",
+      "good": "high",
+      "hint": "Shifts with a qualified person assigned"
+    },
+    {
+      "id": "disruptions",
+      "label": "Active Disruptions",
+      "metric": "active_disruptions",
+      "format": "count",
+      "good": "low",
+      "hint": "Disruptions not yet repaired"
+    },
+    {
+      "id": "at_risk",
+      "label": "At-Risk Assignments",
+      "metric": "at_risk_assignments",
+      "format": "count",
+      "good": "low",
+      "hint": "Shifts affected by an open disruption"
+    },
+    {
+      "id": "overtime",
+      "label": "Overtime",
+      "metric": "overtime_hours",
+      "format": "hours",
+      "good": "low",
+      "hint": "Scheduled hours above contracted hours this week"
+    },
+    {
+      "id": "skills",
+      "label": "Skill Coverage",
+      "metric": "skill_coverage_pct",
+      "format": "percent",
+      "good": "high",
+      "hint": "Covered shifts staffed by fully qualified people"
+    }
+  ],
+  "demoDataset": "shared/demo-data/logistics.json"
+}
